@@ -1,0 +1,71 @@
+\hypertarget{classedu_1_1duke_1_1_directory_resource}{}\doxysection{Referencia de la Clase edu.\+duke.\+Directory\+Resource}
+\label{classedu_1_1duke_1_1_directory_resource}\index{edu.duke.DirectoryResource@{edu.duke.DirectoryResource}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classedu_1_1duke_1_1_directory_resource_a06968fba0d0b6682c8cb2b6731c9022f}{Directory\+Resource}} ()
+\item 
+Iterable$<$ File $>$ \mbox{\hyperlink{classedu_1_1duke_1_1_directory_resource_a294f884c26b03b9d6670d037d10be21d}{selected\+Files}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+The {\ttfamily \mbox{\hyperlink{classedu_1_1duke_1_1_directory_resource}{Directory\+Resource}}} class allows the user to choose one or more files from a directory (or folder) with a file selection dialog box by using the method {\ttfamily selected\+Files}. These files can then be iterated over using a {\ttfamily for} loop.
+
+Example usage\+:
+
+
+\begin{DoxyPre}
+\mbox{\hyperlink{classedu_1_1duke_1_1_directory_resource}{DirectoryResource}} dr = new \mbox{\hyperlink{classedu_1_1duke_1_1_directory_resource_a06968fba0d0b6682c8cb2b6731c9022f}{DirectoryResource()}};
+for (File f : dr.selectedFiles()) \{
+    \mbox{\hyperlink{classedu_1_1duke_1_1_image_resource}{ImageResource}} ir = new ImageResource(f);
+    ir.draw();
+\}
+\end{DoxyPre}
+
+
+This software is licensed with an Apache 2 license, see \href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}} for details.
+
+\begin{DoxyAuthor}{Autor}
+Duke Software Team 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_directory_resource_a06968fba0d0b6682c8cb2b6731c9022f}\label{classedu_1_1duke_1_1_directory_resource_a06968fba0d0b6682c8cb2b6731c9022f}} 
+\index{edu.duke.DirectoryResource@{edu.duke.DirectoryResource}!DirectoryResource@{DirectoryResource}}
+\index{DirectoryResource@{DirectoryResource}!edu.duke.DirectoryResource@{edu.duke.DirectoryResource}}
+\doxysubsubsection{\texorpdfstring{DirectoryResource()}{DirectoryResource()}}
+{\footnotesize\ttfamily edu.\+duke.\+Directory\+Resource.\+Directory\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a {\ttfamily \mbox{\hyperlink{classedu_1_1duke_1_1_directory_resource}{Directory\+Resource}}} object.
+
+Creating a {\ttfamily \mbox{\hyperlink{classedu_1_1duke_1_1_directory_resource}{Directory\+Resource}}} object does not open a dialog box for selecting files. 
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_directory_resource_a294f884c26b03b9d6670d037d10be21d}\label{classedu_1_1duke_1_1_directory_resource_a294f884c26b03b9d6670d037d10be21d}} 
+\index{edu.duke.DirectoryResource@{edu.duke.DirectoryResource}!selectedFiles@{selectedFiles}}
+\index{selectedFiles@{selectedFiles}!edu.duke.DirectoryResource@{edu.duke.DirectoryResource}}
+\doxysubsubsection{\texorpdfstring{selectedFiles()}{selectedFiles()}}
+{\footnotesize\ttfamily Iterable$<$ File $>$ edu.\+duke.\+Directory\+Resource.\+selected\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Open a file selection dialog box to allow the user to navigate to a directory and select one or more files from the chosen directory (or folder).
+
+The file selection dialog box opened starts in the current project folder.
+
+\begin{DoxyReturn}{Devuelve}
+an {\ttfamily Iterable} that accesses the chosen files one at a time 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classedu_1_1duke_1_1_directory_resource_a294f884c26b03b9d6670d037d10be21d_icgraph}
+\end{center}
+\end{figure}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/mariomojica/\+Documents/4 Grado Ingeniería/\+Laboratorio de desarrollo y herramientas/\+Movie\+Recommendation/src/main/java/edu/duke/\mbox{\hyperlink{_directory_resource_8java}{Directory\+Resource.\+java}}\end{DoxyCompactItemize}

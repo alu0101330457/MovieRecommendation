@@ -1,0 +1,368 @@
+\hypertarget{classedu_1_1duke_1_1_pixel}{}\doxysection{Referencia de la Clase edu.\+duke.\+Pixel}
+\label{classedu_1_1duke_1_1_pixel}\index{edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classedu_1_1duke_1_1_pixel_af59be0bd71418d6de7db66e314eb3893}{Pixel}} (\mbox{\hyperlink{classedu_1_1duke_1_1_pixel}{Pixel}} other)
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_aa0fa9fdbfd85e439026304f17174f7f5}{getX}} ()
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_ae139d441af9eaf9a0a81881eba3f4aa7}{getY}} ()
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_af4475716ab1fd09c90655e4eb5b6e960}{get\+Red}} ()
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_a9fcbe4cfdf501ef863c5c8a3218e2a7f}{get\+Green}} ()
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_aa59e69f3f96b6646f212d4ef4f02e68e}{get\+Blue}} ()
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_abc4d19fab0d5621aef2a2f99efe722af}{get\+Alpha}} ()
+\item 
+void \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_a7fecffdfb9efa7ffbc500ea038642fb1}{set\+Red}} (int r)
+\item 
+void \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_ac4176b65ad7ef95835c3100434b1913b}{set\+Green}} (int g)
+\item 
+void \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_ac98f31f54901893a37549d5c75ce2ae3}{set\+Blue}} (int b)
+\item 
+void \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_aef9d321aa9cce808ac4d02f8ad4ea84a}{set\+Alpha}} (int a)
+\item 
+String \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_a0af84b0d76d5ccebd302c2db216902ab}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_a9bebcff2460d6f68d4bceed56ca049d4}{clamp}} (int value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_ae5fde9413915cf013ad1c69b351ab273}{alpha}} = MAX\+\_\+\+VALUE
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_a7a7e59129a7bd75fddbf337b637d3679}{red}} = 0
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_a21ad4e73b6a2a3a81bb07c92ad69dc78}{green}} = 0
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_ad0b3ef75296f618cef3aa987af0b581c}{blue}} = 0
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_a22a65f1e780b2b63bc309333813fb94d}{myX}}
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_pixel_a4e748abc9d31d39cffa525457722128b}{myY}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+The {\ttfamily \mbox{\hyperlink{classedu_1_1duke_1_1_pixel}{Pixel}}} class represents a color as its component values of red, green, blue, as well as alpha (for transparency).
+
+Each of the component values of a pixel must have a value between 0 and 255. If a value is given outside that range, it is changed to be within that range. As such, a negative value would be set to 0 and a value greater than 255 would be set to 255.
+
+Example usage\+:
+
+
+\begin{DoxyPre}
+\mbox{\hyperlink{classedu_1_1duke_1_1_image_resource}{ImageResource}} image = new ImageResource();
+for (\mbox{\hyperlink{classedu_1_1duke_1_1_pixel}{Pixel}} p : image.pixels()) \{
+    int red = p.getRed();
+    int green = p.getGreen();
+    int blue = p.getBlue();
+    int average = (red + green + blue) / 3;
+    p.setRed(average);
+    p.setGreen(average);
+    p.setBlue(average);
+\}
+image.draw();
+\end{DoxyPre}
+
+
+This is open-\/source software released under the terms of the GPL (\href{http://www.gnu.org/licenses/gpl.html}{\texttt{ http\+://www.\+gnu.\+org/licenses/gpl.\+html}}). 
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_af59be0bd71418d6de7db66e314eb3893}\label{classedu_1_1duke_1_1_pixel_af59be0bd71418d6de7db66e314eb3893}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!Pixel@{Pixel}}
+\index{Pixel@{Pixel}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{Pixel()}{Pixel()}}
+{\footnotesize\ttfamily edu.\+duke.\+Pixel.\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1duke_1_1_pixel}{Pixel}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new \mbox{\hyperlink{classedu_1_1duke_1_1_pixel}{Pixel}} from with the same values as the other pixel passed as a parameter.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em other} & another pixel \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas para esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classedu_1_1duke_1_1_pixel_af59be0bd71418d6de7db66e314eb3893_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_a9bebcff2460d6f68d4bceed56ca049d4}\label{classedu_1_1duke_1_1_pixel_a9bebcff2460d6f68d4bceed56ca049d4}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!clamp@{clamp}}
+\index{clamp@{clamp}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{clamp()}{clamp()}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+clamp (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classedu_1_1duke_1_1_pixel_a9bebcff2460d6f68d4bceed56ca049d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_abc4d19fab0d5621aef2a2f99efe722af}\label{classedu_1_1duke_1_1_pixel_abc4d19fab0d5621aef2a2f99efe722af}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!getAlpha@{getAlpha}}
+\index{getAlpha@{getAlpha}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{getAlpha()}{getAlpha()}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+get\+Alpha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the value of the pixel\textquotesingle{}s alpha (or transparency) component.
+
+\begin{DoxyReturn}{Devuelve}
+the pixel\textquotesingle{}s alpha value within the range 0-\/255 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classedu_1_1duke_1_1_pixel_abc4d19fab0d5621aef2a2f99efe722af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_aa59e69f3f96b6646f212d4ef4f02e68e}\label{classedu_1_1duke_1_1_pixel_aa59e69f3f96b6646f212d4ef4f02e68e}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!getBlue@{getBlue}}
+\index{getBlue@{getBlue}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{getBlue()}{getBlue()}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+get\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the value of the pixel\textquotesingle{}s blue component.
+
+\begin{DoxyReturn}{Devuelve}
+the pixel\textquotesingle{}s blue value within the range 0-\/255 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classedu_1_1duke_1_1_pixel_aa59e69f3f96b6646f212d4ef4f02e68e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_a9fcbe4cfdf501ef863c5c8a3218e2a7f}\label{classedu_1_1duke_1_1_pixel_a9fcbe4cfdf501ef863c5c8a3218e2a7f}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!getGreen@{getGreen}}
+\index{getGreen@{getGreen}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{getGreen()}{getGreen()}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+get\+Green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the value of the pixel\textquotesingle{}s green component.
+
+\begin{DoxyReturn}{Devuelve}
+the pixel\textquotesingle{}s green value within the range 0-\/255 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classedu_1_1duke_1_1_pixel_a9fcbe4cfdf501ef863c5c8a3218e2a7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_af4475716ab1fd09c90655e4eb5b6e960}\label{classedu_1_1duke_1_1_pixel_af4475716ab1fd09c90655e4eb5b6e960}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!getRed@{getRed}}
+\index{getRed@{getRed}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{getRed()}{getRed()}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+get\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the value of the pixel\textquotesingle{}s red component.
+
+\begin{DoxyReturn}{Devuelve}
+the pixel\textquotesingle{}s red value within the range 0-\/255 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classedu_1_1duke_1_1_pixel_af4475716ab1fd09c90655e4eb5b6e960_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_aa0fa9fdbfd85e439026304f17174f7f5}\label{classedu_1_1duke_1_1_pixel_aa0fa9fdbfd85e439026304f17174f7f5}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!getX@{getX}}
+\index{getX@{getX}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel\textquotesingle{}s x-\/coordinate within the image.
+
+\begin{DoxyReturn}{Devuelve}
+the x-\/coordinate of this pixel. 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classedu_1_1duke_1_1_pixel_aa0fa9fdbfd85e439026304f17174f7f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_ae139d441af9eaf9a0a81881eba3f4aa7}\label{classedu_1_1duke_1_1_pixel_ae139d441af9eaf9a0a81881eba3f4aa7}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!getY@{getY}}
+\index{getY@{getY}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel\textquotesingle{}s y-\/coordinate within the image.
+
+\begin{DoxyReturn}{Devuelve}
+the y-\/coordinate of this pixel. 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classedu_1_1duke_1_1_pixel_ae139d441af9eaf9a0a81881eba3f4aa7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_aef9d321aa9cce808ac4d02f8ad4ea84a}\label{classedu_1_1duke_1_1_pixel_aef9d321aa9cce808ac4d02f8ad4ea84a}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!setAlpha@{setAlpha}}
+\index{setAlpha@{setAlpha}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{setAlpha()}{setAlpha()}}
+{\footnotesize\ttfamily void edu.\+duke.\+Pixel.\+set\+Alpha (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets the value of the pixel\textquotesingle{}s alpha (or transparency) component to the value passed as a parameter. If it is not in the range of 0-\/255 it is changed to be in that range.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & the alpha value \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas para esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classedu_1_1duke_1_1_pixel_aef9d321aa9cce808ac4d02f8ad4ea84a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_ac98f31f54901893a37549d5c75ce2ae3}\label{classedu_1_1duke_1_1_pixel_ac98f31f54901893a37549d5c75ce2ae3}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!setBlue@{setBlue}}
+\index{setBlue@{setBlue}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{setBlue()}{setBlue()}}
+{\footnotesize\ttfamily void edu.\+duke.\+Pixel.\+set\+Blue (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets the value of the pixel\textquotesingle{}s blue component to the value passed as a parameter. If it is not in the range of 0-\/255 it is changed to be in that range.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em b} & the blue value \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas para esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classedu_1_1duke_1_1_pixel_ac98f31f54901893a37549d5c75ce2ae3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_ac4176b65ad7ef95835c3100434b1913b}\label{classedu_1_1duke_1_1_pixel_ac4176b65ad7ef95835c3100434b1913b}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!setGreen@{setGreen}}
+\index{setGreen@{setGreen}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{setGreen()}{setGreen()}}
+{\footnotesize\ttfamily void edu.\+duke.\+Pixel.\+set\+Green (\begin{DoxyParamCaption}\item[{int}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets the value of the pixel\textquotesingle{}s green component to the value passed as a parameter. If it is not in the range of 0-\/255 it is changed to be in that range.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em g} & the green value \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas para esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classedu_1_1duke_1_1_pixel_ac4176b65ad7ef95835c3100434b1913b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_a7fecffdfb9efa7ffbc500ea038642fb1}\label{classedu_1_1duke_1_1_pixel_a7fecffdfb9efa7ffbc500ea038642fb1}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!setRed@{setRed}}
+\index{setRed@{setRed}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{setRed()}{setRed()}}
+{\footnotesize\ttfamily void edu.\+duke.\+Pixel.\+set\+Red (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets the value of the pixel\textquotesingle{}s red component to the value passed as a parameter. If it is not in the range of 0-\/255 it is changed to be in that range.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r} & the red value \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas para esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classedu_1_1duke_1_1_pixel_a7fecffdfb9efa7ffbc500ea038642fb1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_a0af84b0d76d5ccebd302c2db216902ab}\label{classedu_1_1duke_1_1_pixel_a0af84b0d76d5ccebd302c2db216902ab}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!toString@{toString}}
+\index{toString@{toString}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String edu.\+duke.\+Pixel.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the string representation of the of the pixel.
+
+\begin{DoxyReturn}{Devuelve}
+a string containing the RGB values 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_ae5fde9413915cf013ad1c69b351ab273}\label{classedu_1_1duke_1_1_pixel_ae5fde9413915cf013ad1c69b351ab273}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!alpha@{alpha}}
+\index{alpha@{alpha}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+alpha = MAX\+\_\+\+VALUE\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_ad0b3ef75296f618cef3aa987af0b581c}\label{classedu_1_1duke_1_1_pixel_ad0b3ef75296f618cef3aa987af0b581c}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!blue@{blue}}
+\index{blue@{blue}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{blue}{blue}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+blue = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_a21ad4e73b6a2a3a81bb07c92ad69dc78}\label{classedu_1_1duke_1_1_pixel_a21ad4e73b6a2a3a81bb07c92ad69dc78}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!green@{green}}
+\index{green@{green}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{green}{green}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+green = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_a22a65f1e780b2b63bc309333813fb94d}\label{classedu_1_1duke_1_1_pixel_a22a65f1e780b2b63bc309333813fb94d}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!myX@{myX}}
+\index{myX@{myX}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{myX}{myX}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+myX\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_a4e748abc9d31d39cffa525457722128b}\label{classedu_1_1duke_1_1_pixel_a4e748abc9d31d39cffa525457722128b}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!myY@{myY}}
+\index{myY@{myY}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{myY}{myY}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+myY\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classedu_1_1duke_1_1_pixel_a7a7e59129a7bd75fddbf337b637d3679}\label{classedu_1_1duke_1_1_pixel_a7a7e59129a7bd75fddbf337b637d3679}} 
+\index{edu.duke.Pixel@{edu.duke.Pixel}!red@{red}}
+\index{red@{red}!edu.duke.Pixel@{edu.duke.Pixel}}
+\doxysubsubsection{\texorpdfstring{red}{red}}
+{\footnotesize\ttfamily int edu.\+duke.\+Pixel.\+red = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/mariomojica/\+Documents/4 Grado Ingeniería/\+Laboratorio de desarrollo y herramientas/\+Movie\+Recommendation/src/main/java/edu/duke/\mbox{\hyperlink{_pixel_8java}{Pixel.\+java}}\end{DoxyCompactItemize}

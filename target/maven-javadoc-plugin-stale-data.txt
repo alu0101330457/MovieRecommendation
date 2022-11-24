@@ -1,0 +1,47 @@
+@options
+@packages
+--class-path
+'/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/classes:/Users/mariomojica/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/mariomojica/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mariomojica/.m2/repository/org/apache/commons/commons-csv/1.9.0/commons-csv-1.9.0.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'MovieRecommendation 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'MovieRecommendation 1.0-SNAPSHOT API'
+movieRecommendaton
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/src/main/java/.DS_Store = 1669288409703
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/src/main/java = 1669288463864
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/tag-search-index.js = 1669304185298
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/overview-tree.html = 1669304185186
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/module-search-index.js = 1669304185297
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/index.html = 1669304185379
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/package-search-index.js = 1669304185297
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/jquery-ui.overrides.css = 1669304185419
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/serialized-form.html = 1669303129546
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/index-all.html = 1669304185375
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/allpackages-index.html = 1669304185293
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/member-search-index.js = 1669304185298
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/script.js = 1669304185393
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/stylesheet.css = 1669304185392
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/overview-summary.html = 1669303129940
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/help-doc.html = 1669304185388
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/element-list = 1669304185060
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/allclasses-index.html = 1669304185288
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/type-search-index.js = 1669304185298
+/Users/mariomojica/Documents/4 Grado Ingeniería/Laboratorio de desarrollo y herramientas/MovieRecommendation/target/site/apidocs/search.js = 1669304185409

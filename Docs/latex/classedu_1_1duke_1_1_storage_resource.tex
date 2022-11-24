@@ -1,0 +1,168 @@
+\hypertarget{classedu_1_1duke_1_1_storage_resource}{}\doxysection{Referencia de la Clase edu.\+duke.\+Storage\+Resource}
+\label{classedu_1_1duke_1_1_storage_resource}\index{edu.duke.StorageResource@{edu.duke.StorageResource}}
+
+
+Diagrama de colaboración para edu.\+duke.\+Storage\+Resource\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classedu_1_1duke_1_1_storage_resource__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_a06da2137a8e9d4a6597d3ac5f9795577}{Storage\+Resource}} ()
+\item 
+\mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_a95e25438561c7d8a5f746020bdd3801d}{Storage\+Resource}} (\mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource}{Storage\+Resource}} other)
+\item 
+void \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_a005a27e693cf29b94fab3d90d503c479}{clear}} ()
+\item 
+void \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_a3a28309950048370f0b568a64fbbd08e}{add}} (String s)
+\item 
+int \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_aecd2afb46cabc61b69f6b2eaff4caf38}{size}} ()
+\item 
+boolean \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_afa6adececadd9b9ca0a8a857437162c0}{contains}} (String s)
+\item 
+Iterable$<$ String $>$ \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_ad4044f763661047586bb5de5117a2601}{data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ String $>$ \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_a92ef13bff6ef1ba3d8cf7274ddc9efe5}{my\+Strings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+The {\ttfamily \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource}{Storage\+Resource}}} class stores any number of {\ttfamily String} objects and allows access to these stored values one at a time, using the method {\ttfamily data}. These strings can then be iterated over in the order they were added using a {\ttfamily for} loop.
+
+This class mirrors an {\ttfamily Array\+List\texorpdfstring{$<$}{<}String\texorpdfstring{$>$}{>}} in some functionality, but is simpler to use and fits the Duke/\+Coursersa model of creating and using iterables.
+
+Example usage\+:
+
+
+\begin{DoxyPre}
+\mbox{\hyperlink{classedu_1_1duke_1_1_file_resource}{FileResource}} fr = new FileResource();
+\mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource}{StorageResource}} store = new \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_a06da2137a8e9d4a6597d3ac5f9795577}{StorageResource()}};
+for (String s : fr.words()) \{
+    store.add(s);
+\}
+// can process store here, e.g.,
+// get number of strings stored
+int x = store.size();
+for (String s : store.data()) \{
+    // print or process s
+\}
+\end{DoxyPre}
+
+
+This software is licensed with an Apache 2 license, see \href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}} for details.
+
+\begin{DoxyAuthor}{Autor}
+Duke Software Team 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_storage_resource_a06da2137a8e9d4a6597d3ac5f9795577}\label{classedu_1_1duke_1_1_storage_resource_a06da2137a8e9d4a6597d3ac5f9795577}} 
+\index{edu.duke.StorageResource@{edu.duke.StorageResource}!StorageResource@{StorageResource}}
+\index{StorageResource@{StorageResource}!edu.duke.StorageResource@{edu.duke.StorageResource}}
+\doxysubsubsection{\texorpdfstring{StorageResource()}{StorageResource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily edu.\+duke.\+Storage\+Resource.\+Storage\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an empty {\ttfamily \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource}{Storage\+Resource}}} object \mbox{\Hypertarget{classedu_1_1duke_1_1_storage_resource_a95e25438561c7d8a5f746020bdd3801d}\label{classedu_1_1duke_1_1_storage_resource_a95e25438561c7d8a5f746020bdd3801d}} 
+\index{edu.duke.StorageResource@{edu.duke.StorageResource}!StorageResource@{StorageResource}}
+\index{StorageResource@{StorageResource}!edu.duke.StorageResource@{edu.duke.StorageResource}}
+\doxysubsubsection{\texorpdfstring{StorageResource()}{StorageResource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily edu.\+duke.\+Storage\+Resource.\+Storage\+Resource (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource}{Storage\+Resource}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an {\ttfamily \mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource}{Storage\+Resource}}} object that is a copy of another list.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em other} & the original list being copied \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_storage_resource_a3a28309950048370f0b568a64fbbd08e}\label{classedu_1_1duke_1_1_storage_resource_a3a28309950048370f0b568a64fbbd08e}} 
+\index{edu.duke.StorageResource@{edu.duke.StorageResource}!add@{add}}
+\index{add@{add}!edu.duke.StorageResource@{edu.duke.StorageResource}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void edu.\+duke.\+Storage\+Resource.\+add (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a string to this storage object.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em s} & the value added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_storage_resource_a005a27e693cf29b94fab3d90d503c479}\label{classedu_1_1duke_1_1_storage_resource_a005a27e693cf29b94fab3d90d503c479}} 
+\index{edu.duke.StorageResource@{edu.duke.StorageResource}!clear@{clear}}
+\index{clear@{clear}!edu.duke.StorageResource@{edu.duke.StorageResource}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void edu.\+duke.\+Storage\+Resource.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove all strings from this object so that {\ttfamily .\mbox{\hyperlink{classedu_1_1duke_1_1_storage_resource_aecd2afb46cabc61b69f6b2eaff4caf38}{size()}} == 0}. \mbox{\Hypertarget{classedu_1_1duke_1_1_storage_resource_afa6adececadd9b9ca0a8a857437162c0}\label{classedu_1_1duke_1_1_storage_resource_afa6adececadd9b9ca0a8a857437162c0}} 
+\index{edu.duke.StorageResource@{edu.duke.StorageResource}!contains@{contains}}
+\index{contains@{contains}!edu.duke.StorageResource@{edu.duke.StorageResource}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily boolean edu.\+duke.\+Storage\+Resource.\+contains (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determines if a string is stored in this object.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em s} & string searched for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true if and only if s is stored in this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_storage_resource_ad4044f763661047586bb5de5117a2601}\label{classedu_1_1duke_1_1_storage_resource_ad4044f763661047586bb5de5117a2601}} 
+\index{edu.duke.StorageResource@{edu.duke.StorageResource}!data@{data}}
+\index{data@{data}!edu.duke.StorageResource@{edu.duke.StorageResource}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily Iterable$<$ String $>$ edu.\+duke.\+Storage\+Resource.\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create and return an iterable for all strings in this object.
+
+\begin{DoxyReturn}{Devuelve}
+an {\ttfamily Iterable} that allows access to each string in the order stored 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classedu_1_1duke_1_1_storage_resource_ad4044f763661047586bb5de5117a2601_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_storage_resource_aecd2afb46cabc61b69f6b2eaff4caf38}\label{classedu_1_1duke_1_1_storage_resource_aecd2afb46cabc61b69f6b2eaff4caf38}} 
+\index{edu.duke.StorageResource@{edu.duke.StorageResource}!size@{size}}
+\index{size@{size}!edu.duke.StorageResource@{edu.duke.StorageResource}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int edu.\+duke.\+Storage\+Resource.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of strings added/stored in this object.
+
+\begin{DoxyReturn}{Devuelve}
+the number of strings stored in the object 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classedu_1_1duke_1_1_storage_resource_a92ef13bff6ef1ba3d8cf7274ddc9efe5}\label{classedu_1_1duke_1_1_storage_resource_a92ef13bff6ef1ba3d8cf7274ddc9efe5}} 
+\index{edu.duke.StorageResource@{edu.duke.StorageResource}!myStrings@{myStrings}}
+\index{myStrings@{myStrings}!edu.duke.StorageResource@{edu.duke.StorageResource}}
+\doxysubsubsection{\texorpdfstring{myStrings}{myStrings}}
+{\footnotesize\ttfamily List$<$String$>$ edu.\+duke.\+Storage\+Resource.\+my\+Strings\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/mariomojica/\+Documents/4 Grado Ingeniería/\+Laboratorio de desarrollo y herramientas/\+Movie\+Recommendation/src/main/java/edu/duke/\mbox{\hyperlink{_storage_resource_8java}{Storage\+Resource.\+java}}\end{DoxyCompactItemize}
