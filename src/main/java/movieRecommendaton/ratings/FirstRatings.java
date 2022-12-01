@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.ratings;
 /**
  * Write a description of FirstRatings here.
  * 
@@ -7,6 +7,10 @@ package movieRecommendaton;
  */
 import edu.duke.*;
 import java.util.*;
+
+import movieRecommendaton.movies.Movie;
+import movieRecommendaton.raters.EfficientRater;
+import movieRecommendaton.raters.Rater;
 import org.apache.commons.csv.*;
 
 

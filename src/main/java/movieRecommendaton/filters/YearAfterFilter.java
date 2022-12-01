@@ -1,4 +1,6 @@
-package movieRecommendaton;
+package movieRecommendaton.filters;
+
+import movieRecommendaton.movies.MovieDatabase;
 
 public class YearAfterFilter implements Filter {
 	private int myYear;

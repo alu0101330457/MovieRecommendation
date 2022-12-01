@@ -1,10 +1,13 @@
-package movieRecommendaton;
+package movieRecommendaton.ratings;
 /**
  * Write a description of SecondRatings here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
+
+import movieRecommendaton.movies.Movie;
+import movieRecommendaton.raters.Rater;
 
 import java.util.*;
 
@@ -102,7 +105,7 @@ public class SecondRatings {
     public String getID(String movieTitle){
         /*
          * This method returns the movie ID of this movie. 
-         * If the title is not found, return an appropriate message such as “NO SUCH TITLE.” 
+         * If the title is not found, return an appropriate message such as "NO SUCH TITLE."
          * Note that the movie title must be spelled exactly as it appears in the movie data files.
          */
         for (Movie currMovie: myMovies){

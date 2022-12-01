@@ -1,14 +1,20 @@
-package movieRecommendaton;
+package movieRecommendaton.recommenderrunner;
 /**
  * Write a description of RecommendationRunner here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
+import movieRecommendaton.movies.MovieDatabase;
+import movieRecommendaton.ratings.Rating;
+import movieRecommendaton.filters.Filter;
+import movieRecommendaton.filters.TrueFilter;
+import movieRecommendaton.ratings.FourthRatings;
+
 import java.util.*;
 
 
-public class RecommendationRunner implements Recommender{
+public class RecommendationRunner implements Recommender {
     private Random myRandom;
     private int toRateNum;
     private int numSimilarRaters;
@@ -34,9 +40,6 @@ public class RecommendationRunner implements Recommender{
             // String currMovieTitle = MovieDatabase.getTitle(currMovieID);
             toRate.add(currMovieID);
         }
-        /*System.out.println("Items to be rated:" + toRate);
-        System.out.println("MovieDatabase size: " + MovieDatabase.size());
-        System.out.println("RaterDatabase size:" + RaterDatabase.size());*/
         return toRate;
     }
     

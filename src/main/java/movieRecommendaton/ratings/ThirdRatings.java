@@ -1,4 +1,9 @@
-package movieRecommendaton;
+package movieRecommendaton.ratings;
+
+import movieRecommendaton.movies.MovieDatabase;
+import movieRecommendaton.filters.Filter;
+import movieRecommendaton.filters.TrueFilter;
+import movieRecommendaton.raters.Rater;
 
 import java.util.*;
 

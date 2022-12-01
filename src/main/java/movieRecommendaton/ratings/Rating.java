@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.ratings;
 
 // An immutable passive data object (PDO) to represent the rating data
 public class Rating implements Comparable<Rating> {

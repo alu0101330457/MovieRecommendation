@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.movies;
 
 // An immutable passive data object (PDO) to represent item data
 public class Movie {

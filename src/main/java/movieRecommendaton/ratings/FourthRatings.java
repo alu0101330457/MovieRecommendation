@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.ratings;
 /**
  * Write a description of FourthRatings here.
  * 
@@ -6,6 +6,12 @@ package movieRecommendaton;
  * @version (a version number or a date)
  */
 
+
+import movieRecommendaton.movies.MovieDatabase;
+import movieRecommendaton.raters.RaterDatabase;
+import movieRecommendaton.filters.Filter;
+import movieRecommendaton.filters.TrueFilter;
+import movieRecommendaton.raters.Rater;
 
 import java.util.*;
 

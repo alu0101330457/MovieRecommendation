@@ -1,10 +1,15 @@
-package movieRecommendaton;
+package movieRecommendaton.movierunner;
 /**
  * Write a description of MovieRunnerWithFilters here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
+import movieRecommendaton.movies.MovieDatabase;
+import movieRecommendaton.ratings.Rating;
+import movieRecommendaton.filters.*;
+import movieRecommendaton.ratings.ThirdRatings;
+
 import java.util.*;
 public class MovieRunnerWithFilters {
     private String ratingFileName;

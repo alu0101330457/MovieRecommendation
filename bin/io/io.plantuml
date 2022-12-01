@@ -1,0 +1,328 @@
+@startuml
+
+title __IO's Class Diagram__\n
+
+  namespace  {
+    class AllFilters {
+        ~ filters : ArrayList<Filter>
+        + AllFilters()
+        + addFilter()
+        + satisfies()
+    }
+  }
+  
+
+  namespace  {
+    class DirectorsFilter {
+        - myDirectors : String
+        + DirectorsFilter()
+        + satisfies()
+    }
+  }
+  
+
+  namespace  {
+    class EfficientRater {
+        - myID : String
+        - myRatings : HashMap<String, Rating>
+        + EfficientRater()
+        + addRating()
+        + getID()
+        + getItemsRated()
+        + getRating()
+        + hasRating()
+        + numRatings()
+    }
+  }
+  
+
+  namespace  {
+    interface Filter {
+        {abstract} + satisfies()
+    }
+  }
+  
+
+  namespace  {
+    class FirstRatings {
+        + FirstRatings()
+        + countRatedMovies()
+        + findMaxNumOfRatingsByRater()
+        + findNumOfRater()
+        + findRatingsOfMovie()
+        + loadMovies()
+        + loadRaters()
+        + test()
+        + testLoadMovies()
+        + testLoadRaters()
+    }
+  }
+  
+
+  namespace  {
+    class FourthRatings {
+        + FourthRatings()
+        + FourthRatings()
+        + getAverageRatings()
+        + getAverageRatingsByFilter()
+        + getRaterSize()
+        + getSimilarRatings()
+        - dotProduct()
+        - getAverageByID()
+        - getSimilarities()
+    }
+  }
+  
+
+  namespace  {
+    class GenreFilter {
+        - myGenre : String
+        + GenreFilter()
+        + satisfies()
+    }
+  }
+  
+
+  namespace  {
+    class MinutesFilter {
+        - myMax : int
+        - myMin : int
+        + MinutesFilter()
+        + satisfies()
+    }
+  }
+  
+
+  namespace  {
+    class Movie {
+        - country : String
+        - director : String
+        - genres : String
+        - id : String
+        - minutes : int
+        - poster : String
+        - title : String
+        - year : int
+        + Movie()
+        + Movie()
+        + getCountry()
+        + getDirector()
+        + getGenres()
+        + getID()
+        + getMinutes()
+        + getPoster()
+        + getTitle()
+        + getYear()
+        + toString()
+    }
+  }
+  
+
+  namespace  {
+    class MovieDatabase {
+        {static} - ourMovies : HashMap<String, Movie>
+        + MovieDatabase()
+        {static} + containsID()
+        {static} + filterBy()
+        {static} + getCountry()
+        {static} + getDirector()
+        {static} + getGenres()
+        {static} + getMinutes()
+        {static} + getMovie()
+        {static} + getPoster()
+        {static} + getTitle()
+        {static} + getYear()
+        {static} + initialize()
+        {static} + size()
+        {static} - initialize()
+        {static} - loadMovies()
+    }
+  }
+  
+
+  namespace  {
+    class MovieRunnerAverage {
+        - movieFileName : String
+        - ratingFileName : String
+        - sr : SecondRatings
+        + MovieRunnerAverage()
+        + getAverageRatingOneMovie()
+        + printAverageRatings()
+    }
+  }
+  
+
+  namespace  {
+    class MovieRunnerSimilarRatings {
+        - fourth : FourthRatings
+        + MovieRunnerSimilarRatings()
+        + printAverageRatings()
+        + printSimilarRatings()
+        + printSimilarRatingsByDirector()
+        + printSimilarRatingsByGenre()
+        + printSimilarRatingsByGenreAndMinutes()
+        + printSimilarRatingsByYearAfterAndMinutes()
+    }
+  }
+  
+
+  namespace  {
+    class MovieRunnerWithFilters {
+        - ratingFileName : String
+        - tr : ThirdRatings
+        + MovieRunnerWithFilters()
+        + printAverageRatings()
+        + printAverageRatingsByDirectors()
+        + printAverageRatingsByDirectorsAndMinutes()
+        + printAverageRatingsByGenre()
+        + printAverageRatingsByMinutes()
+        + printAverageRatingsByYearAfter()
+        + printAverageRatingsByYearAfterAndGenre()
+    }
+  }
+  
+
+  namespace  {
+    class PlainRater {
+        - myID : String
+        - myRatings : ArrayList<Rating>
+        + PlainRater()
+        + addRating()
+        + getID()
+        + getItemsRated()
+        + getRating()
+        + hasRating()
+        + numRatings()
+    }
+  }
+  
+
+  namespace  {
+    interface Rater {
+        {abstract} + addRating()
+        {abstract} + getID()
+        {abstract} + getItemsRated()
+        {abstract} + getRating()
+        {abstract} + hasRating()
+        {abstract} + numRatings()
+    }
+  }
+  
+
+  namespace  {
+    class RaterDatabase {
+        {static} - ourRaters : HashMap<String, Rater>
+        + RaterDatabase()
+        {static} + addRaterRating()
+        {static} + addRatings()
+        {static} + getRater()
+        {static} + getRaters()
+        {static} + initialize()
+        {static} + size()
+        {static} - initialize()
+    }
+  }
+  
+
+  namespace  {
+    class Rating {
+        - item : String
+        - value : double
+        + Rating()
+        + compareTo()
+        + getItem()
+        + getValue()
+        + toString()
+    }
+  }
+  
+
+  namespace  {
+    class RecommendationRunner {
+        - maxRecNum : int
+        - minimalRaters : int
+        - myRandom : Random
+        - numSimilarRaters : int
+        - toRateNum : int
+        + RecommendationRunner()
+        + getItemsToRate()
+        + printRecommendationsFor()
+        - printOut()
+    }
+  }
+  
+
+  namespace  {
+    interface Recommender {
+        {abstract} + getItemsToRate()
+        {abstract} + printRecommendationsFor()
+    }
+  }
+  
+
+  namespace  {
+    class SecondRatings {
+        - myMovies : ArrayList<Movie>
+        - myRaters : ArrayList<Rater>
+        + SecondRatings()
+        + SecondRatings()
+        + getAverageRatings()
+        + getID()
+        + getMovieSize()
+        + getRaterSize()
+        + getTitle()
+        - getAverageByID()
+    }
+  }
+  
+
+  namespace  {
+    class ThirdRatings {
+        - myRaters : ArrayList<Rater>
+        + ThirdRatings()
+        + ThirdRatings()
+        + getAverageRatings()
+        + getAverageRatingsByFilter()
+        + getRaterSize()
+        - getAverageByID()
+    }
+  }
+  
+
+  namespace  {
+    class TrueFilter {
+        + TrueFilter()
+        + satisfies()
+    }
+  }
+  
+
+  namespace  {
+    class YearAfterFilter {
+        - myYear : int
+        + YearAfterFilter()
+        + satisfies()
+    }
+  }
+  
+
+  AllFilters .up.|> Filter
+  DirectorsFilter .up.|> Filter
+  EfficientRater .up.|> Rater
+  GenreFilter .up.|> Filter
+  MinutesFilter .up.|> Filter
+  PlainRater .up.|> Rater
+  Rating .up.|> java.lang.Comparable<Rating>
+  RecommendationRunner .up.|> Recommender
+  TrueFilter .up.|> Filter
+  YearAfterFilter .up.|> Filter
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

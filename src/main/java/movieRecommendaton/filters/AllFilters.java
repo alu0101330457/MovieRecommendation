@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.filters;
 
 import java.util.ArrayList;
 

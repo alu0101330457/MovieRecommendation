@@ -1,5 +1,10 @@
-package movieRecommendaton;
+package movieRecommendaton.filters;
 
+import movieRecommendaton.movies.MovieDatabase;
+
+/**
+ * Represents a Filter to
+ */
 public class DirectorsFilter implements Filter {
     private String myDirectors;
     
@@ -17,12 +22,6 @@ public class DirectorsFilter implements Filter {
             }
         }
         return false;
-        
-        /*int idx = MovieDatabase.getDirector(id).indexOf(myDirectors);
-        if (idx != -1){
-            return true;
-        } else {
-            return false;
-        }*/
+
     }
 }

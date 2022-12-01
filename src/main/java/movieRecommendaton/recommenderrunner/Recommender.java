@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.recommenderrunner;
 
 import java.util.*;
 

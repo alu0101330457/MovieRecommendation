@@ -1,4 +1,6 @@
-package movieRecommendaton;
+package movieRecommendaton.filters;
+
+import movieRecommendaton.movies.MovieDatabase;
 
 public class MinutesFilter implements Filter {
     private int myMin;

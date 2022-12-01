@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.raters;
 /**
  * Write a description of class Rater here.
  * 
@@ -6,9 +6,11 @@ package movieRecommendaton;
  * @version (a version number or a date)
  */
 
+import movieRecommendaton.ratings.Rating;
+
 import java.util.*;
 
-public class PlainRater implements Rater{
+public class PlainRater implements Rater {
     private String myID;
     private ArrayList<Rating> myRatings;
 

@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.raters;
 /**
  * Write a description of Rater here.
  * 

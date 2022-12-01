@@ -1,4 +1,4 @@
-package movieRecommendaton;
+package movieRecommendaton.raters;
 /**
  * Write a description of RaterDatabase here.
  * 
@@ -8,6 +8,8 @@ package movieRecommendaton;
 
 
 import edu.duke.FileResource;
+import movieRecommendaton.raters.EfficientRater;
+import movieRecommendaton.raters.Rater;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
@@ -15,7 +17,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class RaterDatabase {
-    private static HashMap<String,Rater> ourRaters;
+    private static HashMap<String, Rater> ourRaters;
      
 	private static void initialize() {
 	    // this method is only called from addRatings 

@@ -1,4 +1,6 @@
-package movieRecommendaton;
+package movieRecommendaton.filters;
+
+import movieRecommendaton.movies.MovieDatabase;
 
 /**
  * Write a description of GenreFilter here.
