@@ -1,0 +1,10 @@
+<map id="movieRecommendaton.movies.MovieDatabase.getGenres" name="movieRecommendaton.movies.MovieDatabase.getGenres">
+<area shape="rect" id="node1" title=" " alt="" coords="616,199,823,239"/>
+<area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#adde6c3837662501678a5fc11ff3cf0d4" title=" " alt="" coords="287,5,526,60"/>
+<area shape="rect" id="node3" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#a488d8062cf0102bfc84b9579d2e04c5c" title=" " alt="" coords="287,84,526,139"/>
+<area shape="rect" id="node4" href="$classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner.html#acdc05b378da8a99f37386c0c1c5104d6" title=" " alt="" coords="245,163,568,203"/>
+<area shape="rect" id="node6" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_similar_ratings.html#a311c176e98a4b1756ec30c9ff02758df" title=" " alt="" coords="280,228,533,283"/>
+<area shape="rect" id="node7" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_similar_ratings.html#a5d9b18c924ddef0185919f99408e1f83" title=" " alt="" coords="280,307,533,361"/>
+<area shape="rect" id="node8" href="$classmovie_recommendaton_1_1filters_1_1_genre_filter.html#a82cf9f89b79bf1d2bf2d1b311696ed63" title=" " alt="" coords="309,386,505,426"/>
+<area shape="rect" id="node5" href="$classmovie_recommendaton_1_1main_1_1_main.html#a02a1f933c0d737b0a31483685de4cb27" title=" " alt="" coords="5,163,197,203"/>
+</map>

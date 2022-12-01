@@ -1,9 +1,9 @@
 <map id="Representación gráfica de la clase" name="Representación gráfica de la clase">
-<area shape="rect" id="node1" href="$interfacemovie_recommendaton_1_1_filter.html" title=" " alt="" coords="5,159,195,184"/>
-<area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_all_filters.html" title=" " alt="" coords="245,5,455,31"/>
-<area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_directors_filter.html" title=" " alt="" coords="243,55,457,95"/>
-<area shape="rect" id="node4" href="$classmovie_recommendaton_1_1_genre_filter.html" title=" " alt="" coords="253,119,447,159"/>
-<area shape="rect" id="node5" href="$classmovie_recommendaton_1_1_minutes_filter.html" title=" " alt="" coords="247,183,453,223"/>
-<area shape="rect" id="node6" href="$classmovie_recommendaton_1_1_true_filter.html" title=" " alt="" coords="243,248,457,273"/>
-<area shape="rect" id="node7" href="$classmovie_recommendaton_1_1_year_after_filter.html" title=" " alt="" coords="243,298,457,338"/>
+<area shape="rect" id="node1" href="$interfacemovie_recommendaton_1_1filters_1_1_filter.html" title=" " alt="" coords="5,165,201,205"/>
+<area shape="rect" id="node2" href="$classmovie_recommendaton_1_1filters_1_1_all_filters.html" title=" " alt="" coords="249,5,445,45"/>
+<area shape="rect" id="node3" href="$classmovie_recommendaton_1_1filters_1_1_directors_filter.html" title=" " alt="" coords="249,69,445,109"/>
+<area shape="rect" id="node4" href="$classmovie_recommendaton_1_1filters_1_1_genre_filter.html" title=" " alt="" coords="249,133,445,173"/>
+<area shape="rect" id="node5" href="$classmovie_recommendaton_1_1filters_1_1_minutes_filter.html" title=" " alt="" coords="249,197,445,237"/>
+<area shape="rect" id="node6" href="$classmovie_recommendaton_1_1filters_1_1_true_filter.html" title=" " alt="" coords="249,261,445,301"/>
+<area shape="rect" id="node7" href="$classmovie_recommendaton_1_1filters_1_1_year_after_filter.html" title=" " alt="" coords="249,325,445,365"/>
 </map>

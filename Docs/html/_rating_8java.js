@@ -1,4 +1,4 @@
 var _rating_8java =
 [
-    [ "movieRecommendaton.Rating", "classmovie_recommendaton_1_1_rating.html", "classmovie_recommendaton_1_1_rating" ]
+    [ "movieRecommendaton.ratings.Rating", "classmovie_recommendaton_1_1ratings_1_1_rating.html", "classmovie_recommendaton_1_1ratings_1_1_rating" ]
 ];
