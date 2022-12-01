@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.EfficientRater" name="movieRecommendaton.EfficientRater">
+<map id="movieRecommendaton.raters.EfficientRater" name="movieRecommendaton.raters.EfficientRater">
 <area shape="rect" id="node1" title=" " alt="" coords="125,108,333,148"/>
 <area shape="rect" id="node2" href="$interfacemovie_recommendaton_1_1_rater.html" title=" " alt="" coords="5,13,197,38"/>
 <area shape="rect" id="node3" title=" " alt="" coords="222,5,493,45"/>

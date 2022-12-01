@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.FirstRatings.loadRaters" name="movieRecommendaton.FirstRatings.loadRaters">
+<map id="movieRecommendaton.ratings.FirstRatings.loadRaters" name="movieRecommendaton.ratings.FirstRatings.loadRaters">
 <area shape="rect" id="node1" title=" " alt="" coords="540,197,727,237"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_first_ratings.html#aa6a2d3f2d39b69f02b348eae97d176ba" title=" " alt="" coords="273,5,459,45"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_first_ratings.html#a36b924b39f7ffa0b0a8682c0e1318b46" title=" " alt="" coords="240,69,492,109"/>

@@ -2,6 +2,9 @@ package movieRecommendaton.filters;
 
 import movieRecommendaton.movies.MovieDatabase;
 
+/**
+ * Represents a Filter to check the duration of a Movie.
+ */
 public class MinutesFilter implements Filter {
     private int myMin;
     private int myMax;

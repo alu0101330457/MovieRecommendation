@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.Rating" name="movieRecommendaton.Rating">
+<map id="movieRecommendaton.ratings.Rating" name="movieRecommendaton.ratings.Rating">
 <area shape="rect" id="node1" title=" " alt="" coords="5,79,204,104"/>
 <area shape="rect" id="node2" title=" " alt="" coords="27,5,182,31"/>
 </map>

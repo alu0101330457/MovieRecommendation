@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.SecondRatings.getAverageByID" name="movieRecommendaton.SecondRatings.getAverageByID">
+<map id="movieRecommendaton.ratings.SecondRatings.getAverageByID" name="movieRecommendaton.ratings.SecondRatings.getAverageByID">
 <area shape="rect" id="node1" title=" " alt="" coords="540,49,744,89"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_second_ratings.html#adb6c788ebb3494f9b008298e19fc9209" title=" " alt="" coords="288,49,492,89"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_movie_runner_average.html#a72a24b4822348663b33fe08ac6bfceb8" title=" " alt="" coords="13,5,233,60"/>

@@ -1,10 +1,5 @@
 package movieRecommendaton.movierunner;
-/**
- * Write a description of MovieRunnerSimilarRatings here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 import movieRecommendaton.movies.MovieDatabase;
 import movieRecommendaton.ratings.Rating;
 import movieRecommendaton.filters.*;
@@ -12,6 +7,9 @@ import movieRecommendaton.ratings.FourthRatings;
 
 import java.util.*;
 
+/**
+ * Has functionalities for getting movies with similar ratings and multiple filters.
+ */
 public class MovieRunnerSimilarRatings {
     private FourthRatings fourth;
     
@@ -43,36 +41,10 @@ public class MovieRunnerSimilarRatings {
         }
         System.out.println("There are " + num + " movies have at least " + numRating + " ratings.");
     }
-    
-    /*public void printAverageRatingsByYearAfterAndGenre(){
-        // MovieDatabase.initialize("ratedmoviesfull.csv");
-        System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
-        System.out.println("There are " + fourth.getRaterSize() + " raters in the file.");
-        
-        int numRating = 8;
-        Filter filterYear = new YearAfterFilter(1990);
-        Filter filterGenre = new GenreFilter("Drama");
-        
-        AllFilters filters = new AllFilters();
-        filters.addFilter(filterYear);
-        filters.addFilter(filterGenre);
-        
-        ArrayList<Rating> ratings = fourth.getAverageRatingsByFilter(numRating, filters);
-        Collections.sort(ratings);
-        
-        int num = 0;
-        for (Rating currRating: ratings){
-            double currValue = currRating.getValue();
-            if(currValue != 0.0){
-                num += 1;
-                String currMovieID = currRating.getItem();
-                System.out.println(currValue + " " + MovieDatabase.getYear(currMovieID) + " "+MovieDatabase.getTitle(currMovieID));
-                System.out.println("    " + MovieDatabase.getGenres(currMovieID));
-            }
-        }
-        System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filters.");
-    }*/
-    
+
+    /**
+     * Prints the similar ratings for a select movie in the database.
+     */
     public void printSimilarRatings(){
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
         System.out.println("There are " + fourth.getRaterSize() + " raters in the file.\n");
@@ -82,7 +54,10 @@ public class MovieRunnerSimilarRatings {
         }
         System.out.println("\nThere are " + list.size() + " recommended movies were found.");
     }
-    
+
+    /**
+     * Prints the movies with similar ratings per genre for a select movie.
+     */
     public void printSimilarRatingsByGenre(){
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
         System.out.println("There are " + fourth.getRaterSize() + " raters in the file.\n");
@@ -99,7 +74,10 @@ public class MovieRunnerSimilarRatings {
         }
         System.out.println("\nThere are " + num + " recommended movies were found.");
     }
-    
+
+    /**
+     * Prints the movies with similar ratings per director for a select movie.
+     */
     public void printSimilarRatingsByDirector(){
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
         System.out.println("There are " + fourth.getRaterSize() + " raters in the file.\n");
@@ -116,7 +94,10 @@ public class MovieRunnerSimilarRatings {
         }
         System.out.println("\nThere are " + num + " recommended movies were found.");
     }
-    
+
+    /**
+     * Prints the movies with similar rating per genre and duration for a select movie.
+     */
     public void printSimilarRatingsByGenreAndMinutes(){
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
         System.out.println("There are " + fourth.getRaterSize() + " raters in the file.\n");
@@ -139,7 +120,10 @@ public class MovieRunnerSimilarRatings {
         }
         System.out.println("\nThere are " + num + " recommended movies were found.");
     }
-    
+
+    /**
+     * Prints the movies with similar ratings by release year and duration.
+     */
     public void printSimilarRatingsByYearAfterAndMinutes(){
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
         System.out.println("There are " + fourth.getRaterSize() + " raters in the file.\n");

@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.RaterDatabase.getRaters" name="movieRecommendaton.RaterDatabase.getRaters">
+<map id="movieRecommendaton.raters.RaterDatabase.getRaters" name="movieRecommendaton.raters.RaterDatabase.getRaters">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,197,45"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_rater_database.html#a44b9ca231494c4d038a6e4fac1e03268" title=" " alt="" coords="245,5,437,45"/>
 </map>

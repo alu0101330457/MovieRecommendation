@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.MovieRunnerWithFilters.printAverageRatingsByDirectorsAndMinutes" name="movieRecommendaton.MovieRunnerWithFilters.printAverageRatingsByDirectorsAndMinutes">
+<map id="movieRecommendaton.movierunner.MovieRunnerWithFilters.printAverageRatingsByDirectorsAndMinutes" name="movieRecommendaton.movierunner.MovieRunnerWithFilters.printAverageRatingsByDirectorsAndMinutes">
 <area shape="rect" id="node1" title=" " alt="" coords="5,199,211,254"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_all_filters.html#ad17133ca3d30eb50ba4aedb2ea352106" title=" " alt="" coords="259,5,495,45"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_third_ratings.html#aa3c9c4da6cc22884b4fb11c3ad7198dd" title=" " alt="" coords="263,69,490,109"/>

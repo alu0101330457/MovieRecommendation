@@ -1,14 +1,12 @@
 package movieRecommendaton.raters;
-/**
- * Write a description of EfficientRater here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 import movieRecommendaton.ratings.Rating;
 
 import java.util.*;
 
+/**
+ * Implements a more efficient Rater for movies using a HashMap.
+ */
 public class EfficientRater implements Rater {
     private String myID;
     private HashMap<String, Rating> myRatings;

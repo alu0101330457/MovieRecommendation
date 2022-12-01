@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.FourthRatings.getSimilarities" name="movieRecommendaton.FourthRatings.getSimilarities">
+<map id="movieRecommendaton.ratings.FourthRatings.getSimilarities" name="movieRecommendaton.ratings.FourthRatings.getSimilarities">
 <area shape="rect" id="node1" title=" " alt="" coords="5,111,203,151"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_fourth_ratings.html#a6379c1d2adcd7b668917a67117f13463" title=" " alt="" coords="265,24,463,64"/>
 <area shape="rect" id="node5" href="$interfacemovie_recommendaton_1_1_rater.html#ac49f9bfef879361068330acc19702695" title=" " alt="" coords="251,89,477,114"/>

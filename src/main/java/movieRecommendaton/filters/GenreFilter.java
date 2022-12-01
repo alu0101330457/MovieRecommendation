@@ -3,10 +3,7 @@ package movieRecommendaton.filters;
 import movieRecommendaton.movies.MovieDatabase;
 
 /**
- * Write a description of GenreFilter here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Represents a Filter to check the Genre of a Movie.
  */
 public class GenreFilter implements Filter {
     private String myGenre;

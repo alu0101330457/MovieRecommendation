@@ -1,11 +1,14 @@
 package movieRecommendaton.movies;
 
-// An immutable passive data object (PDO) to represent item data
+/**
+ * Represents a Movie and contains useful information about it.
+ * A Movie object is immutable.
+ */
 public class Movie {
-    private String id;
-    private String title;
-    private int year;
-    private String genres;
+    private final String id;
+    private final String title;
+    private final int year;
+    private final String genres;
     private String director;
     private String country;
     private String poster;

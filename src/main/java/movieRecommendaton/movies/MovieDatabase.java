@@ -1,13 +1,15 @@
 package movieRecommendaton.movies;
 
 import movieRecommendaton.filters.Filter;
-import movieRecommendaton.movies.Movie;
 import movieRecommendaton.ratings.FirstRatings;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 
+/**
+ * Represents a Data file that contains Movie object.
+ */
 public class MovieDatabase {
     private static HashMap<String, Movie> ourMovies;
 

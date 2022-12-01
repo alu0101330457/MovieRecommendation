@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.MovieDatabase.getYear" name="movieRecommendaton.MovieDatabase.getYear">
+<map id="movieRecommendaton.movies.MovieDatabase.getYear" name="movieRecommendaton.movies.MovieDatabase.getYear">
 <area shape="rect" id="node1" title=" " alt="" coords="272,131,467,171"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_movie_runner_with_filters.html#a5fc6b79e82c5fd15fb3cd08627704d6e" title=" " alt="" coords="13,5,217,60"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_movie_runner_with_filters.html#a7d149e0fa5600487aa4f9180cc40e80e" title=" " alt="" coords="13,84,217,139"/>

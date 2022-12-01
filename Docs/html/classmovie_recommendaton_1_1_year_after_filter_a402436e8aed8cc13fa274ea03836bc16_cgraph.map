@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.YearAfterFilter.satisfies" name="movieRecommendaton.YearAfterFilter.satisfies">
+<map id="movieRecommendaton.filters.YearAfterFilter.satisfies" name="movieRecommendaton.filters.YearAfterFilter.satisfies">
 <area shape="rect" id="node1" title=" " alt="" coords="5,29,220,69"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_movie_database.html#a74b9516b091bd34b2b9c379386cab5f1" title=" " alt="" coords="268,29,463,69"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_movie_database.html#ad1c2635d8739e3d65450d39d3db32639" title=" " alt="" coords="511,29,705,69"/>

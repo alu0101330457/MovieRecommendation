@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.RecommendationRunner.printRecommendationsFor" name="movieRecommendaton.RecommendationRunner.printRecommendationsFor">
+<map id="movieRecommendaton.recommenderrunner.RecommendationRunner.printRecommendationsFor" name="movieRecommendaton.recommenderrunner.RecommendationRunner.printRecommendationsFor">
 <area shape="rect" id="node1" title=" " alt="" coords="5,177,268,217"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_movie_database.html#a31b8779ad9c0aa25057507696bfea199" title=" " alt="" coords="350,5,545,45"/>
 <area shape="rect" id="node7" href="$classmovie_recommendaton_1_1_rating.html#a52628c0bab640629b22fa0712ef186a8" title=" " alt="" coords="324,185,571,210"/>

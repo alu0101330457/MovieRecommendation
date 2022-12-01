@@ -1,16 +1,15 @@
 package movieRecommendaton.movierunner;
-/**
- * Write a description of MovieRunnerWithFilters here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 import movieRecommendaton.movies.MovieDatabase;
 import movieRecommendaton.ratings.Rating;
 import movieRecommendaton.filters.*;
 import movieRecommendaton.ratings.ThirdRatings;
 
 import java.util.*;
+
+/**
+ * Class that has functionalities of retrieving similar movies using Filters.
+ */
 public class MovieRunnerWithFilters {
     private String ratingFileName;
     private ThirdRatings tr;
@@ -19,7 +18,10 @@ public class MovieRunnerWithFilters {
         ratingFileName = "ratings.csv";
         tr = new ThirdRatings(ratingFileName);
     }
-    
+
+    /**
+     * Prints the average ratings of a number of movies.
+     */
     public void printAverageRatings(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
@@ -49,7 +51,10 @@ public class MovieRunnerWithFilters {
         }
         System.out.println("There are " + num + " movies have " + numRating + " ratings.");*/
     }
-    
+
+    /**
+     * Prints the average ratings of movies released in a select year.
+     */
     public void printAverageRatingsByYearAfter(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
@@ -72,7 +77,10 @@ public class MovieRunnerWithFilters {
         }
         System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
     }
-    
+
+    /**
+     * Prints the average ratings of movies of a select genre.
+     */
     public void printAverageRatingsByGenre(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
@@ -95,7 +103,10 @@ public class MovieRunnerWithFilters {
         }
         System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
     }
-    
+
+    /**
+     * Prints the average ratings of movies of a certain duration.
+     */
     public void printAverageRatingsByMinutes(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
@@ -120,7 +131,10 @@ public class MovieRunnerWithFilters {
         }
         System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
     }
-    
+
+    /**
+     * Prints the average ratings of movies with certain Directors.
+     */
     public void printAverageRatingsByDirectors(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
@@ -144,7 +158,10 @@ public class MovieRunnerWithFilters {
         }
         System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
     }
-    
+
+    /**
+     * Prints the average ratings of movies by genre and release date.
+     */
     public void printAverageRatingsByYearAfterAndGenre(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
@@ -173,7 +190,10 @@ public class MovieRunnerWithFilters {
         }
         System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filters.");
     }
-    
+
+    /**
+     * Prints the average ratings of movies by directors and duration.
+     */
     public void printAverageRatingsByDirectorsAndMinutes (){
         MovieDatabase.initialize("ratedmoviesfull.csv");
         System.out.println("There are " + MovieDatabase.size() + " movies in the file.");

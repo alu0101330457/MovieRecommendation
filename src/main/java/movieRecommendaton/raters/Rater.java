@@ -1,11 +1,10 @@
 package movieRecommendaton.raters;
-/**
- * Write a description of Rater here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 import java.util.*;
+
+/**
+ * Represents a Rater for a movie.
+ */
 public interface Rater {
     public void addRating(String item, double rating);
     

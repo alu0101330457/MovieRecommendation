@@ -3,7 +3,7 @@ package movieRecommendaton.filters;
 import movieRecommendaton.movies.MovieDatabase;
 
 /**
- * Represents a Filter to
+ * Represents a Filter to check the Director of a movie.
  */
 public class DirectorsFilter implements Filter {
     private String myDirectors;

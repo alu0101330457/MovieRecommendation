@@ -1,15 +1,13 @@
 package movieRecommendaton.raters;
-/**
- * Write a description of class Rater here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 
 import movieRecommendaton.ratings.Rating;
 
 import java.util.*;
 
+/**
+ *
+ */
 public class PlainRater implements Rater {
     private String myID;
     private ArrayList<Rating> myRatings;

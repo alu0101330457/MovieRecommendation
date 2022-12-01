@@ -2,13 +2,22 @@ package movieRecommendaton.filters;
 
 import java.util.ArrayList;
 
+/**
+ * Class that contains multiple Filters.
+ */
 public class AllFilters implements Filter {
     ArrayList<Filter> filters;
-    
+
+    /**
+     * Initializes the object without any Filter.
+     */
     public AllFilters() {
         filters = new ArrayList<Filter>();
     }
 
+    /**
+     * Adds a Filter.
+     */
     public void addFilter(Filter f) {
         filters.add(f);
     }

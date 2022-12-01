@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.MovieRunnerAverage" name="movieRecommendaton.MovieRunnerAverage">
+<map id="movieRecommendaton.movierunner.MovieRunnerAverage" name="movieRecommendaton.movierunner.MovieRunnerAverage">
 <area shape="rect" id="node1" title=" " alt="" coords="144,211,339,251"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_second_ratings.html" title=" " alt="" coords="139,108,343,148"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,5,229,45"/>

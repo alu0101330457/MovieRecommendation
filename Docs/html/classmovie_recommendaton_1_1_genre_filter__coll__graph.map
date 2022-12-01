@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.GenreFilter" name="movieRecommendaton.GenreFilter">
+<map id="movieRecommendaton.filters.GenreFilter" name="movieRecommendaton.filters.GenreFilter">
 <area shape="rect" id="node1" title=" " alt="" coords="5,79,200,119"/>
 <area shape="rect" id="node2" href="$interfacemovie_recommendaton_1_1_filter.html" title=" " alt="" coords="8,5,197,31"/>
 </map>
