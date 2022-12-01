@@ -16,6 +16,9 @@ import org.apache.commons.csv.CSVRecord;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Implements a Data file with information about multiple raters.
+ */
 public class RaterDatabase {
     private static HashMap<String, Rater> ourRaters;
      

@@ -6,7 +6,7 @@ import movieRecommendaton.ratings.Rating;
 import java.util.*;
 
 /**
- *
+ * Implements a simple Rater for movies.
  */
 public class PlainRater implements Rater {
     private String myID;

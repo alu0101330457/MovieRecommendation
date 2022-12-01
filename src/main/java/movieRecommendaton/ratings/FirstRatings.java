@@ -1,10 +1,5 @@
 package movieRecommendaton.ratings;
-/**
- * Write a description of FirstRatings here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 import edu.duke.*;
 import java.util.*;
 
@@ -17,9 +12,16 @@ import org.apache.commons.csv.*;
 
 import java.io.*;
 
+/**
+ * Process information in a CSV File about movie information.
+ */
 public class FirstRatings {
-    //This method should process every record from the CSV file whose name is filename, 
-    // a file of movie information, and return an ArrayList of type Movie with all of the movie data from the file.
+
+    /**
+     * This method processes movie records from a CSV File
+     * @param filename CSV File containing movie information.
+     * @return ArrayList<Movie> with all the Movie data from the file.
+     */
     public ArrayList<Movie> loadMovies(String filename){
         ArrayList<Movie> movies = new ArrayList<Movie>();
         FileResource fr = new FileResource(filename);
@@ -39,7 +41,12 @@ public class FirstRatings {
         }
         return movies;
     }
-    
+
+    /**
+     * This method processes rater records from a CSV File.
+     * @param filename CSV File containing rater information.
+     * @return ArrayList<Rater> with all the Rater data from the file.
+     */
     public ArrayList<Rater> loadRaters(String filename){
         ArrayList<Rater> raters = new ArrayList<Rater>();
         FileResource fr = new FileResource("data/" + filename);
@@ -79,32 +86,10 @@ public class FirstRatings {
         }
         return raters;
     }
-    
-    /*public ArrayList<Rater> loadRaters1(String filename){
-        ArrayList<Rater> raters = new ArrayList<Rater>();
-        FileResource fr = new FileResource("data/" + filename);
-        CSVParser raterParser = fr.getCSVParser();
-        ArrayList<String> IDs = new ArrayList<String>();
-        for (CSVRecord currentRow: raterParser){
-            String raterId = currentRow.get("rater_id");
-            if (!IDs.contains(raterId)){
-                IDs.add(raterId);
-            }
-        }
-        for (String s: IDs){
-            Rater currRater = new Rater(s);
-            for (CSVRecord currentRow: raterParser){
-                if (s.equals(currentRow.get("rater_id"))){
-                    String movieId = currentRow.get("movie_id");
-                    double rating = Double.parseDouble(currentRow.get("rating"));
-                    currRater.addRating(movieId, rating);
-                }
-            }
-            raters.add(currRater);
-        }
-        return raters;
-    }*/
-    
+
+    /**
+     * Returns the number of records of the Rater with the selected raterID.
+     */
     public void findNumOfRater(String filename, String RaterID){
         ArrayList<Rater> raters = loadRaters(filename);
         Rater result = null;
@@ -116,7 +101,10 @@ public class FirstRatings {
         int num = result.numRatings();
         System.out.println("There are " + num + " ratings of " + "ID " + RaterID);
     }
-    
+
+    /**
+     * Finds the rater with the highest number of records inside the selected file.
+     */
     public void findMaxNumOfRatingsByRater(String filename){
         ArrayList<Rater> raters = loadRaters(filename);
         int max = 0;
@@ -134,7 +122,10 @@ public class FirstRatings {
         }
         System.out.println(s.substring(0, s.length()-2));
     }
-    
+
+    /**
+     * Returns the number of ratings a selected movie has, inside a selected file.
+     */
     public void findRatingsOfMovie(String filename, String movieID){
         ArrayList<Rater> raters = loadRaters(filename);
         int num = 0;
@@ -146,7 +137,10 @@ public class FirstRatings {
         }
         System.out.println("Movie with ID " + movieID + " was rated by " + num + " raters.");
     }
-    
+
+    /**
+     * Counts the unique number of movies inside the selected file.
+     */
     public void countRatedMovies(String filename){
         ArrayList<Rater> raters = loadRaters(filename);
         ArrayList<String> movies = new ArrayList<String>();
@@ -160,7 +154,8 @@ public class FirstRatings {
         }
         System.out.println("There are " + movies.size() + " movies rated.");
     }
-    
+
+
     public void test(){
         DirectoryResource dr = new DirectoryResource();
         for (File f: dr.selectedFiles()){

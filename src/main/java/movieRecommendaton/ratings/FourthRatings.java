@@ -1,10 +1,5 @@
 package movieRecommendaton.ratings;
-/**
- * Write a description of FourthRatings here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 
 
 import movieRecommendaton.movies.MovieDatabase;
@@ -15,6 +10,9 @@ import movieRecommendaton.raters.Rater;
 
 import java.util.*;
 
+/**
+ * Processes information in a CSV File about movies and ratings.
+ */
 public class FourthRatings {
     
     public FourthRatings() {
@@ -25,16 +23,22 @@ public class FourthRatings {
     public FourthRatings(String ratingsfile) {
         RaterDatabase.initialize(ratingsfile);
     }
-    
+
+    /**
+     * Returns the number of raters in the file.
+     */
     public int getRaterSize(){
         // return the number of raters.
         return RaterDatabase.size();
     }
-    
+
+    /**
+     * Returns the average movie rating for this ID if there are at least minimalRaters ratings.
+     * @param movieID Movie to calculate the average rating of.
+     * @param minimalRaters minimum number of raters necessary to return the average.
+     * @return Average movie rating for movieID if there are at least minimalRater ratings, otherwise 0.0
+     */
     private double getAverageByID(String movieID, int minimalRaters){
-        /* This method returns a double representing the average movie rating for this ID 
-         * if there are at least minimalRaters ratings. 
-           If there are not minimalRaters ratings, then it returns 0.0.*/
         int numRatings = 0;
         double totalScore = 0;
         for (Rater currRater: RaterDatabase.getRaters()){
@@ -53,18 +57,16 @@ public class FourthRatings {
             return totalScore/numRatings;
         }
     }
-    
+
+    /**
+     * Finds the average rating for every movie that has been rated by at least minimalRater
+     * raters.
+     * @param minimalRaters minimum number of raters to be considered.
+     * @return ArrayList<Rating> containing all Rating objects for movies that have at least the
+     * minimal number of raters supplying a rating.
+     */
     public ArrayList<Rating> getAverageRatings(int minimalRaters){
-        /*
-         * This method should find the average rating for every movie that has been rated by at least
-         * minimalRaters raters. Store each such rating in a Rating object in which the movie ID 
-         * and the average rating are used in creating the Rating object. 
-         * The method getAverageRatings should return an ArrayList of all the Rating objects for movies
-         * that have at least the minimal number of raters supplying a rating. 
-         * For example, if minimalRaters has the value 10, then this method returns rating information
-         * (the movie ID and its average rating) for each movie that has at least 10 ratings. 
-         * You should consider calling the private getAverageByID method.
-         */
+
         // Get the ArrayList of Movies from MovieDatabase.
         ArrayList<String> movies = MovieDatabase.filterBy(new TrueFilter());
         ArrayList<Rating> allAverageRatings = new ArrayList<Rating>();
@@ -74,14 +76,12 @@ public class FourthRatings {
         }
         return allAverageRatings;
     }
-    
+
+    /**
+     * Creates and returns and ArrayList<Rating> of all the movies that have at
+     * least minimalRaters ratings and satisfies the filter criteria.
+     */
     public ArrayList<Rating> getAverageRatingsByFilter(int minimalRaters, Filter filterCriteria){
-        /*
-         * This method should create and return an ArrayList of type Rating of all the movies 
-         * that have at least minimalRaters ratings and satisfies the filter criteria. 
-         * This method will need to create the ArrayList of type String of movie IDs 
-         * from the MovieDatabase using the filterBy method before calculating those averages.
-         */
         ArrayList<String> movieIDs = MovieDatabase.filterBy(filterCriteria);
         ArrayList<Rating> averageRatings = new ArrayList<Rating>();
         for (String s: movieIDs){
@@ -90,13 +90,14 @@ public class FourthRatings {
         }
         return averageRatings;
     }
-    
+
+    /**
+     * Translates a rating from 0-10 scale to -5 to 5 scale and returns the dot product
+     * of the ratings of movies that they both rated.
+     * <p>
+     * This method is called by getSimilarities.
+     */
     private double dotProduct(Rater me, Rater r){
-        /*
-         * This method should first translate a rating from the scale 0 to 10 to the scale -5 to 5 
-         * and return the dot product of the ratings of movies that they both rated. 
-         * This method will be called by getSimilarities.
-         */
         double result = 0.0;
         ArrayList<String> myMovieIDs = me.getItemsRated();
         ArrayList<String> otherMovieIDs = r.getItemsRated();
@@ -109,19 +110,24 @@ public class FourthRatings {
         }
         return result;
     }
-    
+
+    /**
+     * Computes a similarity rating for each rater in the RaterDatabase
+     * (except the rater with the ID given by the parameter) to see how similar they are to the Rater
+     * whose ID is the parameter to getSimilarities.
+     * <p>
+     * Note that in each Rating object the item field is a rater’s ID,
+     * and the value field is the dot product comparison between that rater and the rater
+     * whose ID is the parameter to getSimilarities.
+     * @param id
+     * @return ArrayList<Rating> sorted by ratings from highest to lowest rating with the highest rating first
+     * and only including those raters who have a positive similarity rating since those with negative values
+     * are not similar in any way.
+     */
     private ArrayList<Rating> getSimilarities(String id){
         /*
          * this method computes a similarity rating for each rater in the RaterDatabase 
-         * (except the rater with the ID given by the parameter) to see how similar they are to the Rater 
-         * whose ID is the parameter to getSimilarities. 
-         * This method returns an ArrayList of type Rating sorted by ratings 
-         * from highest to lowest rating with the highest rating first and only including those raters 
-         * who have a positive similarity rating since those with negative values are not similar in any way. 
-         * Note that in each Rating object the item field is a rater’s ID, 
-         * and the value field is the dot product comparison between that rater and the rater 
-         * whose ID is the parameter to getSimilarities. 
-         * Be sure not to use the dotProduct method with parameter id and itself!
+         *
          */
         ArrayList<Rating> list = new ArrayList<Rating>();
         Rater me = RaterDatabase.getRater(id);
