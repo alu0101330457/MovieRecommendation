@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.ratings.ThirdRatings.getRaterSize" name="movieRecommendaton.ratings.ThirdRatings.getRaterSize">
+<map id="movieRecommendation.ratings.ThirdRatings.getRaterSize" name="movieRecommendation.ratings.ThirdRatings.getRaterSize">
 <area shape="rect" id="node1" title=" " alt="" coords="292,249,495,289"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#ae3a8dcffbe48c1b4f3d712b6aac365ac" title=" " alt="" coords="5,5,244,60"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#a6583e0b805d884cb36b7bffac0c98f6a" title=" " alt="" coords="5,84,244,139"/>

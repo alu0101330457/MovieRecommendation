@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.ratings.FirstRatings.findMaxNumOfRatingsByRater" name="movieRecommendaton.ratings.FirstRatings.findMaxNumOfRatingsByRater">
+<map id="movieRecommendation.ratings.FirstRatings.findMaxNumOfRatingsByRater" name="movieRecommendation.ratings.FirstRatings.findMaxNumOfRatingsByRater">
 <area shape="rect" id="node1" title=" " alt="" coords="5,42,236,97"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1ratings_1_1_first_ratings.html#a3b4ead9641e6afb402764f48d8d32ead" title=" " alt="" coords="284,49,487,89"/>
 <area shape="rect" id="node3" href="$interfacemovie_recommendaton_1_1raters_1_1_rater.html#acc179ddf585dd3eb57f2acdf0868ef86" title=" " alt="" coords="535,5,732,45"/>

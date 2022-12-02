@@ -4817,24 +4817,24 @@ ner,
 
 
 Overfull \hbox (38.22044pt too wide) in paragraph at lines 414--416
-[]\T1/phv/m/n/10 movieRecommendaton.movierunner.MovieRunnerSimilarRatings,
+[]\T1/phv/m/n/10 movieRecommendation.movierunner.MovieRunnerSimilarRatings,
  []
 
 
 Overfull \hbox (22.71368pt too wide) in paragraph at lines 424--426
-[]\T1/phv/m/n/10 movieRecommendaton.movierunner.MovieRunnerWithFilters,
+[]\T1/phv/m/n/10 movieRecommendation.movierunner.MovieRunnerWithFilters,
  []
 
 LaTeX Info: Redefining \. on input line 476.
 LaTeX Info: Redefining \% on input line 476.
 [172]
 Overfull \hbox (58.51492pt too wide) in paragraph at lines 553--555
-[]\T1/phv/m/n/10 movieRecommendaton.recommenderrunner.RecommendationRunner,
+[]\T1/phv/m/n/10 movieRecommendation.recommenderrunner.RecommendationRunner,
  []
 
 
 Overfull \hbox (17.49371pt too wide) in paragraph at lines 564--566
-[]\T1/phv/m/n/10 movieRecommendaton.recommenderrunner.Recommender,
+[]\T1/phv/m/n/10 movieRecommendation.recommenderrunner.Recommender,
  []
 
 
@@ -4989,102 +4989,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 748--750
 
 
 Overfull \hbox (28.03242pt too wide) in paragraph at lines 794--796
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/filters/DirectorsFilter.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/filters/DirectorsFilter.java,
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 796--798
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/filters/Filter.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/filters/Filter.java,
  []
 
 
 Overfull \hbox (17.04355pt too wide) in paragraph at lines 798--800
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/filters/GenreFilter.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/filters/GenreFilter.java,
  []
 
 
 Overfull \hbox (23.45148pt too wide) in paragraph at lines 800--802
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/filters/MinutesFilter.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/filters/MinutesFilter.java,
  []
 
 
 Overfull \hbox (28.78827pt too wide) in paragraph at lines 804--806
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/filters/YearAfterFilter.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/filters/YearAfterFilter.java,
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 806--808
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/main/Main.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/main/Main.java,
  []
 
 
 Overfull \hbox (112.24419pt too wide) in paragraph at lines 808--810
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/movierunner/MovieRunnerSimila
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/movierunner/MovieRunnerSimila
 rRatings.java,
  []
 
 
 Overfull \hbox (96.73743pt too wide) in paragraph at lines 810--812
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/movierunner/MovieRunnerWithFi
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/movierunner/MovieRunnerWithFi
 lters.java,
  []
 
 
 Overfull \hbox (41.60464pt too wide) in paragraph at lines 814--816
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/movies/MovieDatabase.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/movies/MovieDatabase.java,
  []
 
 
 Overfull \hbox (27.4653pt too wide) in paragraph at lines 816--818
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/raters/EfficientRater.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/raters/EfficientRater.java,
  []
 
 
 Overfull \hbox (15.45953pt too wide) in paragraph at lines 818--820
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/raters/PlainRater.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/raters/PlainRater.java,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 820--822
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/raters/Rater.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/raters/Rater.java,
  []
 
 
 Overfull \hbox (34.28734pt too wide) in paragraph at lines 822--824
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/raters/RaterDatabase.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/raters/RaterDatabase.java,
  []
 
 
 Overfull \hbox (25.77354pt too wide) in paragraph at lines 824--826
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/ratings/FirstRatings.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/ratings/FirstRatings.java,
  []
 
 
 Overfull \hbox (34.3773pt too wide) in paragraph at lines 826--828
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/ratings/FourthRatings.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/ratings/FourthRatings.java,
  []
 
 
 Overfull \hbox (38.79633pt too wide) in paragraph at lines 830--832
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/ratings/SecondRatings.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/ratings/SecondRatings.java,
  []
 
 
 Overfull \hbox (28.7795pt too wide) in paragraph at lines 832--834
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/ratings/ThirdRatings.java,
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/ratings/ThirdRatings.java,
  []
 
 
 Overfull \hbox (132.22357pt too wide) in paragraph at lines 834--836
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/recommenderrunner/Recommendat
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/recommenderrunner/Recommendat
 ionRunner.java,
  []
 
 
 Overfull \hbox (91.20236pt too wide) in paragraph at lines 836--838
-[]\T1/phv/m/n/10 src/main/java/movieRecommendaton/recommenderrunner/Recommender
+[]\T1/phv/m/n/10 src/main/java/movieRecommendation/recommenderrunner/Recommender
 .java,
  []
 

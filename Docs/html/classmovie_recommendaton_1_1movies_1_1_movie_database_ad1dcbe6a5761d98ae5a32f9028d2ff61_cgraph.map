@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.movies.MovieDatabase.initialize" name="movieRecommendaton.movies.MovieDatabase.initialize">
+<map id="movieRecommendation.movies.MovieDatabase.initialize" name="movieRecommendation.movies.MovieDatabase.initialize">
 <area shape="rect" id="node1" title=" " alt="" coords="5,29,212,69"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#ab4b4271fc18d7631f2dd071a30560dfd" title=" " alt="" coords="260,29,467,69"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1ratings_1_1_first_ratings.html#af3fa5e5718e8ec1f39fd193e2a5eadbf" title=" " alt="" coords="515,29,717,69"/>

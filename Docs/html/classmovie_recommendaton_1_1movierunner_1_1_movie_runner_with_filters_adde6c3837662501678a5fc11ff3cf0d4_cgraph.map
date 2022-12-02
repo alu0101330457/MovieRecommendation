@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.movierunner.MovieRunnerWithFilters.printAverageRatingsByGenre" name="movieRecommendaton.movierunner.MovieRunnerWithFilters.printAverageRatingsByGenre">
+<map id="movieRecommendation.movierunner.MovieRunnerWithFilters.printAverageRatingsByGenre" name="movieRecommendation.movierunner.MovieRunnerWithFilters.printAverageRatingsByGenre">
 <area shape="rect" id="node1" title=" " alt="" coords="5,160,244,215"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1ratings_1_1_third_ratings.html#af69c352bc4b8de766353aa4cfcc62cc3" title=" " alt="" coords="292,5,519,60"/>
 <area shape="rect" id="node10" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#a9e6b4d161a2bd99f7790ebdf42cc6e14" title=" " alt="" coords="567,141,773,181"/>

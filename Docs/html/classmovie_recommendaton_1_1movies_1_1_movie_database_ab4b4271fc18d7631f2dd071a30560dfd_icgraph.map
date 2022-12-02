@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.movies.MovieDatabase.loadMovies" name="movieRecommendaton.movies.MovieDatabase.loadMovies">
+<map id="movieRecommendation.movies.MovieDatabase.loadMovies" name="movieRecommendation.movies.MovieDatabase.loadMovies">
 <area shape="rect" id="node1" title=" " alt="" coords="871,353,1077,393"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#af30ada7445f2c9f54ef7a7556c846178" title=" " alt="" coords="616,353,823,393"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner.html#ad5bb2eac3dafd41562341a241c138bf6" title=" " alt="" coords="267,5,546,45"/>

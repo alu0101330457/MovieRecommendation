@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.movierunner.MovieRunnerSimilarRatings.printSimilarRatingsByDirector" name="movieRecommendaton.movierunner.MovieRunnerSimilarRatings.printSimilarRatingsByDirector">
+<map id="movieRecommendation.movierunner.MovieRunnerSimilarRatings.printSimilarRatingsByDirector" name="movieRecommendation.movierunner.MovieRunnerSimilarRatings.printSimilarRatingsByDirector">
 <area shape="rect" id="node1" title=" " alt="" coords="5,158,259,213"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#a8c15a62b3cb54e45119dc7fab764093c" title=" " alt="" coords="309,133,515,173"/>
 <area shape="rect" id="node8" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#a7730fc86c3becc49044012c34bf3d568" title=" " alt="" coords="309,5,515,45"/>

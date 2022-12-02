@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.ratings.FourthRatings.getRaterSize" name="movieRecommendaton.ratings.FourthRatings.getRaterSize">
+<map id="movieRecommendation.ratings.FourthRatings.getRaterSize" name="movieRecommendation.ratings.FourthRatings.getRaterSize">
 <area shape="rect" id="node1" title=" " alt="" coords="315,210,517,250"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_similar_ratings.html#a11efa6337f3e63e9711fd9333922fc18" title=" " alt="" coords="5,5,267,60"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_similar_ratings.html#ab8594e1f345b0c1243eb9af20e3d40a9" title=" " alt="" coords="9,84,263,139"/>

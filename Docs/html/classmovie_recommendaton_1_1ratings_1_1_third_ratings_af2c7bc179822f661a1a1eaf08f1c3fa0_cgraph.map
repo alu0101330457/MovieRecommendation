@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.ratings.ThirdRatings.getAverageRatings" name="movieRecommendaton.ratings.ThirdRatings.getAverageRatings">
+<map id="movieRecommendation.ratings.ThirdRatings.getAverageRatings" name="movieRecommendation.ratings.ThirdRatings.getAverageRatings">
 <area shape="rect" id="node1" title=" " alt="" coords="5,93,216,133"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#a8c15a62b3cb54e45119dc7fab764093c" title=" " alt="" coords="264,61,471,101"/>
 <area shape="rect" id="node8" href="$classmovie_recommendaton_1_1ratings_1_1_third_ratings.html#ac0289c769cfa9c1835eb066323c46965" title=" " alt="" coords="266,125,469,165"/>

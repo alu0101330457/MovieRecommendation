@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.recommenderrunner.RecommendationRunner.getItemsToRate" name="movieRecommendaton.recommenderrunner.RecommendationRunner.getItemsToRate">
+<map id="movieRecommendation.recommenderrunner.RecommendationRunner.getItemsToRate" name="movieRecommendation.recommenderrunner.RecommendationRunner.getItemsToRate">
 <area shape="rect" id="node1" title=" " alt="" coords="5,129,284,169"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#a8c15a62b3cb54e45119dc7fab764093c" title=" " alt="" coords="332,69,539,109"/>
 <area shape="rect" id="node8" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#af30ada7445f2c9f54ef7a7556c846178" title=" " alt="" coords="587,133,793,173"/>

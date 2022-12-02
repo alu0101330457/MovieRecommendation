@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.filters.AllFilters.addFilter" name="movieRecommendaton.filters.AllFilters.addFilter">
+<map id="movieRecommendation.filters.AllFilters.addFilter" name="movieRecommendation.filters.AllFilters.addFilter">
 <area shape="rect" id="node1" title=" " alt="" coords="272,131,508,171"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_movie_runner_with_filters.html#a38b4b00b4214bcf9ecd9f2abd446327e" title=" " alt="" coords="12,5,217,60"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_movie_runner_with_filters.html#a7d149e0fa5600487aa4f9180cc40e80e" title=" " alt="" coords="13,84,217,139"/>

@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.movierunner.MovieRunnerSimilarRatings.printAverageRatings" name="movieRecommendaton.movierunner.MovieRunnerSimilarRatings.printAverageRatings">
+<map id="movieRecommendation.movierunner.MovieRunnerSimilarRatings.printAverageRatings" name="movieRecommendation.movierunner.MovieRunnerSimilarRatings.printAverageRatings">
 <area shape="rect" id="node1" title=" " alt="" coords="5,155,267,210"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1ratings_1_1_fourth_ratings.html#a7ba8de80b23b947412ae4f0e93d15578" title=" " alt="" coords="315,69,533,109"/>
 <area shape="rect" id="node12" href="$classmovie_recommendaton_1_1ratings_1_1_fourth_ratings.html#a41a7f8ece26baf408ba3359dd28f7e75" title=" " alt="" coords="323,133,525,173"/>

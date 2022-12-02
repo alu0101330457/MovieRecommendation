@@ -1,4 +1,4 @@
-<map id="movieRecommendaton.movies.MovieDatabase.getMinutes" name="movieRecommendaton.movies.MovieDatabase.getMinutes">
+<map id="movieRecommendation.movies.MovieDatabase.getMinutes" name="movieRecommendation.movies.MovieDatabase.getMinutes">
 <area shape="rect" id="node1" title=" " alt="" coords="272,170,467,210"/>
 <area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_movie_runner_with_filters.html#a38b4b00b4214bcf9ecd9f2abd446327e" title=" " alt="" coords="12,5,217,60"/>
 <area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_movie_runner_with_filters.html#a209ad20b88575ad880ff7289a7abd6df" title=" " alt="" coords="13,84,217,139"/>
