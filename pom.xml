@@ -121,7 +121,7 @@
                 <version>3.4.1</version>
                  <configuration>
                  <excludePackageNames>
-                 edu.duke
+                     src.main.java.edu.duke
                  </excludePackageNames>
                 </configuration>
 

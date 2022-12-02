@@ -1,10 +1,4 @@
 package movieRecommendaton.ratings;
-/**
- * Write a description of SecondRatings here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 
 import movieRecommendaton.movies.Movie;
 import movieRecommendaton.raters.Rater;
@@ -26,16 +20,6 @@ public class SecondRatings {
         myRaters = firstrating.loadRaters(ratingsfile);
     }
     
-    /*public ArrayList<Movie> getMovies(){
-        // return the number of movies.
-        return myMovies;
-    }
-    
-    public ArrayList<Rater> getRaters(){
-        // return the number of movies.
-        return myRaters;
-    }*/
-    
     public int getMovieSize(){
         // return the number of movies.
         return myMovies.size();
@@ -45,11 +29,14 @@ public class SecondRatings {
         // return the number of raters.
         return myRaters.size();
     }
-    
+
+    /**
+     * @return A double representing the average movie rating for this ID
+     * if there are at least minimalRaters ratings.
+     * If there are not minimalRaters ratings, then it returns 0.0.
+     */
     private double getAverageByID(String movieID, int minimalRaters){
-        /* This method returns a double representing the average movie rating for this ID 
-         * if there are at least minimalRaters ratings. 
-           If there are not minimalRaters ratings, then it returns 0.0.*/
+        /* This method returns */
         int numRatings = 0;
         double totalScore = 0;
         for (Rater currRater: myRaters){
@@ -68,18 +55,16 @@ public class SecondRatings {
             return totalScore/numRatings;
         }
     }
-    
+
+    /**
+     * This method finds the average rating for every movie that has been rated by at least
+     *  minimalRaters raters.
+     * @param minimalRaters
+     * @return ArrayList of all the Rating objects for movies
+     * that have at least the minimal number of raters supplying a rating.
+     */
     public ArrayList<Rating> getAverageRatings(int minimalRaters){
-        /*
-         * This method should find the average rating for every movie that has been rated by at least
-         * minimalRaters raters. Store each such rating in a Rating object in which the movie ID 
-         * and the average rating are used in creating the Rating object. 
-         * The method getAverageRatings should return an ArrayList of all the Rating objects for movies
-         * that have at least the minimal number of raters supplying a rating. 
-         * For example, if minimalRaters has the value 10, then this method returns rating information
-         * (the movie ID and its average rating) for each movie that has at least 10 ratings. 
-         * You should consider calling the private getAverageByID method.
-         */
+
         ArrayList<Rating> allAverageRatings = new ArrayList<Rating>();
         for (Movie currMovie: myMovies){
             String currMovieID = currMovie.getID();
@@ -88,11 +73,14 @@ public class SecondRatings {
         }
         return allAverageRatings;
     }
-    
+
+    /**
+     * @return the title of the movie with that ID. If the movie ID does not exist,
+     * then this method returns a String indicating the ID was not found
+     */
     public String getTitle(String movieID){
         /*
-         * This method returns the title of the movie with that ID. 
-         * If the movie ID does not exist, then this method should return a String indicating the ID was not found.
+         * This method returns .
          */
         for (Movie currMovie: myMovies){
             if (currMovie.getID().equals(movieID)){
@@ -101,12 +89,16 @@ public class SecondRatings {
         }
         return "N/A";
     }
-    
+
+    /**
+     *
+     * @param movieTitle
+     * @return The movie ID of this movie. If the title is not found, returns "N/A".
+     * Note that the movie title must be spelled exactly as it appears in the movie data files.
+     */
     public String getID(String movieTitle){
         /*
-         * This method returns the movie ID of this movie. 
-         * If the title is not found, return an appropriate message such as "NO SUCH TITLE."
-         * Note that the movie title must be spelled exactly as it appears in the movie data files.
+         * This method returns
          */
         for (Movie currMovie: myMovies){
             if (currMovie.getTitle().equals(movieTitle)){

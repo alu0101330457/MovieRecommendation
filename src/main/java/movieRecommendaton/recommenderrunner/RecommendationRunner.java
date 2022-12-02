@@ -1,10 +1,5 @@
 package movieRecommendaton.recommenderrunner;
-/**
- * Write a description of RecommendationRunner here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 import movieRecommendaton.movies.MovieDatabase;
 import movieRecommendaton.ratings.Rating;
 import movieRecommendaton.filters.Filter;
