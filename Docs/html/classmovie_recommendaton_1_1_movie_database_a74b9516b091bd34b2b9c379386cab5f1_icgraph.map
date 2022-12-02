@@ -1,7 +1,0 @@
-<map id="movieRecommendation.movies.MovieDatabase.getYear" name="movieRecommendation.movies.MovieDatabase.getYear">
-<area shape="rect" id="node1" title=" " alt="" coords="272,131,467,171"/>
-<area shape="rect" id="node2" href="$classmovie_recommendaton_1_1_movie_runner_with_filters.html#a5fc6b79e82c5fd15fb3cd08627704d6e" title=" " alt="" coords="13,5,217,60"/>
-<area shape="rect" id="node3" href="$classmovie_recommendaton_1_1_movie_runner_with_filters.html#a7d149e0fa5600487aa4f9180cc40e80e" title=" " alt="" coords="13,84,217,139"/>
-<area shape="rect" id="node4" href="$classmovie_recommendaton_1_1_movie_runner_similar_ratings.html#a4dd4d4cf91cfcfb735bc9c8f38076bbf" title=" " alt="" coords="5,163,224,217"/>
-<area shape="rect" id="node5" href="$classmovie_recommendaton_1_1_year_after_filter.html#a402436e8aed8cc13fa274ea03836bc16" title=" " alt="" coords="7,242,222,282"/>
-</map>
