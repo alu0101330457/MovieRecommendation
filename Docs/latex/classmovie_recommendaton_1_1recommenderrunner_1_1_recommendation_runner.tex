@@ -1,0 +1,174 @@
+\hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner}{}\doxysection{Referencia de la Clase movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner}
+\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner}\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+
+
+Diagrama de herencias de movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a6c05a750036fb3ebc0a1b175e621ef47}{Recommendation\+Runner}} ()
+\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ad5bb2eac3dafd41562341a241c138bf6}{get\+Items\+To\+Rate}} ()
+\item 
+void \mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_acdc05b378da8a99f37386c0c1c5104d6}{print\+Recommendations\+For}} (String web\+Rater\+ID)
+\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a8518f8f41b45fbf64c8f5d62cf123e99}{print\+Out}} (String title, double value, String genre)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Random \mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ac27761d0d918a4068dccb7579a6d0dae}{my\+Random}}
+\item 
+int \mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a28ae37c5fc8c680d1c7bff1d1a73d425}{to\+Rate\+Num}}
+\item 
+int \mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_af695c81f0a845728b501b1d139459932}{num\+Similar\+Raters}}
+\item 
+int \mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_afb35a31167f7b82aa9fb4875e00adbd2}{minimal\+Raters}}
+\item 
+int \mbox{\hyperlink{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ad1a98c0c5b4c15646221fc5a18785f3d}{max\+Rec\+Num}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a6c05a750036fb3ebc0a1b175e621ef47}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a6c05a750036fb3ebc0a1b175e621ef47}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!RecommendationRunner@{RecommendationRunner}}
+\index{RecommendationRunner@{RecommendationRunner}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{RecommendationRunner()}{RecommendationRunner()}}
+{\footnotesize\ttfamily movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+Recommendation\+Runner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ad5bb2eac3dafd41562341a241c138bf6}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ad5bb2eac3dafd41562341a241c138bf6}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!getItemsToRate@{getItemsToRate}}
+\index{getItemsToRate@{getItemsToRate}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{getItemsToRate()}{getItemsToRate()}}
+{\footnotesize\ttfamily Array\+List$<$ String $>$ movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+get\+Items\+To\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method returns a list of movie IDs that will be used to look up the movies in the Movie\+Database and present them to users to rate.
+
+The movies returned in the list will be displayed on a web page, so the number you choose may affect how long the page takes to load and how willing users are to rate the movies. For example, 10-\/20 should be fine, 50 or more would be too many.
+
+There are no restrictions on the method you use to generate this list of movies\+: the most recent movies, movies from a specific genre, randomly chosen movies, or simply your favorite movies.
+
+The ratings for these movies will make the profile for a new Rater that will be used to compare to for finding recommendations. 
+
+Implementa \mbox{\hyperlink{interfacemovie_recommendaton_1_1recommenderrunner_1_1_recommender_ac18ecd06f62487f2e061e6b9e8030bbe}{movie\+Recommendaton.\+recommenderrunner.\+Recommender}}.
+
+Gráfico de llamadas para esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ad5bb2eac3dafd41562341a241c138bf6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a8518f8f41b45fbf64c8f5d62cf123e99}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a8518f8f41b45fbf64c8f5d62cf123e99}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!printOut@{printOut}}
+\index{printOut@{printOut}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{printOut()}{printOut()}}
+{\footnotesize\ttfamily String movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+print\+Out (\begin{DoxyParamCaption}\item[{String}]{title,  }\item[{double}]{value,  }\item[{String}]{genre }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a8518f8f41b45fbf64c8f5d62cf123e99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_acdc05b378da8a99f37386c0c1c5104d6}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_acdc05b378da8a99f37386c0c1c5104d6}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!printRecommendationsFor@{printRecommendationsFor}}
+\index{printRecommendationsFor@{printRecommendationsFor}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{printRecommendationsFor()}{printRecommendationsFor()}}
+{\footnotesize\ttfamily void movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+print\+Recommendations\+For (\begin{DoxyParamCaption}\item[{String}]{web\+Rater\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method returns nothing, but prints out an HTML table of the movies recommended for the given rater.
+
+The HTML printed will be displayed on a web page, so the number you choose to display may affect how long the page takes to load. For example, you may want to limit the number printed to only the top 20-\/50 movies recommended or to movies not rater by the given rater.
+
+You may also include CSS styling for your table using the \texorpdfstring{$<$}{<}style\texorpdfstring{$>$}{>} tag before you print the table. There are no restrictions on which movies you print, what order you print them in, or what information you include about each movie.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em web\+Rater\+ID} & the ID of a new Rater that has been already added to the Rater\+Database with ratings for the movies returned by the method get\+Items\+To\+Rate \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \mbox{\hyperlink{interfacemovie_recommendaton_1_1recommenderrunner_1_1_recommender_a88ebfb6fffb5f622b7fe03760cf5f1af}{movie\+Recommendaton.\+recommenderrunner.\+Recommender}}.
+
+Gráfico de llamadas para esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_acdc05b378da8a99f37386c0c1c5104d6_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_acdc05b378da8a99f37386c0c1c5104d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ad1a98c0c5b4c15646221fc5a18785f3d}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ad1a98c0c5b4c15646221fc5a18785f3d}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!maxRecNum@{maxRecNum}}
+\index{maxRecNum@{maxRecNum}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{maxRecNum}{maxRecNum}}
+{\footnotesize\ttfamily int movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+max\+Rec\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_afb35a31167f7b82aa9fb4875e00adbd2}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_afb35a31167f7b82aa9fb4875e00adbd2}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!minimalRaters@{minimalRaters}}
+\index{minimalRaters@{minimalRaters}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{minimalRaters}{minimalRaters}}
+{\footnotesize\ttfamily int movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+minimal\+Raters\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ac27761d0d918a4068dccb7579a6d0dae}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_ac27761d0d918a4068dccb7579a6d0dae}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!myRandom@{myRandom}}
+\index{myRandom@{myRandom}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{myRandom}{myRandom}}
+{\footnotesize\ttfamily Random movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+my\+Random\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_af695c81f0a845728b501b1d139459932}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_af695c81f0a845728b501b1d139459932}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!numSimilarRaters@{numSimilarRaters}}
+\index{numSimilarRaters@{numSimilarRaters}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{numSimilarRaters}{numSimilarRaters}}
+{\footnotesize\ttfamily int movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+num\+Similar\+Raters\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a28ae37c5fc8c680d1c7bff1d1a73d425}\label{classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner_a28ae37c5fc8c680d1c7bff1d1a73d425}} 
+\index{movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}!toRateNum@{toRateNum}}
+\index{toRateNum@{toRateNum}!movieRecommendaton.recommenderrunner.RecommendationRunner@{movieRecommendaton.recommenderrunner.RecommendationRunner}}
+\doxysubsubsection{\texorpdfstring{toRateNum}{toRateNum}}
+{\footnotesize\ttfamily int movie\+Recommendaton.\+recommenderrunner.\+Recommendation\+Runner.\+to\+Rate\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/movie\+Recommendaton/recommenderrunner/\mbox{\hyperlink{_recommendation_runner_8java}{Recommendation\+Runner.\+java}}\end{DoxyCompactItemize}

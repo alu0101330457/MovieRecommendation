@@ -1,0 +1,5 @@
+#Thu Dec 01 11:49:57 WET 2022
+configuration*?=B57E0C836079268587576C37FF56421826AC65AC
+module-resource*?\:checkstyle-xpath-suppressions.xml=656C9504F1B441F0DBAD5AB71C4281DDB30A66DF
+module-resource*?\:checkstyle-suppressions.xml=7D1589934B06AB9094DB5047D0F1D62BFC249EA
+/Users/mariomojica/Documents/GitHub/MovieRecommendation/src/main/java/edu/duke/package-info.java=1443070980000

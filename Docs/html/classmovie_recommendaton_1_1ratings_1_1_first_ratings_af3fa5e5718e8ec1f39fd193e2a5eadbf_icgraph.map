@@ -1,0 +1,18 @@
+<map id="movieRecommendaton.ratings.FirstRatings.loadMovies" name="movieRecommendaton.ratings.FirstRatings.loadMovies">
+<area shape="rect" id="node1" title=" " alt="" coords="1125,417,1328,457"/>
+<area shape="rect" id="node2" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#ab4b4271fc18d7631f2dd071a30560dfd" title=" " alt="" coords="871,353,1077,393"/>
+<area shape="rect" id="node15" href="$classmovie_recommendaton_1_1ratings_1_1_second_ratings.html#a500ebdf12f6519f54dad6444cc85efac" title=" " alt="" coords="872,417,1076,457"/>
+<area shape="rect" id="node16" href="$classmovie_recommendaton_1_1ratings_1_1_first_ratings.html#ae2134f0b59ba541ddc9417aac34a4e9e" title=" " alt="" coords="873,481,1075,521"/>
+<area shape="rect" id="node3" href="$classmovie_recommendaton_1_1movies_1_1_movie_database.html#af30ada7445f2c9f54ef7a7556c846178" title=" " alt="" coords="616,353,823,393"/>
+<area shape="rect" id="node4" href="$classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner.html#ad5bb2eac3dafd41562341a241c138bf6" title=" " alt="" coords="267,5,546,45"/>
+<area shape="rect" id="node5" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_similar_ratings.html#a1c6817d3bf594230ddc0642ddc1af174" title=" " alt="" coords="274,70,539,125"/>
+<area shape="rect" id="node6" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#ae3a8dcffbe48c1b4f3d712b6aac365ac" title=" " alt="" coords="287,149,526,203"/>
+<area shape="rect" id="node7" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#a6583e0b805d884cb36b7bffac0c98f6a" title=" " alt="" coords="287,227,526,282"/>
+<area shape="rect" id="node8" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#a59897f2e701c31cdb66b6ab9477dece6" title=" " alt="" coords="287,306,526,361"/>
+<area shape="rect" id="node9" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#adde6c3837662501678a5fc11ff3cf0d4" title=" " alt="" coords="287,385,526,439"/>
+<area shape="rect" id="node10" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#a656cebc66c4dcae74ac015f91cb68231" title=" " alt="" coords="287,463,526,518"/>
+<area shape="rect" id="node11" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#a8d5063396ef28521545c50e8763f6b36" title=" " alt="" coords="287,542,526,597"/>
+<area shape="rect" id="node12" href="$classmovie_recommendaton_1_1movierunner_1_1_movie_runner_with_filters.html#a488d8062cf0102bfc84b9579d2e04c5c" title=" " alt="" coords="287,621,526,675"/>
+<area shape="rect" id="node13" href="$classmovie_recommendaton_1_1recommenderrunner_1_1_recommendation_runner.html#acdc05b378da8a99f37386c0c1c5104d6" title=" " alt="" coords="245,700,568,740"/>
+<area shape="rect" id="node14" href="$classmovie_recommendaton_1_1main_1_1_main.html#a02a1f933c0d737b0a31483685de4cb27" title=" " alt="" coords="5,700,197,740"/>
+</map>

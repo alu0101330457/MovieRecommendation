@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Recomendador", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Lista de 'namespaces'", "namespaces.html", "namespaces_dup" ]
+      [ "Lista de 'namespaces'", "namespaces.html", null ]
     ] ],
     [ "Clases", "annotated.html", [
       [ "Lista de clases", "annotated.html", "annotated_dup" ],
@@ -47,8 +47,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_all_filters_8java.html",
-"classmovie_recommendaton_1_1_genre_filter.html",
-"classmovie_recommendaton_1_1_third_ratings.html#ac909d111e1af9a768238c021162f5e18"
+"classmovie_recommendaton_1_1movies_1_1_movie_database.html#ae2687d48051e260c197a2bfbea33894f"
 ];
 
 var SYNCONMSG = 'click en deshabilitar sincronización';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hasrating_0',['hasRating',['../classmovie_recommendaton_1_1_efficient_rater.html#ae75a99e424ad277cf86b39b74a902edd',1,'movieRecommendaton.EfficientRater.hasRating()'],['../interfacemovie_recommendaton_1_1_rater.html#a8a5d186ee0e78f6ab3d0b09dec696f2d',1,'movieRecommendaton.Rater.hasRating()'],['../classmovie_recommendaton_1_1_plain_rater.html#a6a2cd3d913e31a9cd004d5f8c8be6b70',1,'movieRecommendaton.PlainRater.hasRating()']]]
+  ['hasrating_0',['hasRating',['../classmovie_recommendaton_1_1raters_1_1_efficient_rater.html#aecb321cd183bce55377d173ca069b492',1,'movieRecommendaton.raters.EfficientRater.hasRating()'],['../classmovie_recommendaton_1_1raters_1_1_plain_rater.html#afb573189e165964a3b59b9c84c958e90',1,'movieRecommendaton.raters.PlainRater.hasRating()'],['../interfacemovie_recommendaton_1_1raters_1_1_rater.html#a07e7614071ed6730cadc095d3263d204',1,'movieRecommendaton.raters.Rater.hasRating()']]]
 ];

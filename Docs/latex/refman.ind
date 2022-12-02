@@ -1,0 +1,902 @@
+\begin{theindex}
+
+  \item {add}
+    \subitem {edu.duke.StorageResource}, \hyperpage{141}
+  \item {addFilter}
+    \subitem {movieRecommendaton.filters.AllFilters}, \hyperpage{12}
+  \item {addPoint}
+    \subitem {edu.duke.Shape}, \hyperpage{137}
+  \item {addRaterRating}
+    \subitem {movieRecommendaton.raters.RaterDatabase}, \hyperpage{118}
+  \item {addRating}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{18}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{103}
+    \subitem {movieRecommendaton.raters.Rater}, \hyperpage{114}
+  \item {addRatings}
+    \subitem {movieRecommendaton.raters.RaterDatabase}, \hyperpage{118}
+  \item {AllFilters}
+    \subitem {movieRecommendaton.filters.AllFilters}, \hyperpage{12}
+  \item {alpha}
+    \subitem {edu.duke.Pixel}, \hyperpage{100}
+  \item {asString}
+    \subitem {edu.duke.FileResource}, \hyperpage{25}
+    \subitem {edu.duke.URLResource}, \hyperpage{151}
+
+  \indexspace
+
+  \item {blue}
+    \subitem {edu.duke.Pixel}, \hyperpage{100}
+
+  \indexspace
+
+  \item {clamp}
+    \subitem {edu.duke.Pixel}, \hyperpage{94}
+  \item {clear}
+    \subitem {edu.duke.StorageResource}, \hyperpage{141}
+  \item {compareTo}
+    \subitem {movieRecommendaton.ratings.Rating}, \hyperpage{123}
+  \item {contains}
+    \subitem {edu.duke.StorageResource}, \hyperpage{141}
+  \item {containsID}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{74}
+  \item {countRatedMovies}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{37}
+  \item {country}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{71}
+
+  \indexspace
+
+  \item {data}
+    \subitem {edu.duke.StorageResource}, \hyperpage{141}
+  \item {director}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{71}
+  \item {DirectorsFilter}
+    \subitem {movieRecommendaton.filters.DirectorsFilter}, 
+		\hyperpage{14}
+  \item {DirectoryResource}
+    \subitem {edu.duke.DirectoryResource}, \hyperpage{15}
+  \item {distance}
+    \subitem {edu.duke.Point}, \hyperpage{106}
+  \item {dotProduct}
+    \subitem {movieRecommendaton.ratings.FourthRatings}, \hyperpage{43}
+  \item {draw}
+    \subitem {edu.duke.ImageResource}, \hyperpage{55}
+
+  \indexspace
+
+  \item {edu.duke}, \hyperpage{9}
+  \item {edu.duke.DirectoryResource}, \hyperpage{15}
+    \subitem {DirectoryResource}, \hyperpage{15}
+    \subitem {selectedFiles}, \hyperpage{16}
+  \item {edu.duke.FileResource}, \hyperpage{19}
+    \subitem {asString}, \hyperpage{25}
+    \subitem {FileResource}, \hyperpage{21--24}
+    \subitem {getCSVHeaders}, \hyperpage{25}
+    \subitem {getCSVParser}, \hyperpage{26--28}
+    \subitem {initFromStream}, \hyperpage{28}
+    \subitem {initRead}, \hyperpage{29, 30}
+    \subitem {initWrite}, \hyperpage{30, 31}
+    \subitem {lines}, \hyperpage{31}
+    \subitem {myPath}, \hyperpage{34}
+    \subitem {mySaveFile}, \hyperpage{34}
+    \subitem {mySource}, \hyperpage{35}
+    \subitem {words}, \hyperpage{32}
+    \subitem {write}, \hyperpage{32--34}
+  \item {edu.duke.ImageResource}, \hyperpage{51}
+    \subitem {draw}, \hyperpage{55}
+    \subitem {getBlankImage}, \hyperpage{55}
+    \subitem {getFileName}, \hyperpage{56}
+    \subitem {getHeight}, \hyperpage{56}
+    \subitem {getImageFromFile}, \hyperpage{56}
+    \subitem {getPixel}, \hyperpage{57}
+    \subitem {getWidth}, \hyperpage{57}
+    \subitem {ImageResource}, \hyperpage{52--54}
+    \subitem {imageToPixels}, \hyperpage{58}
+    \subitem {init}, \hyperpage{58, 59}
+    \subitem {intsToPixels}, \hyperpage{59}
+    \subitem {myDisplay}, \hyperpage{65}
+    \subitem {myFileName}, \hyperpage{65}
+    \subitem {myImage}, \hyperpage{65}
+    \subitem {myPath}, \hyperpage{65}
+    \subitem {myPixels}, \hyperpage{66}
+    \subitem {pixels}, \hyperpage{60}
+    \subitem {pixelsToInts}, \hyperpage{60}
+    \subitem {save}, \hyperpage{61}
+    \subitem {saveAs}, \hyperpage{62}
+    \subitem {setFileName}, \hyperpage{62}
+    \subitem {setPath}, \hyperpage{63}
+    \subitem {setPixel}, \hyperpage{63}
+    \subitem {toString}, \hyperpage{64}
+    \subitem {updateImage}, \hyperpage{64}
+  \item {edu.duke.Pixel}, \hyperpage{93}
+    \subitem {alpha}, \hyperpage{100}
+    \subitem {blue}, \hyperpage{100}
+    \subitem {clamp}, \hyperpage{94}
+    \subitem {getAlpha}, \hyperpage{95}
+    \subitem {getBlue}, \hyperpage{95}
+    \subitem {getGreen}, \hyperpage{96}
+    \subitem {getRed}, \hyperpage{96}
+    \subitem {getX}, \hyperpage{97}
+    \subitem {getY}, \hyperpage{97}
+    \subitem {green}, \hyperpage{101}
+    \subitem {myX}, \hyperpage{101}
+    \subitem {myY}, \hyperpage{101}
+    \subitem {Pixel}, \hyperpage{94}
+    \subitem {red}, \hyperpage{101}
+    \subitem {setAlpha}, \hyperpage{98}
+    \subitem {setBlue}, \hyperpage{98}
+    \subitem {setGreen}, \hyperpage{99}
+    \subitem {setRed}, \hyperpage{99}
+    \subitem {toString}, \hyperpage{100}
+  \item {edu.duke.Point}, \hyperpage{105}
+    \subitem {distance}, \hyperpage{106}
+    \subitem {getX}, \hyperpage{107}
+    \subitem {getY}, \hyperpage{107}
+    \subitem {main}, \hyperpage{107}
+    \subitem {Point}, \hyperpage{105}
+    \subitem {toString}, \hyperpage{108}
+    \subitem {x}, \hyperpage{108}
+    \subitem {y}, \hyperpage{108}
+  \item {edu.duke.RangeResource}, \hyperpage{109}
+    \subitem {makeValues}, \hyperpage{112}
+    \subitem {myEnd}, \hyperpage{113}
+    \subitem {myIncrement}, \hyperpage{113}
+    \subitem {myStart}, \hyperpage{113}
+    \subitem {myValues}, \hyperpage{113}
+    \subitem {RangeResource}, \hyperpage{110, 111}
+    \subitem {sequence}, \hyperpage{112}
+    \subitem {toString}, \hyperpage{112}
+  \item {edu.duke.ResourceException}, \hyperpage{131}
+    \subitem {ResourceException}, \hyperpage{132}
+    \subitem {serialVersionUID}, \hyperpage{132}
+  \item {edu.duke.Shape}, \hyperpage{135}
+    \subitem {addPoint}, \hyperpage{137}
+    \subitem {getLastPoint}, \hyperpage{138}
+    \subitem {getPoints}, \hyperpage{138}
+    \subitem {points}, \hyperpage{139}
+    \subitem {Shape}, \hyperpage{137}
+  \item {edu.duke.StorageResource}, \hyperpage{139}
+    \subitem {add}, \hyperpage{141}
+    \subitem {clear}, \hyperpage{141}
+    \subitem {contains}, \hyperpage{141}
+    \subitem {data}, \hyperpage{141}
+    \subitem {myStrings}, \hyperpage{142}
+    \subitem {size}, \hyperpage{142}
+    \subitem {StorageResource}, \hyperpage{140}
+  \item {edu.duke.URLResource}, \hyperpage{149}
+    \subitem {asString}, \hyperpage{151}
+    \subitem {getCSVHeaders}, \hyperpage{151}
+    \subitem {getCSVParser}, \hyperpage{151--153}
+    \subitem {initFromStream}, \hyperpage{154}
+    \subitem {lines}, \hyperpage{154}
+    \subitem {myPath}, \hyperpage{155}
+    \subitem {mySource}, \hyperpage{155}
+    \subitem {URLResource}, \hyperpage{150}
+    \subitem {words}, \hyperpage{154}
+  \item {EfficientRater}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{18}
+
+  \indexspace
+
+  \item {FileResource}
+    \subitem {edu.duke.FileResource}, \hyperpage{21--24}
+  \item {filterBy}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{74}
+  \item {findMaxNumOfRatingsByRater}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{37}
+  \item {findNumOfRater}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{38}
+  \item {findRatingsOfMovie}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{38}
+  \item {fourth}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{88}
+  \item {FourthRatings}
+    \subitem {movieRecommendaton.ratings.FourthRatings}, \hyperpage{43}
+
+  \indexspace
+
+  \item {GenreFilter}
+    \subitem {movieRecommendaton.filters.GenreFilter}, \hyperpage{50}
+  \item {genres}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{71}
+  \item {getAlpha}
+    \subitem {edu.duke.Pixel}, \hyperpage{95}
+  \item {getAverageByID}
+    \subitem {movieRecommendaton.ratings.FourthRatings}, \hyperpage{44}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{134}
+    \subitem {movieRecommendaton.ratings.ThirdRatings}, \hyperpage{144}
+  \item {getAverageRatings}
+    \subitem {movieRecommendaton.ratings.FourthRatings}, \hyperpage{45}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{134}
+    \subitem {movieRecommendaton.ratings.ThirdRatings}, \hyperpage{144}
+  \item {getAverageRatingsByFilter}
+    \subitem {movieRecommendaton.ratings.FourthRatings}, \hyperpage{45}
+    \subitem {movieRecommendaton.ratings.ThirdRatings}, \hyperpage{145}
+  \item {getBlankImage}
+    \subitem {edu.duke.ImageResource}, \hyperpage{55}
+  \item {getBlue}
+    \subitem {edu.duke.Pixel}, \hyperpage{95}
+  \item {getCountry}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{70}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{75}
+  \item {getCSVHeaders}
+    \subitem {edu.duke.FileResource}, \hyperpage{25}
+    \subitem {edu.duke.URLResource}, \hyperpage{151}
+  \item {getCSVParser}
+    \subitem {edu.duke.FileResource}, \hyperpage{26--28}
+    \subitem {edu.duke.URLResource}, \hyperpage{151--153}
+  \item {getDirector}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{70}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{75}
+  \item {getFileName}
+    \subitem {edu.duke.ImageResource}, \hyperpage{56}
+  \item {getGenres}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{70}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{76}
+  \item {getGreen}
+    \subitem {edu.duke.Pixel}, \hyperpage{96}
+  \item {getHeight}
+    \subitem {edu.duke.ImageResource}, \hyperpage{56}
+  \item {getID}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{70}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{18}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{103}
+    \subitem {movieRecommendaton.raters.Rater}, \hyperpage{115}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{134}
+  \item {getImageFromFile}
+    \subitem {edu.duke.ImageResource}, \hyperpage{56}
+  \item {getItem}
+    \subitem {movieRecommendaton.ratings.Rating}, \hyperpage{123}
+  \item {getItemsRated}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{18}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{103}
+    \subitem {movieRecommendaton.raters.Rater}, \hyperpage{115}
+  \item {getItemsToRate}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{126}
+    \subitem {movieRecommendaton.recommenderrunner.Recommender}, 
+		\hyperpage{130}
+  \item {getLastPoint}
+    \subitem {edu.duke.Shape}, \hyperpage{138}
+  \item {getMinutes}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{70}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{77}
+  \item {getMovie}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{78}
+  \item {getMovieSize}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{134}
+  \item {getPixel}
+    \subitem {edu.duke.ImageResource}, \hyperpage{57}
+  \item {getPoints}
+    \subitem {edu.duke.Shape}, \hyperpage{138}
+  \item {getPoster}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{71}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{78}
+  \item {getRater}
+    \subitem {movieRecommendaton.raters.RaterDatabase}, \hyperpage{119}
+  \item {getRaters}
+    \subitem {movieRecommendaton.raters.RaterDatabase}, \hyperpage{120}
+  \item {getRaterSize}
+    \subitem {movieRecommendaton.ratings.FourthRatings}, \hyperpage{46}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{135}
+    \subitem {movieRecommendaton.ratings.ThirdRatings}, \hyperpage{146}
+  \item {getRating}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{18}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{103}
+    \subitem {movieRecommendaton.raters.Rater}, \hyperpage{116}
+  \item {getRed}
+    \subitem {edu.duke.Pixel}, \hyperpage{96}
+  \item {getSimilarities}
+    \subitem {movieRecommendaton.ratings.FourthRatings}, \hyperpage{47}
+  \item {getSimilarRatings}
+    \subitem {movieRecommendaton.ratings.FourthRatings}, \hyperpage{48}
+  \item {getTitle}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{71}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{78}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{135}
+  \item {getValue}
+    \subitem {movieRecommendaton.ratings.Rating}, \hyperpage{124}
+  \item {getWidth}
+    \subitem {edu.duke.ImageResource}, \hyperpage{57}
+  \item {getX}
+    \subitem {edu.duke.Pixel}, \hyperpage{97}
+    \subitem {edu.duke.Point}, \hyperpage{107}
+  \item {getY}
+    \subitem {edu.duke.Pixel}, \hyperpage{97}
+    \subitem {edu.duke.Point}, \hyperpage{107}
+  \item {getYear}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{71}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{79}
+  \item {green}
+    \subitem {edu.duke.Pixel}, \hyperpage{101}
+
+  \indexspace
+
+  \item {hasRating}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{18}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{104}
+    \subitem {movieRecommendaton.raters.Rater}, \hyperpage{116}
+
+  \indexspace
+
+  \item {id}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{72}
+  \item {ImageResource}
+    \subitem {edu.duke.ImageResource}, \hyperpage{52--54}
+  \item {imageToPixels}
+    \subitem {edu.duke.ImageResource}, \hyperpage{58}
+  \item {init}
+    \subitem {edu.duke.ImageResource}, \hyperpage{58, 59}
+  \item {initFromStream}
+    \subitem {edu.duke.FileResource}, \hyperpage{28}
+    \subitem {edu.duke.URLResource}, \hyperpage{154}
+  \item {initialize}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, 
+		\hyperpage{80, 81}
+    \subitem {movieRecommendaton.raters.RaterDatabase}, 
+		\hyperpage{120, 121}
+  \item {initRead}
+    \subitem {edu.duke.FileResource}, \hyperpage{29, 30}
+  \item {initWrite}
+    \subitem {edu.duke.FileResource}, \hyperpage{30, 31}
+  \item {intsToPixels}
+    \subitem {edu.duke.ImageResource}, \hyperpage{59}
+  \item {item}
+    \subitem {movieRecommendaton.ratings.Rating}, \hyperpage{125}
+
+  \indexspace
+
+  \item {lines}
+    \subitem {edu.duke.FileResource}, \hyperpage{31}
+    \subitem {edu.duke.URLResource}, \hyperpage{154}
+  \item {loadMovies}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{82}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{39}
+  \item {loadRaters}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{40}
+
+  \indexspace
+
+  \item {main}
+    \subitem {edu.duke.Point}, \hyperpage{107}
+    \subitem {movieRecommendaton.main.Main}, \hyperpage{66}
+  \item {makeValues}
+    \subitem {edu.duke.RangeResource}, \hyperpage{112}
+  \item {maxRecNum}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{128}
+  \item {minimalRaters}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{128}
+  \item {minutes}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{72}
+  \item {MinutesFilter}
+    \subitem {movieRecommendaton.filters.MinutesFilter}, \hyperpage{68}
+  \item {Movie}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{69, 70}
+  \item {movieRecommendaton.filters}, \hyperpage{9}
+  \item {movieRecommendaton.filters.AllFilters}, \hyperpage{11}
+    \subitem {addFilter}, \hyperpage{12}
+    \subitem {AllFilters}, \hyperpage{12}
+    \subitem {satisfies}, \hyperpage{12}
+  \item {movieRecommendaton.filters.DirectorsFilter}, \hyperpage{13}
+    \subitem {DirectorsFilter}, \hyperpage{14}
+    \subitem {myDirectors}, \hyperpage{15}
+    \subitem {satisfies}, \hyperpage{14}
+  \item {movieRecommendaton.filters.Filter}, \hyperpage{35}
+    \subitem {satisfies}, \hyperpage{36}
+  \item {movieRecommendaton.filters.GenreFilter}, \hyperpage{49}
+    \subitem {GenreFilter}, \hyperpage{50}
+    \subitem {myGenre}, \hyperpage{50}
+    \subitem {satisfies}, \hyperpage{50}
+  \item {movieRecommendaton.filters.MinutesFilter}, \hyperpage{67}
+    \subitem {MinutesFilter}, \hyperpage{68}
+    \subitem {myMax}, \hyperpage{68}
+    \subitem {myMin}, \hyperpage{68}
+    \subitem {satisfies}, \hyperpage{68}
+  \item {movieRecommendaton.filters.TrueFilter}, \hyperpage{148}
+    \subitem {satisfies}, \hyperpage{148}
+  \item {movieRecommendaton.filters.YearAfterFilter}, \hyperpage{155}
+    \subitem {myYear}, \hyperpage{157}
+    \subitem {satisfies}, \hyperpage{156}
+    \subitem {YearAfterFilter}, \hyperpage{156}
+  \item {movieRecommendaton.main}, \hyperpage{10}
+  \item {movieRecommendaton.main.Main}, \hyperpage{66}
+    \subitem {main}, \hyperpage{66}
+  \item {movieRecommendaton.movierunner}, \hyperpage{10}
+  \item {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{85}
+    \subitem {fourth}, \hyperpage{88}
+    \subitem {MovieRunnerSimilarRatings}, \hyperpage{85}
+    \subitem {printAverageRatings}, \hyperpage{86}
+    \subitem {printSimilarRatings}, \hyperpage{86}
+    \subitem {printSimilarRatingsByDirector}, \hyperpage{86}
+    \subitem {printSimilarRatingsByGenre}, \hyperpage{87}
+    \subitem {printSimilarRatingsByGenreAndMinutes}, \hyperpage{87}
+    \subitem {printSimilarRatingsByYearAfterAndMinutes}, \hyperpage{88}
+  \item {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{89}
+    \subitem {MovieRunnerWithFilters}, \hyperpage{89}
+    \subitem {printAverageRatings}, \hyperpage{90}
+    \subitem {printAverageRatingsByDirectors}, \hyperpage{90}
+    \subitem {printAverageRatingsByDirectorsAndMinutes}, \hyperpage{90}
+    \subitem {printAverageRatingsByGenre}, \hyperpage{91}
+    \subitem {printAverageRatingsByMinutes}, \hyperpage{91}
+    \subitem {printAverageRatingsByYearAfter}, \hyperpage{91}
+    \subitem {printAverageRatingsByYearAfterAndGenre}, \hyperpage{92}
+    \subitem {ratingFileName}, \hyperpage{92}
+    \subitem {tr}, \hyperpage{92}
+  \item {movieRecommendaton.movies}, \hyperpage{10}
+  \item {movieRecommendaton.movies.Movie}, \hyperpage{69}
+    \subitem {country}, \hyperpage{71}
+    \subitem {director}, \hyperpage{71}
+    \subitem {genres}, \hyperpage{71}
+    \subitem {getCountry}, \hyperpage{70}
+    \subitem {getDirector}, \hyperpage{70}
+    \subitem {getGenres}, \hyperpage{70}
+    \subitem {getID}, \hyperpage{70}
+    \subitem {getMinutes}, \hyperpage{70}
+    \subitem {getPoster}, \hyperpage{71}
+    \subitem {getTitle}, \hyperpage{71}
+    \subitem {getYear}, \hyperpage{71}
+    \subitem {id}, \hyperpage{72}
+    \subitem {minutes}, \hyperpage{72}
+    \subitem {Movie}, \hyperpage{69, 70}
+    \subitem {poster}, \hyperpage{72}
+    \subitem {title}, \hyperpage{72}
+    \subitem {toString}, \hyperpage{71}
+    \subitem {year}, \hyperpage{72}
+  \item {movieRecommendaton.movies.MovieDatabase}, \hyperpage{73}
+    \subitem {containsID}, \hyperpage{74}
+    \subitem {filterBy}, \hyperpage{74}
+    \subitem {getCountry}, \hyperpage{75}
+    \subitem {getDirector}, \hyperpage{75}
+    \subitem {getGenres}, \hyperpage{76}
+    \subitem {getMinutes}, \hyperpage{77}
+    \subitem {getMovie}, \hyperpage{78}
+    \subitem {getPoster}, \hyperpage{78}
+    \subitem {getTitle}, \hyperpage{78}
+    \subitem {getYear}, \hyperpage{79}
+    \subitem {initialize}, \hyperpage{80, 81}
+    \subitem {loadMovies}, \hyperpage{82}
+    \subitem {ourMovies}, \hyperpage{84}
+    \subitem {size}, \hyperpage{83}
+  \item {movieRecommendaton.raters}, \hyperpage{10}
+  \item {movieRecommendaton.raters.EfficientRater}, \hyperpage{17}
+    \subitem {addRating}, \hyperpage{18}
+    \subitem {EfficientRater}, \hyperpage{18}
+    \subitem {getID}, \hyperpage{18}
+    \subitem {getItemsRated}, \hyperpage{18}
+    \subitem {getRating}, \hyperpage{18}
+    \subitem {hasRating}, \hyperpage{18}
+    \subitem {myID}, \hyperpage{19}
+    \subitem {myRatings}, \hyperpage{19}
+    \subitem {numRatings}, \hyperpage{19}
+  \item {movieRecommendaton.raters.PlainRater}, \hyperpage{102}
+    \subitem {addRating}, \hyperpage{103}
+    \subitem {getID}, \hyperpage{103}
+    \subitem {getItemsRated}, \hyperpage{103}
+    \subitem {getRating}, \hyperpage{103}
+    \subitem {hasRating}, \hyperpage{104}
+    \subitem {myID}, \hyperpage{104}
+    \subitem {myRatings}, \hyperpage{104}
+    \subitem {numRatings}, \hyperpage{104}
+    \subitem {PlainRater}, \hyperpage{103}
+  \item {movieRecommendaton.raters.Rater}, \hyperpage{114}
+    \subitem {addRating}, \hyperpage{114}
+    \subitem {getID}, \hyperpage{115}
+    \subitem {getItemsRated}, \hyperpage{115}
+    \subitem {getRating}, \hyperpage{116}
+    \subitem {hasRating}, \hyperpage{116}
+    \subitem {numRatings}, \hyperpage{116}
+  \item {movieRecommendaton.raters.RaterDatabase}, \hyperpage{117}
+    \subitem {addRaterRating}, \hyperpage{118}
+    \subitem {addRatings}, \hyperpage{118}
+    \subitem {getRater}, \hyperpage{119}
+    \subitem {getRaters}, \hyperpage{120}
+    \subitem {initialize}, \hyperpage{120, 121}
+    \subitem {ourRaters}, \hyperpage{122}
+    \subitem {size}, \hyperpage{121}
+  \item {movieRecommendaton.ratings}, \hyperpage{10}
+  \item {movieRecommendaton.ratings.FirstRatings}, \hyperpage{37}
+    \subitem {countRatedMovies}, \hyperpage{37}
+    \subitem {findMaxNumOfRatingsByRater}, \hyperpage{37}
+    \subitem {findNumOfRater}, \hyperpage{38}
+    \subitem {findRatingsOfMovie}, \hyperpage{38}
+    \subitem {loadMovies}, \hyperpage{39}
+    \subitem {loadRaters}, \hyperpage{40}
+    \subitem {test}, \hyperpage{41}
+    \subitem {testLoadMovies}, \hyperpage{41}
+    \subitem {testLoadRaters}, \hyperpage{42}
+  \item {movieRecommendaton.ratings.FourthRatings}, \hyperpage{42}
+    \subitem {dotProduct}, \hyperpage{43}
+    \subitem {FourthRatings}, \hyperpage{43}
+    \subitem {getAverageByID}, \hyperpage{44}
+    \subitem {getAverageRatings}, \hyperpage{45}
+    \subitem {getAverageRatingsByFilter}, \hyperpage{45}
+    \subitem {getRaterSize}, \hyperpage{46}
+    \subitem {getSimilarities}, \hyperpage{47}
+    \subitem {getSimilarRatings}, \hyperpage{48}
+  \item {movieRecommendaton.ratings.Rating}, \hyperpage{122}
+    \subitem {compareTo}, \hyperpage{123}
+    \subitem {getItem}, \hyperpage{123}
+    \subitem {getValue}, \hyperpage{124}
+    \subitem {item}, \hyperpage{125}
+    \subitem {Rating}, \hyperpage{123}
+    \subitem {toString}, \hyperpage{124}
+    \subitem {value}, \hyperpage{125}
+  \item {movieRecommendaton.ratings.SecondRatings}, \hyperpage{132}
+    \subitem {getAverageByID}, \hyperpage{134}
+    \subitem {getAverageRatings}, \hyperpage{134}
+    \subitem {getID}, \hyperpage{134}
+    \subitem {getMovieSize}, \hyperpage{134}
+    \subitem {getRaterSize}, \hyperpage{135}
+    \subitem {getTitle}, \hyperpage{135}
+    \subitem {myMovies}, \hyperpage{135}
+    \subitem {myRaters}, \hyperpage{135}
+    \subitem {SecondRatings}, \hyperpage{133}
+  \item {movieRecommendaton.ratings.ThirdRatings}, \hyperpage{143}
+    \subitem {getAverageByID}, \hyperpage{144}
+    \subitem {getAverageRatings}, \hyperpage{144}
+    \subitem {getAverageRatingsByFilter}, \hyperpage{145}
+    \subitem {getRaterSize}, \hyperpage{146}
+    \subitem {myRaters}, \hyperpage{147}
+    \subitem {ThirdRatings}, \hyperpage{143}
+  \item {movieRecommendaton.recommenderrunner}, \hyperpage{10}
+  \item {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{125}
+    \subitem {getItemsToRate}, \hyperpage{126}
+    \subitem {maxRecNum}, \hyperpage{128}
+    \subitem {minimalRaters}, \hyperpage{128}
+    \subitem {myRandom}, \hyperpage{128}
+    \subitem {numSimilarRaters}, \hyperpage{128}
+    \subitem {printOut}, \hyperpage{127}
+    \subitem {printRecommendationsFor}, \hyperpage{127}
+    \subitem {RecommendationRunner}, \hyperpage{126}
+    \subitem {toRateNum}, \hyperpage{129}
+  \item {movieRecommendaton.recommenderrunner.Recommender}, 
+		\hyperpage{129}
+    \subitem {getItemsToRate}, \hyperpage{130}
+    \subitem {printRecommendationsFor}, \hyperpage{130}
+  \item {MovieRunnerSimilarRatings}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{85}
+  \item {MovieRunnerWithFilters}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{89}
+  \item {myDirectors}
+    \subitem {movieRecommendaton.filters.DirectorsFilter}, 
+		\hyperpage{15}
+  \item {myDisplay}
+    \subitem {edu.duke.ImageResource}, \hyperpage{65}
+  \item {myEnd}
+    \subitem {edu.duke.RangeResource}, \hyperpage{113}
+  \item {myFileName}
+    \subitem {edu.duke.ImageResource}, \hyperpage{65}
+  \item {myGenre}
+    \subitem {movieRecommendaton.filters.GenreFilter}, \hyperpage{50}
+  \item {myID}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{19}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{104}
+  \item {myImage}
+    \subitem {edu.duke.ImageResource}, \hyperpage{65}
+  \item {myIncrement}
+    \subitem {edu.duke.RangeResource}, \hyperpage{113}
+  \item {myMax}
+    \subitem {movieRecommendaton.filters.MinutesFilter}, \hyperpage{68}
+  \item {myMin}
+    \subitem {movieRecommendaton.filters.MinutesFilter}, \hyperpage{68}
+  \item {myMovies}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{135}
+  \item {myPath}
+    \subitem {edu.duke.FileResource}, \hyperpage{34}
+    \subitem {edu.duke.ImageResource}, \hyperpage{65}
+    \subitem {edu.duke.URLResource}, \hyperpage{155}
+  \item {myPixels}
+    \subitem {edu.duke.ImageResource}, \hyperpage{66}
+  \item {myRandom}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{128}
+  \item {myRaters}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{135}
+    \subitem {movieRecommendaton.ratings.ThirdRatings}, \hyperpage{147}
+  \item {myRatings}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{19}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{104}
+  \item {mySaveFile}
+    \subitem {edu.duke.FileResource}, \hyperpage{34}
+  \item {mySource}
+    \subitem {edu.duke.FileResource}, \hyperpage{35}
+    \subitem {edu.duke.URLResource}, \hyperpage{155}
+  \item {myStart}
+    \subitem {edu.duke.RangeResource}, \hyperpage{113}
+  \item {myStrings}
+    \subitem {edu.duke.StorageResource}, \hyperpage{142}
+  \item {myValues}
+    \subitem {edu.duke.RangeResource}, \hyperpage{113}
+  \item {myX}
+    \subitem {edu.duke.Pixel}, \hyperpage{101}
+  \item {myY}
+    \subitem {edu.duke.Pixel}, \hyperpage{101}
+  \item {myYear}
+    \subitem {movieRecommendaton.filters.YearAfterFilter}, 
+		\hyperpage{157}
+
+  \indexspace
+
+  \item {numRatings}
+    \subitem {movieRecommendaton.raters.EfficientRater}, \hyperpage{19}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{104}
+    \subitem {movieRecommendaton.raters.Rater}, \hyperpage{116}
+  \item {numSimilarRaters}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{128}
+
+  \indexspace
+
+  \item {ourMovies}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{84}
+  \item {ourRaters}
+    \subitem {movieRecommendaton.raters.RaterDatabase}, \hyperpage{122}
+
+  \indexspace
+
+  \item {Pixel}
+    \subitem {edu.duke.Pixel}, \hyperpage{94}
+  \item {pixels}
+    \subitem {edu.duke.ImageResource}, \hyperpage{60}
+  \item {pixelsToInts}
+    \subitem {edu.duke.ImageResource}, \hyperpage{60}
+  \item {PlainRater}
+    \subitem {movieRecommendaton.raters.PlainRater}, \hyperpage{103}
+  \item {Point}
+    \subitem {edu.duke.Point}, \hyperpage{105}
+  \item {points}
+    \subitem {edu.duke.Shape}, \hyperpage{139}
+  \item {poster}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{72}
+  \item {printAverageRatings}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{86}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{90}
+  \item {printAverageRatingsByDirectors}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{90}
+  \item {printAverageRatingsByDirectorsAndMinutes}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{90}
+  \item {printAverageRatingsByGenre}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{91}
+  \item {printAverageRatingsByMinutes}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{91}
+  \item {printAverageRatingsByYearAfter}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{91}
+  \item {printAverageRatingsByYearAfterAndGenre}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{92}
+  \item {printOut}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{127}
+  \item {printRecommendationsFor}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{127}
+    \subitem {movieRecommendaton.recommenderrunner.Recommender}, 
+		\hyperpage{130}
+  \item {printSimilarRatings}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{86}
+  \item {printSimilarRatingsByDirector}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{86}
+  \item {printSimilarRatingsByGenre}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{87}
+  \item {printSimilarRatingsByGenreAndMinutes}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{87}
+  \item {printSimilarRatingsByYearAfterAndMinutes}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerSimilarRatings}, 
+		\hyperpage{88}
+
+  \indexspace
+
+  \item {RangeResource}
+    \subitem {edu.duke.RangeResource}, \hyperpage{110, 111}
+  \item {Rating}
+    \subitem {movieRecommendaton.ratings.Rating}, \hyperpage{123}
+  \item {ratingFileName}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{92}
+  \item {RecommendationRunner}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{126}
+  \item {red}
+    \subitem {edu.duke.Pixel}, \hyperpage{101}
+  \item {ResourceException}
+    \subitem {edu.duke.ResourceException}, \hyperpage{132}
+
+  \indexspace
+
+  \item {satisfies}
+    \subitem {movieRecommendaton.filters.AllFilters}, \hyperpage{12}
+    \subitem {movieRecommendaton.filters.DirectorsFilter}, 
+		\hyperpage{14}
+    \subitem {movieRecommendaton.filters.Filter}, \hyperpage{36}
+    \subitem {movieRecommendaton.filters.GenreFilter}, \hyperpage{50}
+    \subitem {movieRecommendaton.filters.MinutesFilter}, \hyperpage{68}
+    \subitem {movieRecommendaton.filters.TrueFilter}, \hyperpage{148}
+    \subitem {movieRecommendaton.filters.YearAfterFilter}, 
+		\hyperpage{156}
+  \item {save}
+    \subitem {edu.duke.ImageResource}, \hyperpage{61}
+  \item {saveAs}
+    \subitem {edu.duke.ImageResource}, \hyperpage{62}
+  \item {SecondRatings}
+    \subitem {movieRecommendaton.ratings.SecondRatings}, 
+		\hyperpage{133}
+  \item {selectedFiles}
+    \subitem {edu.duke.DirectoryResource}, \hyperpage{16}
+  \item {sequence}
+    \subitem {edu.duke.RangeResource}, \hyperpage{112}
+  \item {serialVersionUID}
+    \subitem {edu.duke.ResourceException}, \hyperpage{132}
+  \item {setAlpha}
+    \subitem {edu.duke.Pixel}, \hyperpage{98}
+  \item {setBlue}
+    \subitem {edu.duke.Pixel}, \hyperpage{98}
+  \item {setFileName}
+    \subitem {edu.duke.ImageResource}, \hyperpage{62}
+  \item {setGreen}
+    \subitem {edu.duke.Pixel}, \hyperpage{99}
+  \item {setPath}
+    \subitem {edu.duke.ImageResource}, \hyperpage{63}
+  \item {setPixel}
+    \subitem {edu.duke.ImageResource}, \hyperpage{63}
+  \item {setRed}
+    \subitem {edu.duke.Pixel}, \hyperpage{99}
+  \item {Shape}
+    \subitem {edu.duke.Shape}, \hyperpage{137}
+  \item {size}
+    \subitem {edu.duke.StorageResource}, \hyperpage{142}
+    \subitem {movieRecommendaton.movies.MovieDatabase}, \hyperpage{83}
+    \subitem {movieRecommendaton.raters.RaterDatabase}, \hyperpage{121}
+  \item {src/main/java/edu/duke/DirectoryResource.java}, 
+		\hyperpage{159}
+  \item {src/main/java/edu/duke/FileResource.java}, \hyperpage{159}
+  \item {src/main/java/edu/duke/FileSelector.java}, \hyperpage{159}
+  \item {src/main/java/edu/duke/ImageFrame.java}, \hyperpage{160}
+  \item {src/main/java/edu/duke/ImageResource.java}, \hyperpage{160}
+  \item {src/main/java/edu/duke/package-\/info.java}, \hyperpage{160}
+  \item {src/main/java/edu/duke/Pixel.java}, \hyperpage{160}
+  \item {src/main/java/edu/duke/Point.java}, \hyperpage{161}
+  \item {src/main/java/edu/duke/RangeResource.java}, \hyperpage{161}
+  \item {src/main/java/edu/duke/ResourceException.java}, 
+		\hyperpage{161}
+  \item {src/main/java/edu/duke/Shape.java}, \hyperpage{161}
+  \item {src/main/java/edu/duke/StorageResource.java}, \hyperpage{162}
+  \item {src/main/java/edu/duke/TextIterable.java}, \hyperpage{162}
+  \item {src/main/java/edu/duke/URLResource.java}, \hyperpage{162}
+  \item {src/main/java/movieRecommendaton/filters/AllFilters.java}, 
+		\hyperpage{162}
+  \item {src/main/java/movieRecommendaton/filters/DirectorsFilter.java}, 
+		\hyperpage{163}
+  \item {src/main/java/movieRecommendaton/filters/Filter.java}, 
+		\hyperpage{163}
+  \item {src/main/java/movieRecommendaton/filters/GenreFilter.java}, 
+		\hyperpage{163}
+  \item {src/main/java/movieRecommendaton/filters/MinutesFilter.java}, 
+		\hyperpage{163}
+  \item {src/main/java/movieRecommendaton/filters/TrueFilter.java}, 
+		\hyperpage{164}
+  \item {src/main/java/movieRecommendaton/filters/YearAfterFilter.java}, 
+		\hyperpage{164}
+  \item {src/main/java/movieRecommendaton/main/Main.java}, 
+		\hyperpage{164}
+  \item {src/main/java/movieRecommendaton/movierunner/MovieRunnerSimilarRatings.java}, 
+		\hyperpage{164}
+  \item {src/main/java/movieRecommendaton/movierunner/MovieRunnerWithFilters.java}, 
+		\hyperpage{165}
+  \item {src/main/java/movieRecommendaton/movies/Movie.java}, 
+		\hyperpage{165}
+  \item {src/main/java/movieRecommendaton/movies/MovieDatabase.java}, 
+		\hyperpage{165}
+  \item {src/main/java/movieRecommendaton/raters/EfficientRater.java}, 
+		\hyperpage{165}
+  \item {src/main/java/movieRecommendaton/raters/PlainRater.java}, 
+		\hyperpage{166}
+  \item {src/main/java/movieRecommendaton/raters/Rater.java}, 
+		\hyperpage{166}
+  \item {src/main/java/movieRecommendaton/raters/RaterDatabase.java}, 
+		\hyperpage{166}
+  \item {src/main/java/movieRecommendaton/ratings/FirstRatings.java}, 
+		\hyperpage{166}
+  \item {src/main/java/movieRecommendaton/ratings/FourthRatings.java}, 
+		\hyperpage{167}
+  \item {src/main/java/movieRecommendaton/ratings/Rating.java}, 
+		\hyperpage{167}
+  \item {src/main/java/movieRecommendaton/ratings/SecondRatings.java}, 
+		\hyperpage{167}
+  \item {src/main/java/movieRecommendaton/ratings/ThirdRatings.java}, 
+		\hyperpage{167}
+  \item {src/main/java/movieRecommendaton/recommenderrunner/RecommendationRunner.java}, 
+		\hyperpage{168}
+  \item {src/main/java/movieRecommendaton/recommenderrunner/Recommender.java}, 
+		\hyperpage{168}
+  \item {StorageResource}
+    \subitem {edu.duke.StorageResource}, \hyperpage{140}
+
+  \indexspace
+
+  \item {test}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{41}
+  \item {testLoadMovies}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{41}
+  \item {testLoadRaters}
+    \subitem {movieRecommendaton.ratings.FirstRatings}, \hyperpage{42}
+  \item {ThirdRatings}
+    \subitem {movieRecommendaton.ratings.ThirdRatings}, \hyperpage{143}
+  \item {title}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{72}
+  \item {toRateNum}
+    \subitem {movieRecommendaton.recommenderrunner.RecommendationRunner}, 
+		\hyperpage{129}
+  \item {toString}
+    \subitem {edu.duke.ImageResource}, \hyperpage{64}
+    \subitem {edu.duke.Pixel}, \hyperpage{100}
+    \subitem {edu.duke.Point}, \hyperpage{108}
+    \subitem {edu.duke.RangeResource}, \hyperpage{112}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{71}
+    \subitem {movieRecommendaton.ratings.Rating}, \hyperpage{124}
+  \item {tr}
+    \subitem {movieRecommendaton.movierunner.MovieRunnerWithFilters}, 
+		\hyperpage{92}
+
+  \indexspace
+
+  \item {updateImage}
+    \subitem {edu.duke.ImageResource}, \hyperpage{64}
+  \item {URLResource}
+    \subitem {edu.duke.URLResource}, \hyperpage{150}
+
+  \indexspace
+
+  \item {value}
+    \subitem {movieRecommendaton.ratings.Rating}, \hyperpage{125}
+
+  \indexspace
+
+  \item {words}
+    \subitem {edu.duke.FileResource}, \hyperpage{32}
+    \subitem {edu.duke.URLResource}, \hyperpage{154}
+  \item {write}
+    \subitem {edu.duke.FileResource}, \hyperpage{32--34}
+
+  \indexspace
+
+  \item {x}
+    \subitem {edu.duke.Point}, \hyperpage{108}
+
+  \indexspace
+
+  \item {y}
+    \subitem {edu.duke.Point}, \hyperpage{108}
+  \item {year}
+    \subitem {movieRecommendaton.movies.Movie}, \hyperpage{72}
+  \item {YearAfterFilter}
+    \subitem {movieRecommendaton.filters.YearAfterFilter}, 
+		\hyperpage{156}
+
+\end{theindex}
