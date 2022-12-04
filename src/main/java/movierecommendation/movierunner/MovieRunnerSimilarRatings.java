@@ -20,7 +20,8 @@ public class MovieRunnerSimilarRatings {
     static final String MOVIES = " movies ";
     static final String RATINGS = " ratings ";
 
-    static final String RATINGVALUES = "Rating values of MOVIES with at least ";
+    static final String RATINGVALUES = "Rating values of movies with at least ";
+    static final String RECOMMENDED = " recommended movies were found." ;
     
     public MovieRunnerSimilarRatings(){
         fourth = new FourthRatings("ratings.csv");
@@ -58,7 +59,7 @@ public class MovieRunnerSimilarRatings {
         for (Rating r: list){
             log.log(Logger.Level.INFO, MovieDatabase.getTitle(r.getItem()) + " : " + r.getValue());
         }
-        log.log(Logger.Level.INFO, "\n" + THEREARE + list.size() + " recommended MOVIES were found.");
+        log.log(Logger.Level.INFO, "\n" + THEREARE + list.size() + RECOMMENDED );
     }
 
     /**
@@ -78,7 +79,7 @@ public class MovieRunnerSimilarRatings {
                 num += 1;
             }
         }
-        log.log(Logger.Level.INFO, "\n" + THEREARE + num + " recommended MOVIES were found.");
+        log.log(Logger.Level.INFO, "\n" + THEREARE + num + RECOMMENDED );
     }
 
     /**
@@ -98,7 +99,7 @@ public class MovieRunnerSimilarRatings {
                 num += 1;
             }
         }
-        log.log(Logger.Level.INFO, "\n" + THEREARE + num + " recommended MOVIES were found.");
+        log.log(Logger.Level.INFO, "\n" + THEREARE + num + RECOMMENDED );
     }
 
     /**
@@ -124,7 +125,7 @@ public class MovieRunnerSimilarRatings {
                 num += 1;
             }
         }
-        log.log(Logger.Level.INFO, THEREARE + num + " recommended MOVIES were found.");
+        log.log(Logger.Level.INFO, THEREARE + num + RECOMMENDED );
     }
 
     /**
@@ -150,6 +151,6 @@ public class MovieRunnerSimilarRatings {
                 num += 1;
             }
         }
-        log.log(Logger.Level.INFO, THEREARE + num + " recommended MOVIES were found.");
+        log.log(Logger.Level.INFO, THEREARE + num + RECOMMENDED );
     }
 }
