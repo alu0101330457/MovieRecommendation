@@ -18,13 +18,15 @@ import javax.swing.filechooser.FileFilter;
  */
 class FileSelector {
     // result of selection
-    private static File[] ourFiles;
+    //private static File[] ourFiles;
     // BUGBUG: I think this is the right behavior, remembers where user left it last
     private static JFileChooser ourChooser = new JFileChooser();
     static {
         ourChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
         ourChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
     }
+
+    private static File[] ourFiles;
 
 
     /**

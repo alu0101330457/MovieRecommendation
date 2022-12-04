@@ -205,7 +205,7 @@ public class FirstRatings {
                 String director = currMovie.getDirector().trim();
                 if (director.indexOf(",") == -1){
                     if (!map.containsKey(director)){
-                        map.put(director, new ArrayList<String>());
+                        map.put(director, new ArrayList<>());
                     }
                     String title = currMovie.getTitle();
                     map.get(director).add(title);

@@ -34,7 +34,6 @@ public class RecommendationRunner implements Recommender {
         for (int k=0; k<toRateNum; k++){
             int currIdx = myRandom.nextInt(MovieDatabase.size());;
             String currMovieID = allMovies.get(currIdx);
-            // String currMovieTitle = MovieDatabase.getTitle(currMovieID);
             toRate.add(currMovieID);
         }
         return toRate;
@@ -57,10 +56,8 @@ public class RecommendationRunner implements Recommender {
             for (int k=0; k<num; k++){
                 Rating currRating = result.get(k);
                 String currMovieID = currRating.getItem();
-                // System.out.println(MovieDatabase.getTitle(currMovieID) + " : " + currRating.getValue());
                 String currMovieTitle = MovieDatabase.getTitle(currMovieID);
                 double currRatingValue = currRating.getValue();
-                String currGenre = MovieDatabase.getGenres(currMovieID);
                 body += printOut(currMovieTitle, currRatingValue);
             }
             System.out.println(header + body + "</table>");
