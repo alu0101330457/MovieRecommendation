@@ -120,9 +120,13 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.4.1</version>
                  <configuration>
-                 <excludePackageNames>
-                     src.main.java.edu.duke
-                 </excludePackageNames>
+                     <additionalOptions>
+                         <additionalOption>-Xdoclint:none</additionalOption>
+                     </additionalOptions>
+                     <excludePackageNames>
+                        edu.duke
+                     </excludePackageNames>
+                     <sourcepath>${basedir}/src/main/java</sourcepath>
                 </configuration>
 
             </plugin>
