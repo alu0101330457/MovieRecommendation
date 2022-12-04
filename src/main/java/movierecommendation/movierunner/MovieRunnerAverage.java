@@ -1,7 +1,7 @@
-package movieRecommendation.movierunner;
+package movierecommendation.movierunner;
 
-import movieRecommendation.ratings.Rating;
-import movieRecommendation.ratings.SecondRatings;
+import movierecommendation.ratings.Rating;
+import movierecommendation.ratings.SecondRatings;
 
 import java.util.*;
 
@@ -24,6 +24,7 @@ public class MovieRunnerAverage {
      * Prints the average ratings for the movies in the file.
      */
     public void printAverageRatings(){
+
         System.out.println("There are " + sr.getMovieSize() + " movies in the file.");
         System.out.println("There are " + sr.getRaterSize() + " raters in the file.");
         

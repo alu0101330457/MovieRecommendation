@@ -1,4 +1,4 @@
-package movieRecommendation.filters;
+package movierecommendation.filters;
 
 /**
  * Filter that always returns "true", it's always satisfied.

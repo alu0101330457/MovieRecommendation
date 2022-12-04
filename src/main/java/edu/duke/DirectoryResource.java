@@ -51,7 +51,7 @@ public class DirectoryResource {
         // guaranteed to have at least one item
         if (files[0] == null) {
             // return empty list rather than null, so others can throw the exception if needed
-            return new ArrayList<File>();
+            return new ArrayList<>();
         }
         else {
             return Arrays.asList(files);

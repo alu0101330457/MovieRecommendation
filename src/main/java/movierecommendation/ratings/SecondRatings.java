@@ -1,7 +1,7 @@
-package movieRecommendation.ratings;
+package movierecommendation.ratings;
 
-import movieRecommendation.movies.Movie;
-import movieRecommendation.raters.Rater;
+import movierecommendation.movies.Movie;
+import movierecommendation.raters.Rater;
 
 import java.util.*;
 
@@ -65,7 +65,7 @@ public class SecondRatings {
      */
     public ArrayList<Rating> getAverageRatings(int minimalRaters){
 
-        ArrayList<Rating> allAverageRatings = new ArrayList<Rating>();
+        ArrayList<Rating> allAverageRatings = new ArrayList<>();
         for (Movie currMovie: myMovies){
             String currMovieID = currMovie.getID();
             double averageRating = getAverageByID(currMovieID, minimalRaters);

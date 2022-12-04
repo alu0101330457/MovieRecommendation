@@ -1,9 +1,9 @@
-package movieRecommendation.ratings;
+package movierecommendation.ratings;
 
-import movieRecommendation.movies.MovieDatabase;
-import movieRecommendation.filters.Filter;
-import movieRecommendation.filters.TrueFilter;
-import movieRecommendation.raters.Rater;
+import movierecommendation.movies.MovieDatabase;
+import movierecommendation.filters.Filter;
+import movierecommendation.filters.TrueFilter;
+import movierecommendation.raters.Rater;
 
 import java.util.*;
 
@@ -74,7 +74,7 @@ public class ThirdRatings {
          */
         // Get the ArrayList of Movies from MovieDatabase.
         ArrayList<String> movies = MovieDatabase.filterBy(new TrueFilter());
-        ArrayList<Rating> allAverageRatings = new ArrayList<Rating>();
+        ArrayList<Rating> allAverageRatings = new ArrayList<>();
         for (String currMovieID: movies){
             double averageRating = getAverageByID(currMovieID, minimalRaters);
             allAverageRatings.add(new Rating(currMovieID, averageRating));
@@ -88,7 +88,7 @@ public class ThirdRatings {
      */
     public ArrayList<Rating> getAverageRatingsByFilter(int minimalRaters, Filter filterCriteria){
         ArrayList<String> movieIDs = MovieDatabase.filterBy(filterCriteria);
-        ArrayList<Rating> averageRatings = new ArrayList<Rating>();
+        ArrayList<Rating> averageRatings = new ArrayList<>();
         for (String s: movieIDs){
             double ratingValue = getAverageByID(s, minimalRaters);
             averageRatings.add(new Rating(s, ratingValue));

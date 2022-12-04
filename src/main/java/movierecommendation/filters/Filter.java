@@ -1,4 +1,4 @@
-package movieRecommendation.filters;
+package movierecommendation.filters;
 
 /**
  * Interface that represents a Filter.

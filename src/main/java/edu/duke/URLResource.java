@@ -3,7 +3,7 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 
 import java.io.*;
-import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 
 /**
@@ -50,30 +50,6 @@ public class URLResource {
     private String mySource;
 
     /**
-     * Create a <code>URLResource</code> object bound to the web page whose URL is given as the
-     * parameter.
-     * 
-     * Constructing the object opens a connection and reads the contents of the web page.
-     * 
-     * @param name is the name of the URL, it must start with "http" or "https"
-     * @throws exception if the URL does not start with "http" or "https"
-     */
-    public URLResource (String name) {
-        if (name.startsWith("http://") || name.startsWith("https://")) {
-            try {
-                mySource = initFromStream(new URL(name).openStream());
-                myPath = name;
-            }
-            catch (Exception e) {
-                throw new ResourceException("URLResource: unable to load URL with name " + name, e);
-            }
-        }
-        else {
-            throw new ResourceException("URLResource: name must start with http:// or https://" + name);
-        }
-    }
-
-    /**
      * Allow access to open web page one line at a time.
      * 
      * @return an <code>Iterable</code> that allows access one line at a time
@@ -90,15 +66,6 @@ public class URLResource {
      */
     public Iterable<String> words () {
         return new TextIterable(mySource, "\\s+");
-    }
-
-    /**
-     * Return entire open web page as one string.
-     * 
-     * @return a <code>String</code> that is the contents of the open web page
-     */
-    public String asString () {
-        return mySource;
     }
 
     /**
@@ -181,7 +148,7 @@ public class URLResource {
     private String initFromStream (InputStream stream) {
         BufferedReader buff = null;
         try {
-            buff = new BufferedReader(new InputStreamReader(stream, "UTF-8"));
+            buff = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8));
             StringBuilder contents = new StringBuilder();
             String line = null;
             while ((line = buff.readLine()) != null) {

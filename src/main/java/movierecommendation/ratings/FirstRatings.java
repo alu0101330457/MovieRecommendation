@@ -1,11 +1,11 @@
-package movieRecommendation.ratings;
+package movierecommendation.ratings;
 
 import edu.duke.*;
 import java.util.*;
 
-import movieRecommendation.movies.Movie;
-import movieRecommendation.raters.EfficientRater;
-import movieRecommendation.raters.Rater;
+import movierecommendation.movies.Movie;
+import movierecommendation.raters.EfficientRater;
+import movierecommendation.raters.Rater;
 import org.apache.commons.csv.*;
 
 
@@ -23,7 +23,7 @@ public class FirstRatings {
      * @return ArrayList<Movie> with all the Movie data from the file.
      */
     public ArrayList<Movie> loadMovies(String filename){
-        ArrayList<Movie> movies = new ArrayList<Movie>();
+        ArrayList<Movie> movies = new ArrayList<>();
         FileResource fr = new FileResource(filename);
         CSVParser movieParser = fr.getCSVParser();
         for (CSVRecord currentRow: movieParser){
@@ -48,7 +48,7 @@ public class FirstRatings {
      * @return ArrayList<Rater> with all the Rater data from the file.
      */
     public ArrayList<Rater> loadRaters(String filename){
-        ArrayList<Rater> raters = new ArrayList<Rater>();
+        ArrayList<Rater> raters = new ArrayList<>();
         FileResource fr = new FileResource("data/" + filename);
         CSVParser raterParser = fr.getCSVParser();
         // Initial the String to check if the rater is existed or not. 
@@ -143,7 +143,7 @@ public class FirstRatings {
      */
     public void countRatedMovies(String filename){
         ArrayList<Rater> raters = loadRaters(filename);
-        ArrayList<String> movies = new ArrayList<String>();
+        ArrayList<String> movies = new ArrayList<>();
         for (Rater currRater: raters){
             ArrayList<String> currMovies = currRater.getItemsRated();
             for (String s: currMovies){
@@ -197,7 +197,7 @@ public class FirstRatings {
             System.out.println("There are " + numLength150 + " movies which their lengths are more than 150 min.\n");
             
             // Remember that some movies may have more than one director.
-            HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
+            HashMap<String, ArrayList<String>> map = new HashMap<>();
             for (Movie currMovie: movies){
                 String director = currMovie.getDirector().trim();
                 if (director.indexOf(",") == -1){
@@ -213,7 +213,7 @@ public class FirstRatings {
                         String currDirector = director.substring(0, idxComma);
                         
                         if (!map.containsKey(currDirector)){
-                            map.put(currDirector, new ArrayList<String>());
+                            map.put(currDirector, new ArrayList<>());
                         }
                         String title = currMovie.getTitle();
                         map.get(currDirector).add(title);

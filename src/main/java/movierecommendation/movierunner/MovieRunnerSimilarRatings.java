@@ -1,9 +1,9 @@
-package movieRecommendation.movierunner;
+package movierecommendation.movierunner;
 
-import movieRecommendation.movies.MovieDatabase;
-import movieRecommendation.ratings.Rating;
-import movieRecommendation.filters.*;
-import movieRecommendation.ratings.FourthRatings;
+import movierecommendation.movies.MovieDatabase;
+import movierecommendation.ratings.Rating;
+import movierecommendation.filters.*;
+import movierecommendation.ratings.FourthRatings;
 
 import java.util.*;
 

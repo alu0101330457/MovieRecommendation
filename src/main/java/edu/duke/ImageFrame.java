@@ -24,7 +24,7 @@ class ImageFrame extends JFrame {
     /**
      * Creates an ImageFrame.
      */
-    public ImageFrame (String fileName, Image image) {
+    public ImageFrame (String fileName) {
         setTitle(fileName);
         // setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

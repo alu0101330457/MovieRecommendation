@@ -1,4 +1,4 @@
-package movieRecommendation.raters;
+package movierecommendation.raters;
 
 import java.util.*;
 

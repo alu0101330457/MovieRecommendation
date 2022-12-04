@@ -86,28 +86,25 @@ class FileSelector {
 
         try {
             ourFiles = null;
-            SwingUtilities.invokeAndWait(new Runnable() {
-                @Override
-                public void run () {
-                    int result = 0;
-                    if (openForRead) {
-                        result = ourChooser.showOpenDialog(null);
-                    }
-                    else {
-                        result = ourChooser.showSaveDialog(null);
-                    }
-                    if (result == JFileChooser.CANCEL_OPTION) {
-                        ourFiles = new File[] { null };
-                    } else {
-                        try {
-                            if (allowMultiple) {
-                                ourFiles = ourChooser.getSelectedFiles();
-                            } else {
-                                ourFiles = new File[] { ourChooser.getSelectedFile() };
-                            }
-                        } catch (Exception e) {
-                            JOptionPane.showMessageDialog(null, e.toString());
+            SwingUtilities.invokeAndWait(() -> {
+                int result = 0;
+                if (openForRead) {
+                    result = ourChooser.showOpenDialog(null);
+                }
+                else {
+                    result = ourChooser.showSaveDialog(null);
+                }
+                if (result == JFileChooser.CANCEL_OPTION) {
+                    ourFiles = new File[] { null };
+                } else {
+                    try {
+                        if (allowMultiple) {
+                            ourFiles = ourChooser.getSelectedFiles();
+                        } else {
+                            ourFiles = new File[] { ourChooser.getSelectedFile() };
                         }
+                    } catch (Exception e) {
+                        JOptionPane.showMessageDialog(null, e.toString());
                     }
                 }
             });

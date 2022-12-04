@@ -1,5 +1,6 @@
 package edu.duke;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.net.URL;
@@ -273,7 +274,7 @@ public class FileResource {
      * @param s the string to saved to the file
      */
     public void write (String s) {
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
         list.add(s);
         write(list);
     }
@@ -295,7 +296,7 @@ public class FileResource {
      */
     public void write (String[] list) {
         // BUGBUG: yuck :(
-        write(new ArrayList<String>(Arrays.asList(list)));
+        write(new ArrayList<>(Arrays.asList(list)));
     }
 
     /**
@@ -375,7 +376,7 @@ public class FileResource {
     private String initFromStream (InputStream stream) {
         BufferedReader buff = null;
         try {
-            buff = new BufferedReader(new InputStreamReader(stream, "UTF-8"));
+            buff = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8));
             StringBuilder contents = new StringBuilder();
             String line = null;
             while ((line = buff.readLine()) != null) {

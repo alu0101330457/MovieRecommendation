@@ -363,7 +363,7 @@ public class ImageResource {
         try {
             setPath(fileName);
             myImage = image;
-            myDisplay = new ImageFrame(fileName, image);
+            myDisplay = new ImageFrame(fileName);
             myPixels = imageToPixels(myImage);
             // System.out.printf("init: %d %d %s\n", getWidth(), getHeight(), myPath);
         }

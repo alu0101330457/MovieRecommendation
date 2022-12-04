@@ -1,6 +1,6 @@
-package movieRecommendation.filters;
+package movierecommendation.filters;
 
-import movieRecommendation.movies.MovieDatabase;
+import movierecommendation.movies.MovieDatabase;
 
 /**
  * Represents a Filter to check the Director of a movie.

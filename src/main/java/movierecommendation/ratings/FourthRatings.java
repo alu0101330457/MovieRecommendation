@@ -1,12 +1,12 @@
-package movieRecommendation.ratings;
+package movierecommendation.ratings;
 
 
 
-import movieRecommendation.movies.MovieDatabase;
-import movieRecommendation.raters.RaterDatabase;
-import movieRecommendation.filters.Filter;
-import movieRecommendation.filters.TrueFilter;
-import movieRecommendation.raters.Rater;
+import movierecommendation.movies.MovieDatabase;
+import movierecommendation.raters.RaterDatabase;
+import movierecommendation.filters.Filter;
+import movierecommendation.filters.TrueFilter;
+import movierecommendation.raters.Rater;
 
 import java.util.*;
 
@@ -54,6 +54,7 @@ public class FourthRatings {
         if (numRatings < minimalRaters){
             return 0.0;
         } else {
+            numRatings = 1;
             return totalScore/numRatings;
         }
     }
@@ -69,7 +70,7 @@ public class FourthRatings {
 
         // Get the ArrayList of Movies from MovieDatabase.
         ArrayList<String> movies = MovieDatabase.filterBy(new TrueFilter());
-        ArrayList<Rating> allAverageRatings = new ArrayList<Rating>();
+        ArrayList<Rating> allAverageRatings = new ArrayList<>();
         for (String currMovieID: movies){
             double averageRating = getAverageByID(currMovieID, minimalRaters);
             allAverageRatings.add(new Rating(currMovieID, averageRating));
@@ -83,7 +84,7 @@ public class FourthRatings {
      */
     public ArrayList<Rating> getAverageRatingsByFilter(int minimalRaters, Filter filterCriteria){
         ArrayList<String> movieIDs = MovieDatabase.filterBy(filterCriteria);
-        ArrayList<Rating> averageRatings = new ArrayList<Rating>();
+        ArrayList<Rating> averageRatings = new ArrayList<>();
         for (String s: movieIDs){
             double ratingValue = getAverageByID(s, minimalRaters);
             averageRatings.add(new Rating(s, ratingValue));
@@ -129,7 +130,7 @@ public class FourthRatings {
          * this method computes a similarity rating for each rater in the RaterDatabase 
          *
          */
-        ArrayList<Rating> list = new ArrayList<Rating>();
+        ArrayList<Rating> list = new ArrayList<>();
         Rater me = RaterDatabase.getRater(id);
         for (Rater r: RaterDatabase.getRaters()){
             String currOtherID = r.getID();
@@ -158,7 +159,7 @@ public class FourthRatings {
         ArrayList<Rating> similarList = getSimilarities(id);
         // System.out.println("Similar raters list: " + similarList); // Test
         // Key: Movies' IDs.  Value: RaterID and ratring value.
-        HashMap<String, HashMap<String, Double>> recMap = new HashMap<String, HashMap<String, Double>>();
+        HashMap<String, HashMap<String, Double>> recMap = new HashMap<>();
         if (similarList.size() < numSimilarRaters){
             numSimilarRaters = similarList.size();
         }
@@ -168,7 +169,7 @@ public class FourthRatings {
             ArrayList<String> ratedMovies = currRater.getItemsRated();
             for (String currMovie: ratedMovies){
                 if (!recMap.containsKey(currMovie)){
-                    HashMap<String, Double> first = new HashMap<String, Double>();
+                    HashMap<String, Double> first = new HashMap<>();
                     first.put(currRaterID, currRater.getRating(currMovie));
                     recMap.put(currMovie, first);
                 } else {
@@ -178,7 +179,7 @@ public class FourthRatings {
         }
         // System.out.println(recMap);
         
-        ArrayList<Rating> result = new ArrayList<Rating>();
+        ArrayList<Rating> result = new ArrayList<>();
         for (String currMovie : recMap.keySet()){
             HashMap<String, Double> currValueMap = recMap.get(currMovie);
             if (currValueMap.size() >= minimalRaters){

@@ -1,7 +1,7 @@
-package movieRecommendation.movies;
+package movierecommendation.movies;
 
-import movieRecommendation.filters.Filter;
-import movieRecommendation.ratings.FirstRatings;
+import movierecommendation.filters.Filter;
+import movierecommendation.ratings.FirstRatings;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,7 +15,7 @@ public class MovieDatabase {
 
     public static void initialize(String moviefile) {
         if (ourMovies == null) {
-            ourMovies = new HashMap<String,Movie>();
+            ourMovies = new HashMap<>();
             // loadMovies("data/" + moviefile);
             loadMovies("data/" + moviefile); 
         }
@@ -23,7 +23,7 @@ public class MovieDatabase {
 
     private static void initialize() {
         if (ourMovies == null) {
-            ourMovies = new HashMap<String,Movie>();
+            ourMovies = new HashMap<>();
             loadMovies("data/ratedmoviesfull.csv");
         }
     }	
@@ -88,7 +88,7 @@ public class MovieDatabase {
 
     public static ArrayList<String> filterBy(Filter f) {
         initialize();
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
         for(String id : ourMovies.keySet()) {
             if (f.satisfies(id)) {
                 list.add(id);

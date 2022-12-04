@@ -1,4 +1,4 @@
-package movieRecommendation.movies;
+package movierecommendation.movies;
 
 /**
  * Represents a Movie and contains useful information about it.

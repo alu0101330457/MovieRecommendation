@@ -1,4 +1,4 @@
-package movieRecommendation.raters;
+package movierecommendation.raters;
 /**
  * Write a description of RaterDatabase here.
  * 
@@ -23,13 +23,13 @@ public class RaterDatabase {
 	private static void initialize() {
 	    // this method is only called from addRatings 
 		if (ourRaters == null) {
-			ourRaters = new HashMap<String,Rater>();
+			ourRaters = new HashMap<>();
 		}
 	}
 
     public static void initialize(String filename) {
  		if (ourRaters == null) {
- 			ourRaters= new HashMap<String,Rater>();
+ 			ourRaters= new HashMap<>();
  			addRatings("data/" + filename);
  		}
  	}	
@@ -48,7 +48,7 @@ public class RaterDatabase {
     
     public static void addRaterRating(String raterID, String movieID, double rating) {
         initialize(); 
-        Rater rater =  null;
+        Rater rater;
                 if (ourRaters.containsKey(raterID)) {
                     rater = ourRaters.get(raterID); 
                 } 
@@ -67,7 +67,7 @@ public class RaterDatabase {
     
     public static ArrayList<Rater> getRaters() {
     	initialize();
-    	ArrayList<Rater> list = new ArrayList<Rater>(ourRaters.values());
+    	ArrayList<Rater> list = new ArrayList<>(ourRaters.values());
     	
     	return list;
     }

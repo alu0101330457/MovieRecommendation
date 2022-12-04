@@ -1,10 +1,10 @@
-package movieRecommendation.recommenderrunner;
+package movierecommendation.recommenderrunner;
 
-import movieRecommendation.movies.MovieDatabase;
-import movieRecommendation.ratings.Rating;
-import movieRecommendation.filters.Filter;
-import movieRecommendation.filters.TrueFilter;
-import movieRecommendation.ratings.FourthRatings;
+import movierecommendation.movies.MovieDatabase;
+import movierecommendation.ratings.Rating;
+import movierecommendation.filters.Filter;
+import movierecommendation.filters.TrueFilter;
+import movierecommendation.ratings.FourthRatings;
 
 import java.util.*;
 
@@ -26,7 +26,7 @@ public class RecommendationRunner implements Recommender {
     
     public ArrayList<String> getItemsToRate(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
-        ArrayList<String> toRate = new ArrayList<String>();
+        ArrayList<String> toRate = new ArrayList<>();
         Filter f = new TrueFilter();
         ArrayList<String> allMovies = MovieDatabase.filterBy(f);
         for (int k=0; k<toRateNum; k++){
@@ -59,13 +59,13 @@ public class RecommendationRunner implements Recommender {
                 String currMovieTitle = MovieDatabase.getTitle(currMovieID);
                 double currRatingValue = currRating.getValue();
                 String currGenre = MovieDatabase.getGenres(currMovieID);
-                body += printOut(currMovieTitle, currRatingValue, currGenre);
+                body += printOut(currMovieTitle, currRatingValue);
             }
             System.out.println(header + body + "</table>");
         }
     }
     
-    private String printOut(String title, double value, String genre){
-        return ("<tr> <td>" + title + "</td> <td>" + Double.toString(value) + "</td> </tr>");
+    private String printOut(String title, double value){
+        return ("<tr> <td>" + title + "</td> <td>" + value + "</td> </tr>");
     }
 }

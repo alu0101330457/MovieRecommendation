@@ -1,6 +1,6 @@
-package movieRecommendation.main;
+package movierecommendation.main;
 
-import movieRecommendation.recommenderrunner.RecommendationRunner;
+import movierecommendation.recommenderrunner.RecommendationRunner;
 
 public class Main {
     public static void main(String[] args) {

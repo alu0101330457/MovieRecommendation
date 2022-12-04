@@ -1,6 +1,6 @@
-package movieRecommendation.raters;
+package movierecommendation.raters;
 
-import movieRecommendation.ratings.Rating;
+import movierecommendation.ratings.Rating;
 
 import java.util.*;
 
