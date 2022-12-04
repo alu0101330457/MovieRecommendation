@@ -5,7 +5,6 @@ import movierecommendation.ratings.Rating;
 import movierecommendation.filters.*;
 import movierecommendation.ratings.FourthRatings;
 
-import javax.xml.xpath.XPathEvaluationResult;
 import java.lang.System.Logger;
 import java.util.*;
 
@@ -15,8 +14,8 @@ import java.util.*;
 public class MovieRunnerSimilarRatings {
     private FourthRatings fourth;
     private Logger log;
-    final String THEREARE = "There are ";
-    final String INTHEFILE = "in the file";
+    final static String thereAre = "There are ";
+    final static String inTheFile = "in the file";
     
     public MovieRunnerSimilarRatings(){
         fourth = new FourthRatings("ratings.csv");
@@ -24,9 +23,8 @@ public class MovieRunnerSimilarRatings {
     }
     
     public void printAverageRatings(){
-        log.log(Logger.Level.INFO, THEREARE + MovieDatabase.size() + " movies " + INTHEFILE);
-        // log.log(Logger.Level.INFO, "There are " + RaterDatabase.size() + " raters in the file.");
-        log.log(Logger.Level.INFO, THEREARE + fourth.getRaterSize() + " raters " + INTHEFILE);
+        log.log(Logger.Level.INFO, thereAre + MovieDatabase.size() + " movies " + inTheFile);
+        log.log(Logger.Level.INFO, thereAre + fourth.getRaterSize() + " raters " + inTheFile);
         
         int numRating = 35;
         ArrayList<Rating> ratings = fourth.getAverageRatings(numRating);
@@ -42,28 +40,28 @@ public class MovieRunnerSimilarRatings {
                 log.log(Logger.Level.INFO, currValue + "  " + MovieDatabase.getTitle(currMovieID));
             }
         }
-        log.log(Logger.Level.INFO, THEREARE + num + " movies have at least " + numRating + " ratings.");
+        log.log(Logger.Level.INFO, thereAre + num + " movies have at least " + numRating + " ratings.");
     }
 
     /**
      * Prints the similar ratings for a select movie in the database.
      */
     public void printSimilarRatings(){
-        log.log(Logger.Level.INFO,  THEREARE + MovieDatabase.size() + " movies " + INTHEFILE);
-        log.log(Logger.Level.INFO, THEREARE + fourth.getRaterSize() + " raters " + INTHEFILE + "\n");
+        log.log(Logger.Level.INFO,  thereAre + MovieDatabase.size() + " movies " + inTheFile);
+        log.log(Logger.Level.INFO, thereAre + fourth.getRaterSize() + " raters " + inTheFile + "\n");
         ArrayList<Rating> list = fourth.getSimilarRatings("337", 10, 3);
         for (Rating r: list){
             log.log(Logger.Level.INFO, MovieDatabase.getTitle(r.getItem()) + " : " + r.getValue());
         }
-        log.log(Logger.Level.INFO, "\n" + THEREARE + list.size() + " recommended movies were found.");
+        log.log(Logger.Level.INFO, "\n" + thereAre + list.size() + " recommended movies were found.");
     }
 
     /**
      * Prints the movies with similar ratings per genre for a select movie.
      */
     public void printSimilarRatingsByGenre(){
-        log.log(Logger.Level.INFO, THEREARE + MovieDatabase.size() + " movies " + INTHEFILE);
-        log.log(Logger.Level.INFO, THEREARE + fourth.getRaterSize() + " raters "+ INTHEFILE + "\n");
+        log.log(Logger.Level.INFO, thereAre + MovieDatabase.size() + " movies " + inTheFile);
+        log.log(Logger.Level.INFO, thereAre + fourth.getRaterSize() + " raters "+ inTheFile + "\n");
         Filter genreFilter = new GenreFilter("Mystery");
         ArrayList<String> movieIDs = MovieDatabase.filterBy(genreFilter);
         ArrayList<Rating> list = fourth.getSimilarRatings("964", 20, 5);
@@ -75,15 +73,15 @@ public class MovieRunnerSimilarRatings {
                 num += 1;
             }
         }
-        log.log(Logger.Level.INFO, "\n" + THEREARE + num + " recommended movies were found.");
+        log.log(Logger.Level.INFO, "\n" + thereAre + num + " recommended movies were found.");
     }
 
     /**
      * Prints the movies with similar ratings per director for a select movie.
      */
     public void printSimilarRatingsByDirector(){
-        log.log(Logger.Level.INFO, THEREARE + MovieDatabase.size() + " movies " + INTHEFILE);
-        log.log(Logger.Level.INFO, THEREARE + fourth.getRaterSize() + " raters " + INTHEFILE);
+        log.log(Logger.Level.INFO, thereAre + MovieDatabase.size() + " movies " + inTheFile);
+        log.log(Logger.Level.INFO, thereAre + fourth.getRaterSize() + " raters " + inTheFile);
         Filter directorFilter = new DirectorsFilter("Clint Eastwood,J.J. Abrams,Alfred Hitchcock,Sydney Pollack,David Cronenberg,Oliver Stone,Mike Leigh");
         ArrayList<String> movieIDs = MovieDatabase.filterBy(directorFilter);
         ArrayList<Rating> list = fourth.getSimilarRatings("120", 10, 2);
@@ -95,15 +93,15 @@ public class MovieRunnerSimilarRatings {
                 num += 1;
             }
         }
-        log.log(Logger.Level.INFO, "\n" + THEREARE + num + " recommended movies were found.");
+        log.log(Logger.Level.INFO, "\n" + thereAre + num + " recommended movies were found.");
     }
 
     /**
      * Prints the movies with similar rating per genre and duration for a select movie.
      */
     public void printSimilarRatingsByGenreAndMinutes(){
-        log.log(Logger.Level.INFO, THEREARE + MovieDatabase.size() + " movies " + INTHEFILE);
-        log.log(Logger.Level.INFO, THEREARE + fourth.getRaterSize() + " raters " + INTHEFILE);
+        log.log(Logger.Level.INFO, thereAre + MovieDatabase.size() + " movies " + inTheFile);
+        log.log(Logger.Level.INFO, thereAre + fourth.getRaterSize() + " raters " + inTheFile);
         Filter genreFilter = new GenreFilter("Drama");
         Filter minutesFilter = new MinutesFilter(80, 160);
         AllFilters all = new AllFilters();
@@ -121,15 +119,15 @@ public class MovieRunnerSimilarRatings {
                 num += 1;
             }
         }
-        log.log(Logger.Level.INFO, THEREARE + num + " recommended movies were found.");
+        log.log(Logger.Level.INFO, thereAre + num + " recommended movies were found.");
     }
 
     /**
      * Prints the movies with similar ratings by release year and duration.
      */
     public void printSimilarRatingsByYearAfterAndMinutes(){
-        log.log(Logger.Level.INFO, THEREARE + MovieDatabase.size() + " movies " + INTHEFILE);
-        log.log(Logger.Level.INFO, THEREARE + fourth.getRaterSize() + " raters " + INTHEFILE);
+        log.log(Logger.Level.INFO, thereAre + MovieDatabase.size() + " movies " + inTheFile);
+        log.log(Logger.Level.INFO, thereAre + fourth.getRaterSize() + " raters " + inTheFile);
         Filter yearAfterFilter = new YearAfterFilter(1975);
         Filter minutesFilter = new MinutesFilter(70, 200);
         AllFilters all = new AllFilters();
@@ -147,6 +145,6 @@ public class MovieRunnerSimilarRatings {
                 num += 1;
             }
         }
-        log.log(Logger.Level.INFO, THEREARE + num + " recommended movies were found.");
+        log.log(Logger.Level.INFO, thereAre + num + " recommended movies were found.");
     }
 }
