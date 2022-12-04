@@ -177,7 +177,6 @@ public class FourthRatings {
                 }
             }
         }
-        // System.out.println(recMap);
         
         ArrayList<Rating> result = new ArrayList<>();
         for (String currMovie : recMap.keySet()){

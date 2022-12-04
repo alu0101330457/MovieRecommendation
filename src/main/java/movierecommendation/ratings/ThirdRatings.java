@@ -73,7 +73,6 @@ public class ThirdRatings {
          * (the movie ID and its average rating) for each movie that has at least 10 ratings. 
          * You should consider calling the private getAverageByID method.
          */
-        // Get the ArrayList of Movies from MovieDatabase.
         ArrayList<String> movies = MovieDatabase.filterBy(new TrueFilter());
         ArrayList<Rating> allAverageRatings = new ArrayList<>();
         for (String currMovieID: movies){

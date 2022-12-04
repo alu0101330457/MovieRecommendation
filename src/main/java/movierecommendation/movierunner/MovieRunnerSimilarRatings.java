@@ -24,9 +24,6 @@ public class MovieRunnerSimilarRatings {
     }
     
     public void printAverageRatings(){
-        // MovieDatabase.initialize("ratedmoviesfull.csv");
-        // RaterDatabase.initialize("ratings.csv");
-
         log.log(Logger.Level.INFO, THEREARE + MovieDatabase.size() + " movies " + INTHEFILE);
         // log.log(Logger.Level.INFO, "There are " + RaterDatabase.size() + " raters in the file.");
         log.log(Logger.Level.INFO, THEREARE + fourth.getRaterSize() + " raters " + INTHEFILE);

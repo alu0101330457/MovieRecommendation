@@ -44,14 +44,6 @@ public class MovieRunnerWithFilters {
             }
         }
         log.log(Logger.Level.INFO, "There are " + num + " movies have at least " + numRating + " ratings.");
-        /*int num = 0;
-        for (Rating currRating: ratings){
-            double currValue = currRating.getValue();
-            if(currValue != 0.0){
-                num += 1;
-            }
-        }
-        log.log(Logger.Level.INFO, "There are " + num + " movies have " + numRating + " ratings.");*/
     }
 
     /**

@@ -169,79 +169,73 @@ public class FirstRatings {
             String filename = f.getName();
             log.log(Logger.Level.INFO, "Processing file: " + filename);
             log.log(Logger.Level.INFO, " ");
-            //testLoadMovies(filename);
-            //testLoadRaters(filename);
+
             findNumOfRater(filename, "193");
         }
     }
     
     public void testLoadMovies(String filename){
-        //DirectoryResource dr = new DirectoryResource();
-        //for (File f: dr.selectedFiles()){
-            //String filename = f.getName();
-            //System.out.println("Processing file: " + filename);
-            ArrayList<Movie> movies = loadMovies(filename);
-            log.log(Logger.Level.INFO, "There are " + movies.size() + " records.");
-            //System.out.println(movie);
+        ArrayList<Movie> movies = loadMovies(filename);
+        log.log(Logger.Level.INFO, "There are " + movies.size() + " records.");
+
             
-            int numComedy = 0;
-            for (Movie currMovie: movies){
-                if (currMovie.getGenres().indexOf("Comedy") != -1){
-                    numComedy += 1;
-                }
+        int numComedy = 0;
+        for (Movie currMovie: movies){
+            if (currMovie.getGenres().indexOf("Comedy") != -1){
+                numComedy += 1;
             }
-            log.log(Logger.Level.INFO, "There are " + numComedy + " comedy movies in the file.");
+        }
+        log.log(Logger.Level.INFO, "There are " + numComedy + " comedy movies in the file.");
             
-            int numLength150 = 0;
-            for (Movie currMovie: movies){
-                if (currMovie.getMinutes() > 150){
-                    numLength150 += 1;
-                }
+        int numLength150 = 0;
+        for (Movie currMovie: movies){
+            if (currMovie.getMinutes() > 150){
+                numLength150 += 1;
             }
-            log.log(Logger.Level.INFO, "There are " + numLength150 + " movies which their lengths are more than 150 min.\n");
-            
-            // Remember that some movies may have more than one director.
-            HashMap<String, ArrayList<String>> map = new HashMap<>();
-            for (Movie currMovie: movies){
-                String director = currMovie.getDirector().trim();
-                if (director.indexOf(",") == -1){
-                    if (!map.containsKey(director)){
-                        map.put(director, new ArrayList<>());
+        }
+        log.log(Logger.Level.INFO, "There are " + numLength150 + " movies which their lengths are more than 150 min.\n");
+
+        HashMap<String, ArrayList<String>> map = new HashMap<>();
+        for (Movie currMovie: movies){
+            String director = currMovie.getDirector().trim();
+            if (director.indexOf(",") == -1){
+                if (!map.containsKey(director)){
+                    map.put(director, new ArrayList<>());
+                }
+                String title = currMovie.getTitle();
+                map.get(director).add(title);
+                  
+            } else {
+                while (director.indexOf(",") != -1){
+                    int idxComma = director.indexOf(",");
+                    String currDirector = director.substring(0, idxComma);
+                        
+                    if (!map.containsKey(currDirector)){
+                        map.put(currDirector, new ArrayList<>());
                     }
                     String title = currMovie.getTitle();
-                    map.get(director).add(title);
-                  
-                } else {
-                    while (director.indexOf(",") != -1){
-                        int idxComma = director.indexOf(",");
-                        String currDirector = director.substring(0, idxComma);
-                        
-                        if (!map.containsKey(currDirector)){
-                            map.put(currDirector, new ArrayList<>());
-                        }
-                        String title = currMovie.getTitle();
-                        map.get(currDirector).add(title);
-                        
-                        director = director.substring(idxComma+1).trim();
-                    }
+                    map.get(currDirector).add(title);
+
+                    director = director.substring(idxComma+1).trim();
                 }
             }
+        }
             
-            int maxNumOfMoviesByDirector = 0;
-            for (String s: map.keySet()){
-                if (map.get(s).size() > maxNumOfMoviesByDirector){
-                    maxNumOfMoviesByDirector = map.get(s).size();
-                }
+        int maxNumOfMoviesByDirector = 0;
+        for (String s: map.keySet()){
+            if (map.get(s).size() > maxNumOfMoviesByDirector){
+                maxNumOfMoviesByDirector = map.get(s).size();
             }
-            log.log(Logger.Level.INFO, "The maximum number of films directed by one director is " + maxNumOfMoviesByDirector);
+        }
+        log.log(Logger.Level.INFO, "The maximum number of films directed by one director is " + maxNumOfMoviesByDirector);
             
-            String directorWithMaxMovies = "";
-            for (String s: map.keySet()){
-                if (map.get(s).size() == maxNumOfMoviesByDirector){
-                    directorWithMaxMovies += s + ", ";
-                }
+        String directorWithMaxMovies = "";
+        for (String s: map.keySet()){
+            if (map.get(s).size() == maxNumOfMoviesByDirector){
+                directorWithMaxMovies += s + ", ";
             }
-            log.log(Logger.Level.INFO, "Names of the directors who directed the maximum number of movies " +
+        }
+        log.log(Logger.Level.INFO, "Names of the directors who directed the maximum number of movies " +
                                 directorWithMaxMovies.substring(0, directorWithMaxMovies.length()-2));
     }
     

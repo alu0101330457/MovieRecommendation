@@ -15,7 +15,6 @@ public class Movie {
     private int minutes;
 
     public Movie (String anID, String aTitle, String aYear, String theGenres) {
-        // just in case data file contains extra whitespace
         id = anID.trim();
         title = aTitle.trim();
         year = Integer.parseInt(aYear.trim());
@@ -24,7 +23,6 @@ public class Movie {
 
     public Movie (String anID, String aTitle, String aYear, String theGenres, String aDirector,
     String aCountry, String aPoster, int theMinutes) {
-        // just in case data file contains extra whitespace
         id = anID.trim();
         title = aTitle.trim();
         year = Integer.parseInt(aYear.trim());
