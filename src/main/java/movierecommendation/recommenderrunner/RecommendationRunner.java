@@ -6,6 +6,7 @@ import movierecommendation.filters.Filter;
 import movierecommendation.filters.TrueFilter;
 import movierecommendation.ratings.FourthRatings;
 
+import java.lang.System.Logger;
 import java.util.*;
 
 
@@ -15,6 +16,7 @@ public class RecommendationRunner implements Recommender {
     private int numSimilarRaters;
     private int minimalRaters;
     private int maxRecNum;
+    private Logger log = System.getLogger("RecommendationRunner");
     
     public RecommendationRunner(){
         myRandom = new Random();
@@ -44,8 +46,8 @@ public class RecommendationRunner implements Recommender {
         ArrayList<Rating> result = fourth.getSimilarRatings(webRaterID, numSimilarRaters, minimalRaters);
         int num = result.size();
         if (num == 0){
-            System.out.println("Recommendation List:");
-            System.out.println("Not Found");
+            log.log(Logger.Level.INFO, "Recommendation List:");
+            log.log(Logger.Level.INFO, "No movies found");
         } else {
             if (num > maxRecNum){
                 num = maxRecNum;

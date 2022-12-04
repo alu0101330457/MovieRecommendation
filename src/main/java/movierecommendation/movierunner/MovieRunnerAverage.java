@@ -3,6 +3,7 @@ package movierecommendation.movierunner;
 import movierecommendation.ratings.Rating;
 import movierecommendation.ratings.SecondRatings;
 
+import java.lang.System.Logger;
 import java.util.*;
 
 /**
@@ -13,6 +14,7 @@ public class MovieRunnerAverage {
     private String movieFileName;
     private String ratingFileName;
     private SecondRatings sr;
+    private Logger log;
     
     public MovieRunnerAverage() {
         movieFileName = "ratedmoviesfull.csv";
@@ -25,19 +27,19 @@ public class MovieRunnerAverage {
      */
     public void printAverageRatings(){
 
-        System.out.println("There are " + sr.getMovieSize() + " movies in the file.");
-        System.out.println("There are " + sr.getRaterSize() + " raters in the file.");
+        log.log(Logger.Level.INFO, "There are " + sr.getMovieSize() + " movies in the file.");
+        log.log(Logger.Level.INFO, "There are " + sr.getRaterSize() + " raters in the file.");
         
         int numRating = 12;
         ArrayList<Rating> ratings = sr.getAverageRatings(numRating);
         Collections.sort(ratings);
         
-        System.out.println("Rating values of Movies with at least " + numRating + " ratings:");
+        log.log(Logger.Level.INFO, "Rating values of Movies with at least " + numRating + " ratings:");
         for (Rating currRating: ratings){
             double currValue = currRating.getValue();
             if(currValue != 0.0){
                 String currMovieID = currRating.getItem();
-                System.out.println(currValue + "  " + sr.getTitle(currMovieID));
+                log.log(Logger.Level.INFO, currValue + "  " + sr.getTitle(currMovieID));
             }
         }
     }
@@ -60,6 +62,6 @@ public class MovieRunnerAverage {
                 value = currRating.getValue();
             }
         }
-        System.out.println("The average rating for " + movieTitle + " is " + value + "");
+        log.log(Logger.Level.INFO, "The average rating for " + movieTitle + " is " + value + "");
     }
 }

@@ -11,11 +11,14 @@ import org.apache.commons.csv.*;
 
 
 import java.io.*;
+import java.lang.System.Logger;
 
 /**
  * Process information in a CSV File about movie information.
  */
 public class FirstRatings {
+
+    private Logger log;
 
     /**
      * This method processes movie records from a CSV File
@@ -99,7 +102,7 @@ public class FirstRatings {
             }
         }
         int num = result.numRatings();
-        System.out.println("There are " + num + " ratings of " + "ID " + RaterID);
+        log.log(Logger.Level.INFO, "There are " + num + " ratings of " + "ID " + RaterID);
     }
 
     /**
@@ -113,14 +116,14 @@ public class FirstRatings {
                 max = currRater.numRatings();
             }
         }
-        System.out.println("The maximum number of ratings of the rater(s) is " + max + ". Their IDs are:");
+        log.log(Logger.Level.INFO, "The maximum number of ratings of the rater(s) is " + max + ". Their IDs are:");
         String s = "";
         for (Rater currRater: raters){
             if (currRater.numRatings() == max){
                 s += currRater.getID() + ", ";
             }
         }
-        System.out.println(s.substring(0, s.length()-2));
+        log.log(Logger.Level.INFO, s.substring(0, s.length()-2));
     }
 
     /**
@@ -135,7 +138,7 @@ public class FirstRatings {
                 num += 1;
             }
         }
-        System.out.println("Movie with ID " + movieID + " was rated by " + num + " raters.");
+        log.log(Logger.Level.INFO, "Movie with ID " + movieID + " was rated by " + num + " raters.");
     }
 
     /**
@@ -152,7 +155,7 @@ public class FirstRatings {
                 }
             }
         }
-        System.out.println("There are " + movies.size() + " movies rated.");
+        log.log(Logger.Level.INFO, "There are " + movies.size() + " movies rated.");
     }
 
 
@@ -160,8 +163,8 @@ public class FirstRatings {
         DirectoryResource dr = new DirectoryResource();
         for (File f: dr.selectedFiles()){
             String filename = f.getName();
-            System.out.println("Processing file: " + filename);
-            System.out.println(" ");
+            log.log(Logger.Level.INFO, "Processing file: " + filename);
+            log.log(Logger.Level.INFO, " ");
             //testLoadMovies(filename);
             //testLoadRaters(filename);
             findNumOfRater(filename, "193");
@@ -177,7 +180,7 @@ public class FirstRatings {
             //String filename = f.getName();
             //System.out.println("Processing file: " + filename);
             ArrayList<Movie> movies = loadMovies(filename);
-            System.out.println("There are " + movies.size() + " records.");
+            log.log(Logger.Level.INFO, "There are " + movies.size() + " records.");
             //System.out.println(movie);
             
             int numComedy = 0;
@@ -186,7 +189,7 @@ public class FirstRatings {
                     numComedy += 1;
                 }
             }
-            System.out.println("There are " + numComedy + " comedy movies in the file.");
+            log.log(Logger.Level.INFO, "There are " + numComedy + " comedy movies in the file.");
             
             int numLength150 = 0;
             for (Movie currMovie: movies){
@@ -194,7 +197,7 @@ public class FirstRatings {
                     numLength150 += 1;
                 }
             }
-            System.out.println("There are " + numLength150 + " movies which their lengths are more than 150 min.\n");
+            log.log(Logger.Level.INFO, "There are " + numLength150 + " movies which their lengths are more than 150 min.\n");
             
             // Remember that some movies may have more than one director.
             HashMap<String, ArrayList<String>> map = new HashMap<>();
@@ -229,7 +232,7 @@ public class FirstRatings {
                     maxNumOfMoviesByDirector = map.get(s).size();
                 }
             }
-            System.out.println("The maximum number of films directed by one director is " + maxNumOfMoviesByDirector);
+            log.log(Logger.Level.INFO, "The maximum number of films directed by one director is " + maxNumOfMoviesByDirector);
             
             String directorWithMaxMovies = "";
             for (String s: map.keySet()){
@@ -237,23 +240,14 @@ public class FirstRatings {
                     directorWithMaxMovies += s + ", ";
                 }
             }
-            System.out.println("Names of the directors who directed the maximum number of movies " +
+            log.log(Logger.Level.INFO, "Names of the directors who directed the maximum number of movies " +
                                 directorWithMaxMovies.substring(0, directorWithMaxMovies.length()-2));
     }
     
     public void testLoadRaters(String filename){
         ArrayList<Rater> raters = loadRaters(filename);
-        System.out.println("There are " + raters.size() + " raters.");
-        System.out.println(" ");
-        /*for (Rater currRater: raters){
-            System.out.println("Rater ID " + currRater.getID() + ": " + currRater.numRatings() + " ratings.");
-            ArrayList<String> items = currRater.getItemsRated();
-            for (String item: items){
-                double rating = currRater.getRating(item);
-                System.out.print(item + " " + rating + "; ");
-            }
-            System.out.println("\n");
-        }*/
+        log.log(Logger.Level.INFO, "There are " + raters.size() + " raters.");
+        log.log(Logger.Level.INFO, " ");
     }
     
     

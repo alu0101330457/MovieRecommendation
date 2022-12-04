@@ -5,6 +5,7 @@ import movierecommendation.ratings.Rating;
 import movierecommendation.filters.*;
 import movierecommendation.ratings.ThirdRatings;
 
+import java.lang.System.Logger;
 import java.util.*;
 
 /**
@@ -13,6 +14,7 @@ import java.util.*;
 public class MovieRunnerWithFilters {
     private String ratingFileName;
     private ThirdRatings tr;
+    private Logger log;
     
     public MovieRunnerWithFilters (){
         ratingFileName = "ratings.csv";
@@ -24,24 +26,24 @@ public class MovieRunnerWithFilters {
      */
     public void printAverageRatings(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
-        System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
-        System.out.println("There are " + tr.getRaterSize() + " raters in the file.");
+        log.log(Logger.Level.INFO, "There are " + MovieDatabase.size() + " movies in the file.");
+        log.log(Logger.Level.INFO, "There are " + tr.getRaterSize() + " raters in the file.");
         
         int numRating = 35;
         ArrayList<Rating> ratings = tr.getAverageRatings(numRating);
         Collections.sort(ratings);
         
         int num = 0;
-        System.out.println("Rating values of Movies with at least " + numRating + " ratings:");
+        log.log(Logger.Level.INFO, "Rating values of Movies with at least " + numRating + " ratings:");
         for (Rating currRating: ratings){
             double currValue = currRating.getValue();
             if(currValue != 0.0){
                 num += 1;
                 String currMovieID = currRating.getItem();
-                System.out.println(currValue + "  " + MovieDatabase.getTitle(currMovieID));
+                log.log(Logger.Level.INFO, currValue + "  " + MovieDatabase.getTitle(currMovieID));
             }
         }
-        System.out.println("There are " + num + " movies have at least " + numRating + " ratings.");
+        log.log(Logger.Level.INFO, "There are " + num + " movies have at least " + numRating + " ratings.");
         /*int num = 0;
         for (Rating currRating: ratings){
             double currValue = currRating.getValue();
@@ -49,7 +51,7 @@ public class MovieRunnerWithFilters {
                 num += 1;
             }
         }
-        System.out.println("There are " + num + " movies have " + numRating + " ratings.");*/
+        log.log(Logger.Level.INFO, "There are " + num + " movies have " + numRating + " ratings.");*/
     }
 
     /**
@@ -57,8 +59,8 @@ public class MovieRunnerWithFilters {
      */
     public void printAverageRatingsByYearAfter(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
-        System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
-        System.out.println("There are " + tr.getRaterSize() + " raters in the file.");
+        log.log(Logger.Level.INFO, "There are " + MovieDatabase.size() + " movies in the file.");
+        log.log(Logger.Level.INFO, "There are " + tr.getRaterSize() + " raters in the file.");
         
         int numRating = 20;
         Filter filterYear = new YearAfterFilter(2000);
@@ -66,16 +68,16 @@ public class MovieRunnerWithFilters {
         Collections.sort(ratings);
         
         int num = 0;
-        System.out.println("Rating values of Movies with at least " + numRating + " ratings:");
+        log.log(Logger.Level.INFO, "Rating values of Movies with at least " + numRating + " ratings:");
         for (Rating currRating: ratings){
             double currValue = currRating.getValue();
             if(currValue != 0.0){
                 num += 1;
                 String currMovieID = currRating.getItem();
-                System.out.println(currValue + "  " + MovieDatabase.getYear(currMovieID) + "  " +MovieDatabase.getTitle(currMovieID));
+                log.log(Logger.Level.INFO, currValue + "  " + MovieDatabase.getYear(currMovieID) + "  " +MovieDatabase.getTitle(currMovieID));
             }
         }
-        System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
+        log.log(Logger.Level.INFO, "There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
     }
 
     /**
@@ -83,8 +85,8 @@ public class MovieRunnerWithFilters {
      */
     public void printAverageRatingsByGenre(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
-        System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
-        System.out.println("There are " + tr.getRaterSize() + " raters in the file.");
+        log.log(Logger.Level.INFO, "There are " + MovieDatabase.size() + " movies in the file.");
+        log.log(Logger.Level.INFO, "There are " + tr.getRaterSize() + " raters in the file.");
         
         int numRating = 20;
         Filter filterGenre = new GenreFilter("Comedy");
@@ -97,11 +99,11 @@ public class MovieRunnerWithFilters {
             if(currValue != 0.0){
                 num += 1;
                 String currMovieID = currRating.getItem();
-                System.out.println(currValue + "  " + MovieDatabase.getTitle(currMovieID));
-                System.out.println("     " + MovieDatabase.getGenres(currMovieID));
+                log.log(Logger.Level.INFO, currValue + "  " + MovieDatabase.getTitle(currMovieID));
+                log.log(Logger.Level.INFO, "     " + MovieDatabase.getGenres(currMovieID));
             }
         }
-        System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
+        log.log(Logger.Level.INFO, "There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
     }
 
     /**
@@ -109,8 +111,8 @@ public class MovieRunnerWithFilters {
      */
     public void printAverageRatingsByMinutes(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
-        System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
-        System.out.println("There are " + tr.getRaterSize() + " raters in the file.");
+        log.log(Logger.Level.INFO, "There are " + MovieDatabase.size() + " movies in the file.");
+        log.log(Logger.Level.INFO, "There are " + tr.getRaterSize() + " raters in the file.");
         
         int numRating = 5;
         int minMinutes = 105;
@@ -125,11 +127,11 @@ public class MovieRunnerWithFilters {
             if(currValue != 0.0){
                 num += 1;
                 String currMovieID = currRating.getItem();
-                System.out.println(currValue + "  " + "Time: " + MovieDatabase.getMinutes(currMovieID)
+                log.log(Logger.Level.INFO, currValue + "  " + "Time: " + MovieDatabase.getMinutes(currMovieID)
                                    + " " + MovieDatabase.getTitle(currMovieID));
             }
         }
-        System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
+        log.log(Logger.Level.INFO, "There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
     }
 
     /**
@@ -137,8 +139,8 @@ public class MovieRunnerWithFilters {
      */
     public void printAverageRatingsByDirectors(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
-        System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
-        System.out.println("There are " + tr.getRaterSize() + " raters in the file.");
+        log.log(Logger.Level.INFO, "There are " + MovieDatabase.size() + " movies in the file.");
+        log.log(Logger.Level.INFO, "There are " + tr.getRaterSize() + " raters in the file.");
         
         int numRating = 4;
         String directors = "Clint Eastwood,Joel Coen,Martin Scorsese,Roman Polanski,Nora Ephron,Ridley Scott,Sydney Pollack";
@@ -152,11 +154,11 @@ public class MovieRunnerWithFilters {
             if(currValue != 0.0){
                 num += 1;
                 String currMovieID = currRating.getItem();
-                System.out.println(currValue + "  " + MovieDatabase.getTitle(currMovieID));
-                System.out.println("    " + MovieDatabase.getDirector(currMovieID));
+                log.log(Logger.Level.INFO, currValue + "  " + MovieDatabase.getTitle(currMovieID));
+                log.log(Logger.Level.INFO, "    " + MovieDatabase.getDirector(currMovieID));
             }
         }
-        System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
+        log.log(Logger.Level.INFO, "There are " + num + " movies have at least " + numRating + " ratings and satisfy the filter.");
     }
 
     /**
@@ -164,8 +166,8 @@ public class MovieRunnerWithFilters {
      */
     public void printAverageRatingsByYearAfterAndGenre(){
         MovieDatabase.initialize("ratedmoviesfull.csv");
-        System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
-        System.out.println("There are " + tr.getRaterSize() + " raters in the file.");
+        log.log(Logger.Level.INFO, "There are " + MovieDatabase.size() + " movies in the file.");
+        log.log(Logger.Level.INFO, "There are " + tr.getRaterSize() + " raters in the file.");
         
         int numRating = 8;
         Filter filterYear = new YearAfterFilter(1990);
@@ -184,11 +186,11 @@ public class MovieRunnerWithFilters {
             if(currValue != 0.0){
                 num += 1;
                 String currMovieID = currRating.getItem();
-                System.out.println(currValue + " " + MovieDatabase.getYear(currMovieID) + " "+MovieDatabase.getTitle(currMovieID));
-                System.out.println("    " + MovieDatabase.getGenres(currMovieID));
+                log.log(Logger.Level.INFO, currValue + " " + MovieDatabase.getYear(currMovieID) + " "+MovieDatabase.getTitle(currMovieID));
+                log.log(Logger.Level.INFO, "    " + MovieDatabase.getGenres(currMovieID));
             }
         }
-        System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filters.");
+        log.log(Logger.Level.INFO, "There are " + num + " movies have at least " + numRating + " ratings and satisfy the filters.");
     }
 
     /**
@@ -196,8 +198,8 @@ public class MovieRunnerWithFilters {
      */
     public void printAverageRatingsByDirectorsAndMinutes (){
         MovieDatabase.initialize("ratedmoviesfull.csv");
-        System.out.println("There are " + MovieDatabase.size() + " movies in the file.");
-        System.out.println("There are " + tr.getRaterSize() + " raters in the file.");
+        log.log(Logger.Level.INFO, "There are " + MovieDatabase.size() + " movies in the file.");
+        log.log(Logger.Level.INFO, "There are " + tr.getRaterSize() + " raters in the file.");
         
         int numRating = 3;
         String directors = "Clint Eastwood,Joel Coen,Tim Burton,Ron Howard,Nora Ephron,Sydney Pollack";
@@ -219,11 +221,11 @@ public class MovieRunnerWithFilters {
             if(currValue != 0.0){
                 num += 1;
                 String currMovieID = currRating.getItem();
-                System.out.println(currValue + " Time: " + MovieDatabase.getMinutes(currMovieID) + " "+ MovieDatabase.getTitle(currMovieID));
-                System.out.println("    " + MovieDatabase.getDirector(currMovieID));
+                log.log(Logger.Level.INFO, currValue + " Time: " + MovieDatabase.getMinutes(currMovieID) + " "+ MovieDatabase.getTitle(currMovieID));
+                log.log(Logger.Level.INFO, "    " + MovieDatabase.getDirector(currMovieID));
             }
         }
-        System.out.println("There are " + num + " movies have at least " + numRating + " ratings and satisfy the filters.");
+        log.log(Logger.Level.INFO, "There are " + num + " movies have at least " + numRating + " ratings and satisfy the filters.");
     }
     
 }
