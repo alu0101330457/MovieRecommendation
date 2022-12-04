@@ -50,6 +50,7 @@ public class ThirdRatings {
         if (numRatings < minimalRaters){
             return 0.0;
         } else {
+            numRatings = 1;
             return totalScore/numRatings;
         }
     }
