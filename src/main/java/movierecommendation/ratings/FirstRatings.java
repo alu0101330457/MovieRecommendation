@@ -101,7 +101,11 @@ public class FirstRatings {
                 result = currRater;
             }
         }
-        int num = result.numRatings();
+
+        int num = 0;
+        if (result.numRatings() != 0) {
+            num = result.numRatings();
+        }
         log.log(Logger.Level.INFO, "There are " + num + " ratings of " + "ID " + RaterID);
     }
 
@@ -168,9 +172,6 @@ public class FirstRatings {
             //testLoadMovies(filename);
             //testLoadRaters(filename);
             findNumOfRater(filename, "193");
-            //findMaxNumOfRatingsByRater(filename);
-            //findRatingsOfMovie(filename, "1798709");
-            //countRatedMovies(filename);
         }
     }
     
