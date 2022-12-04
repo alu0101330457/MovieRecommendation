@@ -132,42 +132,4 @@ public class URLResource {
         }
     }
 
-    /**
-     * Allows access to the column names of the header row of a CSV file (the first line in the
-     * file) one at a time. If the CSV file did not have a header row, then an empty
-     * <code>Iterator</code> is returned.
-     * 
-     * @param parser the <code>CSVParser</code> that has been created for this web page
-     * @return an <code>Iterable</code> that allows access one header name at a time
-     */
-    public Iterable<String> getCSVHeaders (CSVParser parser) {
-        return parser.getHeaderMap().keySet();
-    }
-
-    // store data (keep in sync with URLResource)
-    private String initFromStream (InputStream stream) {
-        BufferedReader buff = null;
-        try {
-            buff = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8));
-            StringBuilder contents = new StringBuilder();
-            String line = null;
-            while ((line = buff.readLine()) != null) {
-                contents.append(line + "\n");
-            }
-            return contents.toString();
-        }
-        catch (Exception e) {
-            throw new ResourceException("URLResource: error encountered reading " + myPath, e);
-        }
-        finally {
-            try {
-                if (buff != null) {
-                    buff.close();
-                }
-            }
-            catch (Exception e) {
-                // should never happen
-            }
-        }
-    }
 }
