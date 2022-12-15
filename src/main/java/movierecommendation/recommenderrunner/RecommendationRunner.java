@@ -1,11 +1,14 @@
 package movierecommendation.recommenderrunner;
 
 import movierecommendation.movies.MovieDatabase;
+import movierecommendation.raters.RaterDatabase;
 import movierecommendation.ratings.Rating;
 import movierecommendation.filters.Filter;
 import movierecommendation.filters.TrueFilter;
 import movierecommendation.ratings.FourthRatings;
 
+import javax.swing.*;
+import java.awt.print.PrinterException;
 import java.lang.System.Logger;
 import java.util.*;
 
@@ -38,15 +41,43 @@ public class RecommendationRunner implements Recommender {
         }
         return toRate;
     }
+
+    public static void main(String[] args) throws PrinterException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Películas a calificar:");
+        RecommendationRunner rec = new RecommendationRunner();
+        ArrayList<String> films = rec.getItemsToRate();
+        int rate = -1;
+        ArrayList<Integer> rates = new ArrayList<Integer>();
+        for (String film : films) {
+            System.out.print(MovieDatabase.getMovie(film) + ": ");
+            rate = scanner.nextInt();
+            while ((rate < 0) || (rate > 10)) {
+                System.out.print(MovieDatabase.getMovie(film) + ": ");
+                rate = scanner.nextInt();
+            }
+            rates.add(rate);
+            RaterDatabase.addRaterRating("0", film, rate);
+            rate = -1;
+        }
+
+        JTextPane jtp = new JTextPane();
+        jtp.setContentType("text/html");
+        jtp.setText("<html>" + rec.printRecommendationsFor("0") + "</html>"); //Your whole html here..
+        JFrame frame = new JFrame();
+        frame.add(jtp);
+        frame.pack();
+        frame.setVisible(true);
+
+    }
     
-    public void printRecommendationsFor (String webRaterID){
+    public String printRecommendationsFor (String webRaterID){
         MovieDatabase.initialize("ratedmoviesfull.csv");
         FourthRatings fourth = new FourthRatings();
         ArrayList<Rating> result = fourth.getSimilarRatings(webRaterID, numSimilarRaters, minimalRaters);
         int num = result.size();
         if (num == 0){
-            log.log(Logger.Level.INFO, "Recommendation List:");
-            log.log(Logger.Level.INFO, "No movies found");
+            return "No movies found";
         } else {
             if (num > maxRecNum){
                 num = maxRecNum;
@@ -60,7 +91,7 @@ public class RecommendationRunner implements Recommender {
                 double currRatingValue = currRating.getValue();
                 body += printOut(currMovieTitle, currRatingValue);
             }
-            System.out.println(header + body + "</table>");
+            return header + body + "</table>";
         }
     }
     

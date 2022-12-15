@@ -24,7 +24,8 @@ public class RaterDatabase {
 	    // this method is only called from addRatings 
 		if (ourRaters == null) {
 			ourRaters = new HashMap<>();
-		}
+            addRatings("src/main/resources/data/ratings.csv");
+        }
 	}
 
     public static void initialize(String filename) {

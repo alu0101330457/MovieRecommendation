@@ -39,22 +39,23 @@ public interface Recommender {
     public ArrayList<String> getItemsToRate ();
 
     /**
-     * This method returns nothing, but prints out an HTML table of the 
+     * This method returns nothing, but prints out an HTML table of the
      * movies recommended for the given rater.
      * <p>
      * The HTML printed will be displayed on a web page, so the number you
-     * choose to display may affect how long the page takes to load.  For 
-     * example, you may want to limit the number printed to only the top 
+     * choose to display may affect how long the page takes to load.  For
+     * example, you may want to limit the number printed to only the top
      * 20-50 movies recommended or to movies not rater by the given rater.
      * <p>
      * You may also include CSS styling for your table using the &lt;style&gt;
-     * tag before you print the table.  There are no restrictions on which 
+     * tag before you print the table.  There are no restrictions on which
      * movies you print, what order you print them in, or what information
-     * you include about each movie. 
-     * 
-     * @param webRaterID the ID of a new Rater that has been already added to 
-     *        the RaterDatabase with ratings for the movies returned by the 
-     *        method getItemsToRate
+     * you include about each movie.
+     *
+     * @param webRaterID the ID of a new Rater that has been already added to
+     *                   the RaterDatabase with ratings for the movies returned by the
+     *                   method getItemsToRate
+     * @return
      */
-    public void printRecommendationsFor (String webRaterID);
+    public String printRecommendationsFor (String webRaterID);
 }
