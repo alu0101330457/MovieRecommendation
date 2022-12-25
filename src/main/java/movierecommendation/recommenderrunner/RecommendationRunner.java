@@ -95,7 +95,7 @@ public class RecommendationRunner implements Recommender {
         }
     }
     
-    private String printOut(String title, double value){
+    public String printOut(String title, double value){
         return ("<tr> <td>" + title + "</td> <td>" + value + "</td> </tr>");
     }
 }
