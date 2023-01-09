@@ -14,7 +14,7 @@ _Nuestro proyecto consiste en dar soporte a un proyecto ya creado._
 
 Se han realizado una serie de tareas o hitos para la consecución de los objetivos de la actividad:
 
-* **Creación del proyecto con un repositorio GitHub_** _(Sistema de control de versiones)_. 
+* **Creación del proyecto con un repositorio GitHub** _(Sistema de control de versiones)_. 
 * **Integración del proyecto en Maven** _(Herramienta de automatización de compilación y gestión de dependencias)_.
 * **Configurar GitHub Actions**. 
 * **Integración del proyecto en SonarCloud** _(Herramienta de análisis de código estático)_.
