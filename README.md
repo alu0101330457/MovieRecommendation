@@ -25,3 +25,5 @@ En este repositorio se encuentra todo el trabajo realizado durante el cuatrimest
 
 ## Es posible ejecutar el proyecto en el siguiente [enlace](https://www.dukelearntoprogram.com//capstone/recommender.php?id=xqsLtSbzOkCgjA)
 > Esta interfaz ha sido ofrecida por la Duke's University.
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=alu0101330457_MovieRecommendation)
