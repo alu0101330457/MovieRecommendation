@@ -20,6 +20,7 @@ Se han realizado una serie de tareas o hitos para la consecución de los objetiv
 * **Integración del proyecto en SonarCloud** _(Herramienta de análisis de código estático)_.
 * **Generar la documentación del proyecto con Doxygen** _(Herramienta de generación de documentación)_.
 * **Realizar las pruebas unitarias correspondientes al programa con JUnit** _(Herramienta de pruebas unitarias)_.
+* **Integración del proyecto en la herramienta Jenkins** _(Pruebas)_.
 
 En este repositorio se encuentra todo el trabajo realizado durante el cuatrimestre de manera colaborativa. 
 
