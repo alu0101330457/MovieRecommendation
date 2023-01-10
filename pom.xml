@@ -90,7 +90,9 @@
                     <formats>
                       <format>XML</format>
                     </formats>
+                    <excludes>**/*.jar</excludes>
                   </configuration>
+                         
                 </execution>
               </executions>
             </plugin>
