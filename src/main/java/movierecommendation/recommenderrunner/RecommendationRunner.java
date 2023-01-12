@@ -43,6 +43,7 @@ public class RecommendationRunner implements Recommender {
     }
 
     public static void main(String[] args) throws PrinterException {
+        System.out.println("Hola");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Películas a calificar:");
         RecommendationRunner rec = new RecommendationRunner();
